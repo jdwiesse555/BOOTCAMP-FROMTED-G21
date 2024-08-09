@@ -8,17 +8,23 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
 }
-.content {
-    float:right;
-}
-.foto {
-    float:left;
-}
 main {
-         display: flex;
-        justify-content:center;
-        align-items:center;
+         display:flex;
+         margin-top: 100px;
+         padding: 25px;       
+         width: 25%;
+         position:relative;
+         transform: translate(-50%, -50%);
+         top: 10%;
+         left: 50%;
+         
+}
+.content {
+    padding-left: 20px;   /* borde izquierdo*/
+    background-color: blanchedalmond;
 }
 button {
     background-color: aqua;
+
+   
 }
