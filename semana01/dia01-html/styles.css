@@ -14,3 +14,8 @@ body {
 .foto {
     float:left;
 }
+main {
+         display: flex;
+        justify-content:center;
+        align-items:center;
+}
