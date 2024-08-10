@@ -10,22 +10,30 @@ body {
 }
 main {
          display:flex;
-         margin-top: 100px;
-         padding: 25px;       
-         width: 25%;
+         margin-top: 200px;
+         padding: 30px;       
+         width: 40%;
          position:relative;
          transform: translate(-50%, -50%);
-         top: 10%;
+         top: 20%;
          left: 50%;
-         border:3px solid brown;
-         border-radius:22px;
+         /*border:3px solid brown;
+         border-radius:22px;*/
 }
 .content {
-    padding-left: 20px;   /* borde izquierdo*/
-    background-color: blanchedalmond;
+    padding-left: 10px;   /* borde izquierdo*/
+    background-color: rgb(234, 230, 225);
 }
 button {
-    background-color: aqua;
-
-   
+    background-color: green;
+    width: 190px;
+    height: 30px;  
+}
+span {
+    color: green;
+    font-size:24px ;
+}
+p{
+    font-size: 13px;
+    align-content: center;
 }
