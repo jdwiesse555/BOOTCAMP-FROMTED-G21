@@ -2,27 +2,39 @@
 
 /* font-family: "Fraunces", serif;   */
 body {
-    
+    margin: 0;
     background-color:hsl(30, 38%, 92%) ;
-    
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
 main {
-         display:flex;
-         margin-top: 200px;
-         padding: 30px;       
-         width: 40%;
-         position:relative;
+         display: flex;
+         /*margin-top: 300px;
+         padding: 30px;    */   
+         width: 650px;
+         height: 400px;
+         /*position:relative;
          transform: translate(-50%, -50%);
          top: 20%;
-         left: 50%;
-         /*border:3px solid brown;
-         border-radius:22px;*/
+         left: 50%;*/
+         border:1px solid brown;
+         border-radius:22px;
 }
 .content {
     padding-left: 10px;   /* borde izquierdo*/
     background-color: rgb(234, 230, 225);
+    border: 5px solid blue;
+    width: 300px;
+}
+.photo {
+    border: 5px solid green;
+    width: 350px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 button {
     background-color: green;
@@ -33,7 +45,7 @@ span {
     color: green;
     font-size:24px ;
 }
-p{
+p {
     font-size: 13px;
     align-content: center;
 }
