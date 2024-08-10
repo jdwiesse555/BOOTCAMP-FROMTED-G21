@@ -2,34 +2,37 @@
 
 /* font-family: "Fraunces", serif;   */
 body {
-    margin: 0;
+   margin: 0;
     background-color:hsl(30, 38%, 92%) ;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100vh;}
 main {
          display: flex;
          /*margin-top: 300px;
          padding: 30px;    */   
          width: 650px;
-         height: 400px;
+         min-height: 400px;
          /*position:relative;
          transform: translate(-50%, -50%);
          top: 20%;
-         left: 50%;*/
-         border:1px solid brown;
-         border-radius:22px;
+         left: 50%;
+         border:1px solid brown;*/
+         border-radius:14px;
+         overflow: hidden;
 }
 .content {
     padding: 28px;   /* borde */
     display: flex;/* separacion de parrafo inicio*/
     flex-direction: column;
-    gap: 7px;  /* separacion de parrafo fin */
+    gap: 14px;  /* separacion de parrafo fin */
     background-color:  hsl(0, 0%, 100%);
-    border: 5px solid blue;
+    /*border: 5px solid blue;*/
     width: 300px;
 }
 .content h3 {
@@ -53,26 +56,49 @@ main {
     font-weight: 500;
     line-height: 1.5;
     color:hsl(228, 12%, 48%) ;
-    gap: 14px;
+    text-align: left;
+
+}
+
+.content span {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+
+}
+.content div {
+    display: flex; /* cololar una a la derecha del otro */
+    align-items: center;
+    gap:14px; /* separacion */
+}
+.content s{
+    color hsl(228, 12%, 48%);
+}
+.content button {
+    border: 0;
+    font-weight: 700;
+    font-family:"Montserrat", sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    
+    padding: 14px;
+
+    display:flex;
+    justify-content: center;
+    gap: 7px;
+
+    cursor:pointer;
+    border-radius:7px ;
+
+
 
 }
 .photo {
-    border: 5px solid green;
+    /*border: 5px solid green;*/
     width: 350px;
     background-image: url(./images/image-product-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-button {
-    background-color: green;
-    width: 190px;
-    height: 30px;  
-}
-span {
-    color: green;
-    font-size:24px ;
-}
-p {
-    font-size: 13px;
-    align-content: center;
-}
+
