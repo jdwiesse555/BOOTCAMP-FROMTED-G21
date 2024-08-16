@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    border: 2px solid green;
+    background-color: hsl(47, 88%, 63%);
+    display: flex; /*FlexBox*/
+    justify-content: center;/*importante para centrar*/
+    align-items: center;/*alinear al centro*/
+    height: 900px; /*sirve para darle altura del 100% de la pantalla*/
+
+}
+main{
+    border: 1px solid rgb(1, 1, 1);
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    background-color: white;
+    width: 470px;
+    height: 630px;
+    border-radius: 20px;
+    display: flexbox;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.photo{
+    
+    background-image: url(./assets/images/illustration-article.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 240px;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 24px;
+    border-radius: 25px;
+}
+
+h4{
+    font-family: "Figtree", sans-serif;
+    background-color:hsl(47, 88%, 63%);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+p{
+    font-family: "Figtree", sans-serif;
+    color: hsl(0, 0%, 7%);
+    font-weight: 600;
+    margin-left: 24px;
+    
+}
+h1{
+    font-family: "Figtree", sans-serif;
+    color:black;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 24px;
+}
+.text p{
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    color: hsl(0, 0%, 42%);
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Final img{
+    margin-left: 2px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.Final p{
+    
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
