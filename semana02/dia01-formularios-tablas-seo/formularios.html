@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
+
+</head>
+<body>
+    <main>
+    <h1>Formularios + input + Validaciones </h1>
+    <form>
+        <h2>inputs</h2>
+        <label>input tipo texto</label>
+        <input type="text" placeholder="ingrese algun texto" id="text1"/>
+        <label> INPUT solo lectura
+        <input type="text" placeholder="input solo lectura" value="hola" readonly>
+        </label>
+        <label> INPUT desactivado
+            <input type="text" placeholder="input desactivado " value="hola" disabled>
+        </label>
+        <label> INPUT number
+                <input type="number" placeholder="input number" name="edad" id="name" /> 
+        </label>  
+        <label> INPUT correo
+            <input type="email" placeholder="input email" name="correo" id="name" /> 
+    </label>  
+    <label> INPUT rango
+        <input type="range"   min="1" max="50"  step="10"/> 
+</label> 
+<label> INPUT telfono
+    <input type="tel" placeholder="(51)335 343 132" /> 
+</label> 
+<label> INPUT url
+    <input type="url" placeholder="input url"  /> 
+</label> 
+<label> INPUT pass
+    <input type="password" placeholder="input pass"  /> 
+</label> 
+<label> INPUT color
+    <input type="color"   /> 
+</label> 
+<label> INPUT search
+    <input type="search"   />  
+</label> 
+<label> INPUT fiel seleciona una imagen
+    <input type="file"  accept=".jpg,.jpeg" /> 
+</label> 
+<label> INPUT file seleciona multiplos imagen
+    <input type="file"  accept=".jpg,.jpeg" multiple/> 
+</label> 
+<label> INPUT oculto b
+    <input type="hidden"  value="datos-oculto"/> 
+    <input type="submit" value="grabar">
+    <input type="reset" value="limpiar">
+</label> 
+
+
+    </form>
+    
+</main>
+</body>
+</html>
