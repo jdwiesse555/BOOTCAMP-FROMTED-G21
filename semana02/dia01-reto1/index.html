@@ -13,23 +13,23 @@
     <form>
       <div class="row">
         <label>
-          First Name <span>*</span>
+          First Name <span class="required">*</span>
           <input type="text" />
         </label>
         
         <label>
-          Last Name <span>*</span>
+          Last Name <span class="required">*</span>
           <input type="text" />
         </label>
       </div>
 
       <label>
-        Email Address <span>*</span>
+        Email Address <span class="required">*</span>
         <input type="text" />
       </label>
 
       <label>
-        Query Type <span>*</span>
+        Query Type <span class="required">*</span>
         
         <div class="row">
           <div class="query-type">
@@ -44,14 +44,14 @@
         </div>
       </label>
       
-      <label>
-        Message <span>*</span>
-        <textarea rows="5"></textarea>
+      <label >
+        Message <span class="required">*</span>
+        <textarea rows="5" ></textarea>
       </label>
       
-      <label>
+      <label class="flex">
         <input type="checkbox" />
-        I consent to being contacted by the team <span>*</span>
+        I consent to being contacted by the team <span class="required">*</span>
       </label>
       
       <input type="submit" />
