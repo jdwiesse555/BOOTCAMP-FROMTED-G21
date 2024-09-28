@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --colotTextos: #49454567;
+}
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Roboto';
+    background: #4568dc;
+
+    background: linear-gradient(to right,#b06ab3,#4568dc);
+
+    height:650px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    text-align: center;
+    font-size: 700;
+}
+
+form {
+    background: #fff;
+    padding:40px 0;
+    box-shadow: 0 0 6px 0 rgba(255,255,255,0.8 );
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input {
+
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid var(--colotTextos);
+
+
+}
+
+input:focus{
+    outline:none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colotTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+
+}
+
+input:focus~label,
+input:valid~label{
+    top: -20px;
+    font-size:  18px;
+    color: #2196f3;
+
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width:100%;
+
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right,#b06ab3,#4568dc);
+    transition: 0,3s ease widh;
+    left:0;
+
+}
+input:focus~.barra::before{
+    width: 100%;
+
+}
+
+button {
+    font-family: 'roboto';
+    background: #4568dc;
+    background: linear-gradient(to right,#b06ab3,#4568dc);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+
+}

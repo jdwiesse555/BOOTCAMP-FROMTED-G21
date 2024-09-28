@@ -1,0 +1,140 @@
+img {
+    width: 30px;
+}
+
+body {
+  font-family: 'Roboto';
+  background: #4568dc;
+
+  background: linear-gradient(to right,#b06ab3,#4568dc);
+
+
+
+
+}
+.menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+
+    /*background-color: hsl(193, 100%, 96%);*/
+    width: min(100% - 3rem, 1200px);
+}
+
+.login {
+
+  background-image: url(../images/login.jpg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+
+
+width: 60px;
+height: 60px;
+
+}
+
+.nuevo {
+
+    background-image: url(../images/nuevo.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+  
+  width: 60px;
+  height: 60px;
+  
+  }
+  .corregir {
+
+    background-image: url(../images/corregir.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+  
+  width: 60px;
+  height: 60px;
+  
+  }
+  .grabar {
+
+    background-image: url(../images/grabar.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+  
+  width: 60px;
+  height: 60px;
+  
+  }
+
+  section  {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+
+   /* background-color: hsl(193, 100%, 96%);*/
+    width: min(100% - 3rem, 1200px);
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  background: #2ecc71;
+  color: #fff;
+  border: 1px solid crimson;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+
+.tanque{
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  border: 3px solid #73AD21;
+  border-radius: 3rem 3rem 0 0;
+}
+.imgtk{
+  width: 200px;
+  height: 200px;
+
+}
+
+div.agua {
+  position: absolute;
+  bottom: 0px;
+ 
+  right: 0;
+  width: 300px;
+ height: 0px;
+  background-color: #fff;
+  /*border-radius: 0 0 3rem 3rem;*/
+
+}
+div.crudo {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 300px;
+  height: 0px;
+  background-color: black;
+}
+.tablapk {
+  border: 2px solid green;
+
+}
+
+.titulo {
+
+  background-color: lightslategray;
+}

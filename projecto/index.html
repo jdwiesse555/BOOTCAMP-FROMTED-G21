@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tankes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header class="menu">
+    <div>
+
+  <button class="nuevo">    nuevo    </button> 
+
+  <button class="corregir">   Corregir    </button>
+
+  <button class="grabar">    grabar   </button>
+</div>
+<div>  
+
+  <button class="login" onclick="salir()">    Salir    </button>
+</div>
+
+</header>
+<main>
+  <script src="./main.js"></script>
+<section>  
+<div>
+  <form action="#">
+  <select name="tk1"  id ="tk" onchange="ShowSelected(); altura();" >
+    <optgroup label="area_1">
+      <optgroup label="bateria_1   ">
+        <option>TK1</option>
+        <option>TK2</option>
+        <option>TK3</option>
+      </optgroup>
+      <optgroup label="bateria_2   "  >
+        <option>TK4</option>
+        <option>TK5</option>
+        <option>TK6</option>
+      </optgroup>   
+
+      <optgroup label="bateria_3   ">
+        <option>TK7</option>
+      </optgroup>   
+    </optgroup>
+    <optgroup label="area_2">
+      <optgroup label="bateria_3   ">
+        <option>TK8</option>
+        <option>TK9</option>
+
+      </optgroup>
+      <optgroup label="bateria_4">
+        <option>TK10</option>
+
+      </optgroup>   
+    </optgroup>
+  </select>
+ 
+
+</form>
+</div>
+<div>
+    <table class="tablapk">
+      <tr>
+        <th class="titulo">codigo bateria</th>
+      </tr>
+      <tr>
+        <th id="codigo"> 0 </th>
+      </tr>
+      <tr>
+        <th class="titulo">Metrica TK</th>
+      </tr>
+      <tr>
+        <th id="metrica"> 0 </th>
+      </tr>
+      <tr>
+        <th class="titulo">capacidad TK</th>
+      </tr>
+      <tr>
+        <th id="capacidad"> 0</th>
+      </tr>
+      <tr>
+        <th class="titulo">Altura pies</th>
+      </tr>
+      <tr>
+        <th id="altura"> 0</th>
+      </tr>
+      <tr>
+        <th class="titulo">crudo pies</th>
+      </tr>
+      <tr>
+        <th> <input  id="crudo_pies" type="number" value="0"  min="0" max="99" onchange="calcular()"> 
+         <input  id="crudo_pulgadas" type="number" value="0" min="0" max="11" onchange="calcular()"> </th>
+      </tr>
+      <tr>
+        <th class="titulo">agua pies</th>
+      </tr>
+      <tr>
+        <th> <input  id="agua_pies" type="number" value="0"  min="0" max="99" onchange="calcular()">
+           <input  id="agua_pulgadas" type="number" value="0" min="0" max="11" onchange="calcular()"> </th>
+      </tr>
+      <tr>
+        <th class="titulo">Stop TK</th>
+      </tr>
+      <tr>
+        <th id="stoptk"> 0</th>
+      </tr>
+    </table>
+</div>
+<div>
+  
+    <div class="tanque">
+      <h4 id = "textoSalida" ></h4>
+   
+      <div class="agua" id="agua">
+          <p></p>
+      </div>
+      <div class="crudo" id="crudo">
+        <p></p>
+    </div>
+    </div>
+</div>
+</section>
+
+<section>
+  <table class="tablapk">
+    <tr>
+      <th class="titulo">Fecha</th>
+      <th class="titulo">Movimiento</th>
+      <th class="titulo">OIL </th>
+      <th class="titulo">OIL OCT</th>
+      <th class="titulo">WATER</th>
+      <th class="titulo">WATER OCT</th>
+      <th class="titulo">TYPE MOV</th>
+      <th class="titulo">RECIBO TK      </th>
+      <th class="titulo">BOMBEO TK</th>
+      <th class="titulo">RECIBO OTHERTK</th>
+      <th class="titulo">TRANSF TO OTHERTK</th>
+      <th class="titulo">RECIBO SPECIAL</th>
+      <th class="titulo">STOCK TK</th>
+      <th class="titulo">comentarios</th>
+    </tr>
+    <tr>
+      <td width="2px"><input type="fecha" ></td>
+      <td width="2px"><input type="number" ></td>
+      <td ><input type="number" width="2px"></td>
+      <td ><input type="number" width="2px"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="number"></td>
+      <td ><input type="text"></td>
+
+
+
+
+    </tr>
+
+  </table>
+</section>
+</main>
+
+</body>
+</html>
