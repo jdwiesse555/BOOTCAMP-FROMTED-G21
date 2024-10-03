@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD de Películas con json-server</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+  <style>
+    .fs-small {
+      font-size: .8rem;
+    }
+    .flex {
+      display: flex;
+    }
+    .gap-0\.5 {
+      gap: .5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li>
+        <strong>CRUD de Películas con json-server</strong>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="container-fluid">
+    <div class="grid">
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="peliculas__list">
+            <!-- <tr>
+              <td>1</td>
+              <td>Imagen 1</td>
+              <td>Pelicula 1</td>
+              <td>Acciones</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <form id="peliculasForm">
+          <h2>Nueva película</h2>
+
+          <input type="text" name="nombre" placeholder="Mi pelicula" required />
+          <input type="text" name="imagen" placeholder="https://..." required />
+          <input type="date" name="estreno" placeholder="estreno" required />
+          <select name="genero" required>
+            <option value="">Selecciona un genero...</option>
+            <option value="1">Comedia</option>
+            <option value="2">Acción</option>
+            <option value="3">Animación</option>
+            <option value="4">Aventura</option>
+          </select>
+          <textarea name="resumen" placeholder="Resumen de mi película"></textarea>
+
+          <input type="submit" value="Guardar" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

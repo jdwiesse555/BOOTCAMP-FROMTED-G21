@@ -1,0 +1,23 @@
+### listar peliculas 
+
+GET http://localhost:3000/peliculas
+
+### crear peliculas
+
+POST http://localhost:3000/peliculas
+Content-Type: application/json
+
+{
+    "nombre":"ejemplo",
+    "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDokeUV_QMfHbKxGLYTkAQrL3G9y4FGc10LA&s",
+    "estreno" :"2024-10-02",
+    "generoId" : 1,
+    "resumen":"resumen de la pelicula"
+
+
+}
+
+
+### eliminar pelicula
+
+DELETE http://localhost:3000/peliculas/7bfa
