@@ -30,7 +30,7 @@ export const renderPeliculas = (peliculas = []) => {
         </td>
         <td>
           <div class="flex gap-0.5">
-            <button class="pelicula__edit">✏</button>
+            <button class="pelicula__edit" data-ide="${pelicula.id}">✏</button>
             <button class="pelicula__remove" data-id="${pelicula.id}">❌</button>
           </div>        
         </td>
@@ -49,6 +49,33 @@ export const renderPeliculas = (peliculas = []) => {
       const id = event.target.dataset.id
 
       const response = borrarPelicula(id)
+
+      console.log(response)
+
+      if (response) {
+        const peliculas = await fetchPeliculas()
+    
+        renderPeliculas(peliculas)
+      }
+    })
+  })
+
+  const editButtons = document.querySelectorAll('.pelicula__edit')
+
+  editButtons.forEach(button => {
+    button.addEventListener('click', async (event) => {
+      
+
+      const id = event.target.dataset.nombre
+      console.log("hola"+id)
+
+      //peliculaForm.nombre.value = 
+      //const imagen = peliculaForm.imagen.value
+      //const estreno = peliculaForm.estreno.value
+      ///const genero = peliculaForm.genero.value
+      //const resumen = peliculaForm.resumen.value
+
+      const response = 1//editPelicula(id)
 
       console.log(response)
 

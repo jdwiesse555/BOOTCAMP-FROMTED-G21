@@ -1,0 +1,23 @@
+### Listar estudiantes
+GET https://67074c39a0e04071d229b837.mockapi.io/api/v1/students
+
+### Crear un estudiante
+POST https://67074c39a0e04071d229b837.mockapi.io/api/v1/students
+Content-Type: application/json
+
+{
+  "name": "Victor1",
+  "city": "Chiclayo1"
+}
+
+#### actualizar un estudiante
+PUT https://67074c39a0e04071d229b837.mockapi.io/api/v1/students/111
+Content-Type: application/json
+
+{
+    "name": "Bulma test",
+    "city": "Chiclayo"
+}
+
+#### eliminar un estudiante 
+DELETE https://67074c39a0e04071d229b837.mockapi.io/api/v1/students/111
