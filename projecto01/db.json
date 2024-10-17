@@ -1,0 +1,38 @@
+{
+  "tanques": [
+    {
+      "codigo": "TK1",
+      "metrica": "TM-010",
+      "capacidad": "3133.96gl",
+      "HEIGHT_PIES": 16,
+      "id": "1d47"
+    },
+    {
+      "codigo": "TK2",
+      "metrica": "TM-011",
+      "capacidad": "20011.25gl",
+      "HEIGHT_PIES": 16,
+      "id": "16a2"
+    },
+    {
+      "codigo": "TK3",
+      "metrica": "TM-012",
+      "capacidad": "10077.84gl",
+      "HEIGHT_PIES": 16,
+      "id": "6398"
+    },
+    {
+      "codigo": "TK4",
+      "metrica": "m-04",
+      "HEIGHT_PIES": 16,
+      "id": "1221"
+    },
+    {
+      "id": "ef8d",
+      "codigo": "TK5",
+      "metrica": "m-04",
+      "capacidad": "600gl",
+      "HEIGHT_PIES": "20"
+    }
+  ]
+}

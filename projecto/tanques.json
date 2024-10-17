@@ -1,0 +1,16 @@
+
+[ {    "codigo" : "TK1",
+           "metrica" : "TM-010",
+           "capacidad" : "3133.96gl",
+           "HEIGHT_PIES": 16},
+       {   "codigo" : "TK2",
+           "metrica":"TM-011",
+           "capacidad":"20011.25gl"},
+       {   "codigo" : "TK3",
+           "metrica":"TM-012",
+           "capacidad":"10077.84gl"},
+       {   "codigo" : "TK4",
+           "metrica":"m-04",
+           "capacidad":"600gl"}  
+       ]
+       
