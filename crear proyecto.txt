@@ -1,0 +1,61 @@
+llenar lo básico fsx rafce
+
+crear proyecto
+
+ npm create vite@latest
+	poner nombre del porjecto
+	escoger react	
+	escoger  javascrip +swc
+
+picocss
+
+copiar index.dtml
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+
+
+tailwind
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+copiar postcss.config.js  ****déjalo como esta ver si tiene tailwindcss y auto...
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+copiar en tailwind.config.js
+
+content: ["./index.html","./src/**/*.{js,ts,jsx,tsx}"],
+
+copiar index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+rutas
+npm i react-router-dom
+
+icons
+npm install react-icons --sabe
+
+
+sonner
+npm install sonner
+
+sweetalert2
+npm install sweetalert2
+
+redux
+npm install @reduxjs/toolkit
+npm install react-redux
+
+Zustand
+
+npm install zustand
+

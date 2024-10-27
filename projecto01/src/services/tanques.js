@@ -25,14 +25,16 @@ export const fetchTanques = async () => {
 
   // crear un registro  Crearemos una petición del tipo POST para el endpoint /students
   export const updateTanques = async  (data) => {
-  const url = `http://localhost:3000/tanques`
+  const url = `http://localhost:3000/tanques/${data.id}`
     const options = {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json' // Mimetypes
       },
       body: JSON.stringify({
-   
+        codigo: data.codigo, 
+        metrica: data.metrica,
+        capaciadad:data.capaciadad, 
         HEIGHT_PIES:data.HEIGHT_PIES      
       }
         )
@@ -42,8 +44,9 @@ export const fetchTanques = async () => {
   return await response.json()
 }
 
-export const delPeliculas = async (id) => {
-    const url = `https://670891fc8e86a8d9e42f4d14.mockapi.io/peli/${id}`
+export const delTanques = async (id) => {
+  const url = `http://localhost:3000/tanques/${id}`
+
  
   
     const options = {

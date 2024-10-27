@@ -1,0 +1,58 @@
+{
+  "tanques": [
+    {
+      "codigo": "TK1",
+      "metrica": "TM-010",
+      "capacidad": "3133.96gl",
+      "HEIGHT_PIES": "17",
+      "id": "1d47"
+    },
+    {
+      "codigo": "TK2",
+      "metrica": "TM-011",
+      "capacidad": "20011.25gl",
+      "HEIGHT_PIES": 16,
+      "id": "16a2"
+    },
+    {
+      "codigo": "TK4",
+      "metrica": "zx",
+      "capacidad": "10gl",
+      "HEIGHT_PIES": "340",
+      "id": "d131"
+    },
+    {
+      "codigo": "TK9",
+      "metrica": "zx",
+      "capacidad": "10gl",
+      "HEIGHT_PIES": "340",
+      "id": "2699"
+    },
+    {
+      "codigo": "TK8",
+      "metrica": "zx",
+      "capacidad": "10gl",
+      "HEIGHT_PIES": "300",
+      "id": "ba71"
+    },
+    {
+      "id": "6a9d",
+      "codigo": "TK10",
+      "metrica": "23",
+      "capacidad": "123",
+      "HEIGHT_PIES": "12"
+    }
+  ],
+  "usuario": [
+    {
+      "id": "9e6d",
+      "username": "jdwiesse",
+      "password": "123"
+    },
+    {
+      "id": "3f64",
+      "username": "jdwiesse",
+      "password": "1234"
+    }
+  ]
+}

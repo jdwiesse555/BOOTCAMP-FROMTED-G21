@@ -1,6 +1,6 @@
 import Avatar from "boring-avatars";
 import { useState, useEffect } from "react";
-import { fetchTanques,updateTanques,createTanques } from "./services/tanques";
+import { fetchTanques,updateTanques,createTanques, delTanques } from "./services/tanques";
 import Swal from 'sweetalert2'
 //import tanques from "./tanques.json"
 
@@ -11,6 +11,7 @@ const App = () => {
   
   const [tanques, setTanques] = useState([])
   const [form, setForm] = useState({
+    id : '',
     codigo: '',
     metrica: '',
     capacidad: '',
@@ -36,7 +37,7 @@ const App = () => {
   const handleSave = async (event) => {
     event.preventDefault();
     console.log(event.type)
-    const isNew = true
+    const isNew = (form.id === '' ) 
    
 
     if (isNew) {
@@ -71,7 +72,7 @@ const App = () => {
          }
 
     setForm({
-  
+      id:'',
       codigo: '',
       metrica: '',
       capaciadad: '',
@@ -86,8 +87,8 @@ const App = () => {
 
   const handleRemove = async(id) => {
     console.log('Deleting student...', id)
-    const res = await delPeliculas(id)
-    // enviar una peticion
+    const res = await delTanques(id)
+    // enviar una peticionT
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -131,6 +132,7 @@ const App = () => {
             <table>
               <thead>
                 <tr>
+                <th>id</th>
                   <th>Nombre</th>
                   <th>Metrica</th>
                   <th>Capacidad</th>
@@ -138,12 +140,13 @@ const App = () => {
                 </tr>
               </thead>
               
-              <tbody className="peliculas__list">
+              <tbody className="Tanques__list">
 
               {tanques.map(tanques => {
               return (
       
                 <tr>
+                  <td>{tanques.id}</td>
                   <td>{tanques.codigo}</td>
                   <td>{tanques.metrica} 
                   </td>
@@ -170,8 +173,8 @@ const App = () => {
             
             </table>
           </div>
-          <div>
-            <form id="peliculasForm" 
+          <div >
+            <form id="TanquesForm" 
               onSubmit={handleSave} 
               >
               <h2>Nueva Tanque</h2>

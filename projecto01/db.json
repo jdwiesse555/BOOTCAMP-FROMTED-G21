@@ -28,11 +28,16 @@
       "id": "1221"
     },
     {
-      "id": "ef8d",
       "codigo": "TK5",
       "metrica": "m-04",
-      "capacidad": "600gl",
-      "HEIGHT_PIES": "20"
+      "HEIGHT_PIES": "20",
+      "id": "ef8d"
+    },
+    {
+      "id": "26d9",
+      "codigo": "TK6",
+      "metrica": "m-06",
+      "HEIGHT_PIES": "200"
     }
   ]
 }
