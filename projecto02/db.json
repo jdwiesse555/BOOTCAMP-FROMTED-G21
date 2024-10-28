@@ -36,11 +36,11 @@
       "id": "ba71"
     },
     {
-      "id": "6a9d",
       "codigo": "TK10",
       "metrica": "23",
       "capacidad": "123",
-      "HEIGHT_PIES": "12"
+      "HEIGHT_PIES": "14",
+      "id": "6a9d"
     }
   ],
   "usuario": [

@@ -1,9 +1,10 @@
-const BASE_URL = import.meta.env.VITE1_API_URL
+const BASE_URL = import.meta.env.VITE_API_URL_1
+console.log(BASE_URL)
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
 const login = async(username, password) => {
-  const url = `${BASE_URL}/usuarioS?username=${username}&password=${password}`
+  const url = `${BASE_URL}/usuarios?username=${username}&password=${password}`
 
   console.log(url)
 
@@ -25,7 +26,7 @@ const LoginPage = () => {
    
     const res = await login(form.username, form.password)
     console.log("2",res) 
-    if (res.length!==0) {
+    if (res!=="Not found") {
       console.log(res) // TOKEN
       localStorage.setItem('auth', JSON.stringify(res)) // accessToken
       navigate('/home')

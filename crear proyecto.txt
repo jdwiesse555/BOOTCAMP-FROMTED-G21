@@ -68,4 +68,9 @@ https://bootcamp-fromted-g21-hqtz-git-main-javier-s-projects-2c7b0856.vercel.app
 https://vercel.com/
 https://github.com/
 
+
+https://api.jsonbin.io/v3/b/671fb135ad19ca34f8bffe1d/record?username="jdwiesse"&password="123"
+
+https://mockapi.io/
+
 clave %Temporal55%
