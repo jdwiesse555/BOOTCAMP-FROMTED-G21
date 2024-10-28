@@ -1,9 +1,9 @@
-const BASE_URL = import.meta.env.VITE_API_URL
+const BASE_URL = import.meta.env.VITE1_API_URL
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
 const login = async(username, password) => {
-  const url = `${BASE_URL}/usuario?username=${username}&password=${password}`
+  const url = `${BASE_URL}/usuarioS?username=${username}&password=${password}`
 
   console.log(url)
 

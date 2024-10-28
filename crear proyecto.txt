@@ -59,3 +59,13 @@ Zustand
 
 npm install zustand
 
+
+
+proyecto
+
+https://bootcamp-fromted-g21-hqtz-git-main-javier-s-projects-2c7b0856.vercel.app/
+
+https://vercel.com/
+https://github.com/
+
+clave %Temporal55%
