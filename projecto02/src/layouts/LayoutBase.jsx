@@ -11,6 +11,7 @@ const LayoutBase = () => {
             <Link to='/'>Login</Link>
             <Link to='/home'>Home</Link>
             <Link to='/Tanques'>Tanques</Link>
+            <Link to='/Metricas'>Metricas</Link>
           </nav>
         </div>
       </header>

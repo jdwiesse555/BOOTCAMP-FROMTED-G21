@@ -54,5 +54,7531 @@
       "username": "jdwiesse",
       "password": "1234"
     }
+  ],
+  "metricas": [
+    {
+      "metrica": "TM-010",
+      "medida": "1001",
+      "vol_bbls": 1264.03,
+      "id": "c9d7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1002",
+      "vol_bbls": 1274.48,
+      "id": "2cc6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1003",
+      "vol_bbls": 1284.92,
+      "id": "fbb4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1004",
+      "vol_bbls": 1295.37,
+      "id": "22ef"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1005",
+      "vol_bbls": 1305.82,
+      "id": "8232"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1006",
+      "vol_bbls": 1316.26,
+      "id": "da67"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1007",
+      "vol_bbls": 1326.71,
+      "id": "ccda"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1008",
+      "vol_bbls": 1337.16,
+      "id": "067b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1009",
+      "vol_bbls": 1347.6,
+      "id": "7bfa"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1010",
+      "vol_bbls": 1358.05,
+      "id": "49f6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1011",
+      "vol_bbls": 1368.5,
+      "id": "f058"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1100",
+      "vol_bbls": 1378.94,
+      "id": "95d6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1101",
+      "vol_bbls": 1389.39,
+      "id": "6c54"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1102",
+      "vol_bbls": 1399.84,
+      "id": "b555"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1103",
+      "vol_bbls": 1410.28,
+      "id": "bbf8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1104",
+      "vol_bbls": 1420.73,
+      "id": "e573"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1105",
+      "vol_bbls": 1431.18,
+      "id": "f16d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1106",
+      "vol_bbls": 1441.62,
+      "id": "4414"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1107",
+      "vol_bbls": 1452.07,
+      "id": "2ef2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1108",
+      "vol_bbls": 1462.51,
+      "id": "31e8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1109",
+      "vol_bbls": 1472.96,
+      "id": "e058"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1110",
+      "vol_bbls": 1483.41,
+      "id": "1c57"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1111",
+      "vol_bbls": 1493.85,
+      "id": "e13b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1200",
+      "vol_bbls": 1504.3,
+      "id": "f576"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1201",
+      "vol_bbls": 1514.75,
+      "id": "694d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1202",
+      "vol_bbls": 1525.19,
+      "id": "d9d9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1203",
+      "vol_bbls": 1535.64,
+      "id": "01c9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1204",
+      "vol_bbls": 1546.09,
+      "id": "4e2b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1205",
+      "vol_bbls": 1556.53,
+      "id": "8bd9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1206",
+      "vol_bbls": 1566.98,
+      "id": "4d2d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1207",
+      "vol_bbls": 1577.43,
+      "id": "71e1"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1208",
+      "vol_bbls": 1587.87,
+      "id": "d58e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1209",
+      "vol_bbls": 1598.32,
+      "id": "bb56"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1210",
+      "vol_bbls": 1608.77,
+      "id": "2599"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1211",
+      "vol_bbls": 1619.21,
+      "id": "5cbf"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1300",
+      "vol_bbls": 1629.66,
+      "id": "261f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1301",
+      "vol_bbls": 1640.11,
+      "id": "ab28"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1302",
+      "vol_bbls": 1650.55,
+      "id": "2bba"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1303",
+      "vol_bbls": 1661,
+      "id": "a5c7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1304",
+      "vol_bbls": 1671.45,
+      "id": "1fc0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1305",
+      "vol_bbls": 1681.89,
+      "id": "e768"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1306",
+      "vol_bbls": 1692.34,
+      "id": "18bd"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1307",
+      "vol_bbls": 1702.78,
+      "id": "5f12"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1308",
+      "vol_bbls": 1713.23,
+      "id": "274f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1309",
+      "vol_bbls": 1723.68,
+      "id": "04d0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1310",
+      "vol_bbls": 1734.12,
+      "id": "eaae"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1311",
+      "vol_bbls": 1744.57,
+      "id": "7194"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1400",
+      "vol_bbls": 1755.02,
+      "id": "51d1"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1401",
+      "vol_bbls": 1765.46,
+      "id": "08b4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1402",
+      "vol_bbls": 1775.91,
+      "id": "ccf2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0305",
+      "vol_bbls": 428.31,
+      "id": "00cd"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0306",
+      "vol_bbls": 438.75,
+      "id": "1328"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0307",
+      "vol_bbls": 449.2,
+      "id": "ec3f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0308",
+      "vol_bbls": 459.65,
+      "id": "b715"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0309",
+      "vol_bbls": 470.09,
+      "id": "4675"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0310",
+      "vol_bbls": 480.54,
+      "id": "cc32"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0311",
+      "vol_bbls": 490.99,
+      "id": "a822"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0400",
+      "vol_bbls": 501.43,
+      "id": "0bda"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0401",
+      "vol_bbls": 511.88,
+      "id": "e1ce"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0402",
+      "vol_bbls": 522.33,
+      "id": "feab"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0403",
+      "vol_bbls": 532.77,
+      "id": "6d6d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0404",
+      "vol_bbls": 543.22,
+      "id": "b46b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0405",
+      "vol_bbls": 553.67,
+      "id": "cb7e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0406",
+      "vol_bbls": 564.11,
+      "id": "0f17"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0407",
+      "vol_bbls": 574.56,
+      "id": "1a4a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0408",
+      "vol_bbls": 585.01,
+      "id": "d0ce"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0409",
+      "vol_bbls": 595.45,
+      "id": "ee96"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0410",
+      "vol_bbls": 605.9,
+      "id": "f8fb"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0411",
+      "vol_bbls": 616.35,
+      "id": "6bfe"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0500",
+      "vol_bbls": 626.79,
+      "id": "143b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0501",
+      "vol_bbls": 637.24,
+      "id": "1082"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0502",
+      "vol_bbls": 647.69,
+      "id": "7405"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0503",
+      "vol_bbls": 658.13,
+      "id": "a525"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0504",
+      "vol_bbls": 668.58,
+      "id": "8c78"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0505",
+      "vol_bbls": 679.02,
+      "id": "6668"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0506",
+      "vol_bbls": 689.47,
+      "id": "c6a5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0507",
+      "vol_bbls": 699.92,
+      "id": "0c4c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0508",
+      "vol_bbls": 710.36,
+      "id": "fba9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0509",
+      "vol_bbls": 720.81,
+      "id": "fa11"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0510",
+      "vol_bbls": 731.26,
+      "id": "7bcb"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0511",
+      "vol_bbls": 741.7,
+      "id": "94b5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0600",
+      "vol_bbls": 752.15,
+      "id": "0b88"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0601",
+      "vol_bbls": 762.6,
+      "id": "e537"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0602",
+      "vol_bbls": 773.04,
+      "id": "1191"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0603",
+      "vol_bbls": 783.49,
+      "id": "7f5f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0604",
+      "vol_bbls": 793.94,
+      "id": "6371"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0605",
+      "vol_bbls": 804.38,
+      "id": "0692"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0606",
+      "vol_bbls": 814.83,
+      "id": "0a6f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0607",
+      "vol_bbls": 825.28,
+      "id": "b1e2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0608",
+      "vol_bbls": 835.72,
+      "id": "e2be"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0609",
+      "vol_bbls": 846.17,
+      "id": "c67b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0610",
+      "vol_bbls": 856.62,
+      "id": "08d5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0611",
+      "vol_bbls": 867.06,
+      "id": "fcb3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0700",
+      "vol_bbls": 877.51,
+      "id": "8c1a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0701",
+      "vol_bbls": 887.96,
+      "id": "2286"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0702",
+      "vol_bbls": 898.4,
+      "id": "f556"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0703",
+      "vol_bbls": 908.85,
+      "id": "e78e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0704",
+      "vol_bbls": 919.29,
+      "id": "793a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0705",
+      "vol_bbls": 929.74,
+      "id": "e6d3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0706",
+      "vol_bbls": 940.19,
+      "id": "315a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0707",
+      "vol_bbls": 950.63,
+      "id": "5f83"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0708",
+      "vol_bbls": 961.08,
+      "id": "d464"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0709",
+      "vol_bbls": 971.53,
+      "id": "a95c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0710",
+      "vol_bbls": 981.97,
+      "id": "6164"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0711",
+      "vol_bbls": 992.42,
+      "id": "12b3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0800",
+      "vol_bbls": 1002.87,
+      "id": "e3d3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0801",
+      "vol_bbls": 1013.31,
+      "id": "05c5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0802",
+      "vol_bbls": 1023.76,
+      "id": "3464"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0803",
+      "vol_bbls": 1034.21,
+      "id": "bc5d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0804",
+      "vol_bbls": 1044.65,
+      "id": "a17f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0805",
+      "vol_bbls": 1055.1,
+      "id": "0dd3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0806",
+      "vol_bbls": 1065.55,
+      "id": "1058"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0807",
+      "vol_bbls": 1075.99,
+      "id": "aeb2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0808",
+      "vol_bbls": 1086.44,
+      "id": "f380"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0809",
+      "vol_bbls": 1096.89,
+      "id": "e4fd"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0810",
+      "vol_bbls": 1107.33,
+      "id": "a2de"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0811",
+      "vol_bbls": 1117.78,
+      "id": "a5ae"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0900",
+      "vol_bbls": 1128.23,
+      "id": "fb29"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0901",
+      "vol_bbls": 1138.67,
+      "id": "0bbe"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0902",
+      "vol_bbls": 1149.12,
+      "id": "b597"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0903",
+      "vol_bbls": 1159.57,
+      "id": "cf37"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0904",
+      "vol_bbls": 1170.01,
+      "id": "c4a0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0905",
+      "vol_bbls": 1180.46,
+      "id": "18fc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0906",
+      "vol_bbls": 1190.9,
+      "id": "d19a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0907",
+      "vol_bbls": 1201.35,
+      "id": "d657"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0908",
+      "vol_bbls": 1211.8,
+      "id": "8972"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0909",
+      "vol_bbls": 1222.24,
+      "id": "9ae5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0910",
+      "vol_bbls": 1232.69,
+      "id": "0e37"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0911",
+      "vol_bbls": 1243.14,
+      "id": "7d13"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1000",
+      "vol_bbls": 1253.58,
+      "id": "a616"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0000",
+      "vol_bbls": 0,
+      "id": "e504"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0001",
+      "vol_bbls": 10.45,
+      "id": "8652"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0002",
+      "vol_bbls": 20.89,
+      "id": "363e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0003",
+      "vol_bbls": 31.34,
+      "id": "13d9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0004",
+      "vol_bbls": 41.79,
+      "id": "acf1"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0005",
+      "vol_bbls": 52.23,
+      "id": "fbdc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0006",
+      "vol_bbls": 62.68,
+      "id": "8e29"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0007",
+      "vol_bbls": 73.13,
+      "id": "42c3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0008",
+      "vol_bbls": 83.57,
+      "id": "5223"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0009",
+      "vol_bbls": 94.02,
+      "id": "cf08"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0010",
+      "vol_bbls": 104.47,
+      "id": "a07a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0011",
+      "vol_bbls": 114.91,
+      "id": "0717"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0100",
+      "vol_bbls": 125.36,
+      "id": "b80d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0101",
+      "vol_bbls": 135.8,
+      "id": "79c5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0102",
+      "vol_bbls": 146.25,
+      "id": "716c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0103",
+      "vol_bbls": 156.7,
+      "id": "8941"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0104",
+      "vol_bbls": 167.14,
+      "id": "4509"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0105",
+      "vol_bbls": 177.59,
+      "id": "819d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0106",
+      "vol_bbls": 188.04,
+      "id": "fa7f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0107",
+      "vol_bbls": 198.48,
+      "id": "3bd5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0108",
+      "vol_bbls": 208.93,
+      "id": "dfbc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0109",
+      "vol_bbls": 219.38,
+      "id": "3cfa"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0110",
+      "vol_bbls": 229.82,
+      "id": "ca71"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0111",
+      "vol_bbls": 240.27,
+      "id": "ab20"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0200",
+      "vol_bbls": 250.72,
+      "id": "d6a6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0201",
+      "vol_bbls": 261.16,
+      "id": "0426"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0202",
+      "vol_bbls": 271.61,
+      "id": "b928"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0203",
+      "vol_bbls": 282.06,
+      "id": "a805"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0204",
+      "vol_bbls": 292.5,
+      "id": "9138"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0205",
+      "vol_bbls": 302.95,
+      "id": "b8a7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0206",
+      "vol_bbls": 313.4,
+      "id": "24b3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0207",
+      "vol_bbls": 323.84,
+      "id": "9f76"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0208",
+      "vol_bbls": 334.29,
+      "id": "cc30"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0209",
+      "vol_bbls": 344.74,
+      "id": "2bf2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0210",
+      "vol_bbls": 355.18,
+      "id": "7a19"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0211",
+      "vol_bbls": 365.63,
+      "id": "5dfc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0300",
+      "vol_bbls": 376.08,
+      "id": "f26c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0301",
+      "vol_bbls": 386.52,
+      "id": "45ca"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0302",
+      "vol_bbls": 396.97,
+      "id": "2446"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0303",
+      "vol_bbls": 407.41,
+      "id": "83dc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "0304",
+      "vol_bbls": 417.86,
+      "id": "c1b4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1403",
+      "vol_bbls": 1786.36,
+      "id": "d53c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1404",
+      "vol_bbls": 1796.8,
+      "id": "822f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1405",
+      "vol_bbls": 1807.25,
+      "id": "0ae5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1406",
+      "vol_bbls": 1817.7,
+      "id": "f60d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1407",
+      "vol_bbls": 1828.14,
+      "id": "1bbf"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1408",
+      "vol_bbls": 1838.59,
+      "id": "f660"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1409",
+      "vol_bbls": 1849.04,
+      "id": "5b27"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1410",
+      "vol_bbls": 1859.48,
+      "id": "5180"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1411",
+      "vol_bbls": 1869.93,
+      "id": "e698"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1500",
+      "vol_bbls": 1880.38,
+      "id": "933d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1501",
+      "vol_bbls": 1890.82,
+      "id": "2174"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1502",
+      "vol_bbls": 1901.27,
+      "id": "4aaf"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1503",
+      "vol_bbls": 1911.72,
+      "id": "72f6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1504",
+      "vol_bbls": 1922.16,
+      "id": "97d6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1505",
+      "vol_bbls": 1932.61,
+      "id": "f194"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1506",
+      "vol_bbls": 1943.06,
+      "id": "32f7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1507",
+      "vol_bbls": 1953.5,
+      "id": "68d1"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1508",
+      "vol_bbls": 1963.95,
+      "id": "d6aa"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1509",
+      "vol_bbls": 1974.39,
+      "id": "ec91"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1510",
+      "vol_bbls": 1984.84,
+      "id": "e970"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1511",
+      "vol_bbls": 1995.29,
+      "id": "a9b7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1600",
+      "vol_bbls": 2005.73,
+      "id": "c301"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1601",
+      "vol_bbls": 2016.18,
+      "id": "55c7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1602",
+      "vol_bbls": 2026.63,
+      "id": "cd84"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1603",
+      "vol_bbls": 2037.07,
+      "id": "bb13"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1604",
+      "vol_bbls": 2047.52,
+      "id": "bd2d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1605",
+      "vol_bbls": 2057.97,
+      "id": "d4d5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1606",
+      "vol_bbls": 2068.41,
+      "id": "9a83"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1607",
+      "vol_bbls": 2078.86,
+      "id": "4ab2"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1608",
+      "vol_bbls": 2089.31,
+      "id": "7807"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1609",
+      "vol_bbls": 2099.75,
+      "id": "2572"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1610",
+      "vol_bbls": 2110.2,
+      "id": "7f15"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1611",
+      "vol_bbls": 2120.65,
+      "id": "4824"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1700",
+      "vol_bbls": 2131.09,
+      "id": "4ee6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1701",
+      "vol_bbls": 2141.54,
+      "id": "2dd0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1702",
+      "vol_bbls": 2151.99,
+      "id": "bc72"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1703",
+      "vol_bbls": 2162.43,
+      "id": "071c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1704",
+      "vol_bbls": 2172.88,
+      "id": "b0a4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1705",
+      "vol_bbls": 2183.33,
+      "id": "5bb6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1706",
+      "vol_bbls": 2193.77,
+      "id": "12f7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1707",
+      "vol_bbls": 2204.22,
+      "id": "acc7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1708",
+      "vol_bbls": 2214.67,
+      "id": "59fc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1709",
+      "vol_bbls": 2225.11,
+      "id": "0e9b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1710",
+      "vol_bbls": 2235.56,
+      "id": "e020"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1711",
+      "vol_bbls": 2246,
+      "id": "2d5a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1800",
+      "vol_bbls": 2256.45,
+      "id": "597f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1801",
+      "vol_bbls": 2266.9,
+      "id": "2aea"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1802",
+      "vol_bbls": 2277.34,
+      "id": "8165"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1803",
+      "vol_bbls": 2287.79,
+      "id": "3e4a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1804",
+      "vol_bbls": 2298.24,
+      "id": "0da0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1805",
+      "vol_bbls": 2308.68,
+      "id": "762e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1806",
+      "vol_bbls": 2319.13,
+      "id": "63ef"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1807",
+      "vol_bbls": 2329.58,
+      "id": "0ae7"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1808",
+      "vol_bbls": 2340.02,
+      "id": "597a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1809",
+      "vol_bbls": 2350.47,
+      "id": "5e11"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1810",
+      "vol_bbls": 2360.92,
+      "id": "138e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1811",
+      "vol_bbls": 2371.36,
+      "id": "9cd5"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1900",
+      "vol_bbls": 2381.81,
+      "id": "b809"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1901",
+      "vol_bbls": 2392.26,
+      "id": "03a6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1902",
+      "vol_bbls": 2402.7,
+      "id": "370f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1903",
+      "vol_bbls": 2413.15,
+      "id": "6851"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1904",
+      "vol_bbls": 2423.6,
+      "id": "6b07"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1905",
+      "vol_bbls": 2434.04,
+      "id": "e111"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1906",
+      "vol_bbls": 2444.49,
+      "id": "de22"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1907",
+      "vol_bbls": 2454.94,
+      "id": "3a80"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1908",
+      "vol_bbls": 2465.38,
+      "id": "9768"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1909",
+      "vol_bbls": 2475.83,
+      "id": "5e29"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1910",
+      "vol_bbls": 2486.27,
+      "id": "b9c8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "1911",
+      "vol_bbls": 2496.72,
+      "id": "9be4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2000",
+      "vol_bbls": 2507.17,
+      "id": "d670"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2001",
+      "vol_bbls": 2517.61,
+      "id": "f548"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2002",
+      "vol_bbls": 2528.06,
+      "id": "ca74"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2003",
+      "vol_bbls": 2538.51,
+      "id": "685a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2004",
+      "vol_bbls": 2548.95,
+      "id": "e62f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2005",
+      "vol_bbls": 2559.4,
+      "id": "6535"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2006",
+      "vol_bbls": 2569.85,
+      "id": "0a79"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2007",
+      "vol_bbls": 2580.29,
+      "id": "787b"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2008",
+      "vol_bbls": 2590.74,
+      "id": "4593"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2009",
+      "vol_bbls": 2601.19,
+      "id": "a3bc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2010",
+      "vol_bbls": 2611.63,
+      "id": "3667"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2011",
+      "vol_bbls": 2622.08,
+      "id": "4a31"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2100",
+      "vol_bbls": 2632.53,
+      "id": "1fd3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2101",
+      "vol_bbls": 2642.97,
+      "id": "0b04"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2102",
+      "vol_bbls": 2653.42,
+      "id": "651a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2103",
+      "vol_bbls": 2663.87,
+      "id": "9d63"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2104",
+      "vol_bbls": 2674.31,
+      "id": "80e4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2105",
+      "vol_bbls": 2684.76,
+      "id": "c774"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2106",
+      "vol_bbls": 2695.21,
+      "id": "7d97"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2107",
+      "vol_bbls": 2705.65,
+      "id": "d3c3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2108",
+      "vol_bbls": 2716.1,
+      "id": "c54c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2109",
+      "vol_bbls": 2726.55,
+      "id": "6afa"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2110",
+      "vol_bbls": 2736.99,
+      "id": "9355"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2111",
+      "vol_bbls": 2747.44,
+      "id": "acc3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2200",
+      "vol_bbls": 2757.88,
+      "id": "7c01"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2201",
+      "vol_bbls": 2768.33,
+      "id": "1027"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2202",
+      "vol_bbls": 2778.78,
+      "id": "ea59"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2203",
+      "vol_bbls": 2789.22,
+      "id": "39f0"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2204",
+      "vol_bbls": 2799.67,
+      "id": "2c72"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2205",
+      "vol_bbls": 2810.12,
+      "id": "f551"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2206",
+      "vol_bbls": 2820.56,
+      "id": "92b6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2207",
+      "vol_bbls": 2831.01,
+      "id": "9b38"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2208",
+      "vol_bbls": 2841.46,
+      "id": "f512"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2209",
+      "vol_bbls": 2851.9,
+      "id": "183c"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2210",
+      "vol_bbls": 2862.35,
+      "id": "70c8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2211",
+      "vol_bbls": 2872.8,
+      "id": "0f43"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2300",
+      "vol_bbls": 2883.24,
+      "id": "fefe"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2301",
+      "vol_bbls": 2893.69,
+      "id": "aa92"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2302",
+      "vol_bbls": 2904.14,
+      "id": "da22"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2303",
+      "vol_bbls": 2914.58,
+      "id": "7142"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2304",
+      "vol_bbls": 2925.03,
+      "id": "498a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2305",
+      "vol_bbls": 2935.48,
+      "id": "b506"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2306",
+      "vol_bbls": 2945.92,
+      "id": "8326"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2307",
+      "vol_bbls": 2956.37,
+      "id": "f8bc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2308",
+      "vol_bbls": 2966.82,
+      "id": "9e17"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2309",
+      "vol_bbls": 2977.26,
+      "id": "9508"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2310",
+      "vol_bbls": 2987.71,
+      "id": "b2f3"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2311",
+      "vol_bbls": 2998.16,
+      "id": "6b3f"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2400",
+      "vol_bbls": 3008.6,
+      "id": "2f47"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2401",
+      "vol_bbls": 3019.05,
+      "id": "4d0d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2402",
+      "vol_bbls": 3029.49,
+      "id": "c4d4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2403",
+      "vol_bbls": 3039.94,
+      "id": "b6cc"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2404",
+      "vol_bbls": 3050.39,
+      "id": "a9a8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2405",
+      "vol_bbls": 3060.83,
+      "id": "a4c8"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2406",
+      "vol_bbls": 3071.28,
+      "id": "3dde"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2407",
+      "vol_bbls": 3081.73,
+      "id": "cebf"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2408",
+      "vol_bbls": 3092.17,
+      "id": "fbc9"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2409",
+      "vol_bbls": 3102.62,
+      "id": "3e89"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2410",
+      "vol_bbls": 3113.07,
+      "id": "721e"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2411",
+      "vol_bbls": 3123.51,
+      "id": "de43"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "2500",
+      "vol_bbls": 3133.96,
+      "id": "968d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8881",
+      "vol_bbls": 1.31,
+      "id": "36a1"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8882",
+      "vol_bbls": 2.61,
+      "id": "f02a"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8883",
+      "vol_bbls": 3.92,
+      "id": "52a4"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8884",
+      "vol_bbls": 5.22,
+      "id": "11e6"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8885",
+      "vol_bbls": 6.53,
+      "id": "0034"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8886",
+      "vol_bbls": 7.83,
+      "id": "ca7d"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8887",
+      "vol_bbls": 9.14,
+      "id": "96d7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0000",
+      "vol_bbls": 0,
+      "id": "cfdc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0001",
+      "vol_bbls": 49.81,
+      "id": "9d09"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0002",
+      "vol_bbls": 89.35,
+      "id": "c314"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0003",
+      "vol_bbls": 128.89,
+      "id": "431f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0004",
+      "vol_bbls": 168.43,
+      "id": "a629"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0005",
+      "vol_bbls": 207.98,
+      "id": "b6c7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0006",
+      "vol_bbls": 247.53,
+      "id": "8c88"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0007",
+      "vol_bbls": 287.08,
+      "id": "2e2f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0008",
+      "vol_bbls": 326.63,
+      "id": "aa51"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0009",
+      "vol_bbls": 366.19,
+      "id": "aee3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0010",
+      "vol_bbls": 405.74,
+      "id": "b976"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0011",
+      "vol_bbls": 445.29,
+      "id": "9c30"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0100",
+      "vol_bbls": 484.82,
+      "id": "7314"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0101",
+      "vol_bbls": 524.36,
+      "id": "e1f3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0102",
+      "vol_bbls": 563.91,
+      "id": "c315"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0103",
+      "vol_bbls": 603.52,
+      "id": "b0a2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0104",
+      "vol_bbls": 643.07,
+      "id": "bb9c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0105",
+      "vol_bbls": 682.61,
+      "id": "1154"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0106",
+      "vol_bbls": 722.17,
+      "id": "af5b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0107",
+      "vol_bbls": 761.72,
+      "id": "decb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0108",
+      "vol_bbls": 801.27,
+      "id": "966c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0109",
+      "vol_bbls": 840.82,
+      "id": "2165"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0110",
+      "vol_bbls": 880.36,
+      "id": "0921"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0111",
+      "vol_bbls": 919.91,
+      "id": "4378"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0200",
+      "vol_bbls": 959.46,
+      "id": "1bd8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0201",
+      "vol_bbls": 999.01,
+      "id": "4d63"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0202",
+      "vol_bbls": 1039.11,
+      "id": "0311"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0203",
+      "vol_bbls": 1078.11,
+      "id": "6a89"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0204",
+      "vol_bbls": 1117.66,
+      "id": "004f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0205",
+      "vol_bbls": 1157.21,
+      "id": "cdaa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0206",
+      "vol_bbls": 1196.76,
+      "id": "88ef"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0207",
+      "vol_bbls": 1236.31,
+      "id": "5081"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0208",
+      "vol_bbls": 1275.86,
+      "id": "b95a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0209",
+      "vol_bbls": 1315.44,
+      "id": "377b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0210",
+      "vol_bbls": 1354.96,
+      "id": "d62d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0211",
+      "vol_bbls": 1394.91,
+      "id": "009a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0300",
+      "vol_bbls": 1434.06,
+      "id": "1069"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0301",
+      "vol_bbls": 1473.61,
+      "id": "08c8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0302",
+      "vol_bbls": 1513.15,
+      "id": "603b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0303",
+      "vol_bbls": 1552.7,
+      "id": "d562"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0304",
+      "vol_bbls": 1592.24,
+      "id": "96a2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0305",
+      "vol_bbls": 1631.43,
+      "id": "7b54"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0306",
+      "vol_bbls": 1671.32,
+      "id": "214d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0307",
+      "vol_bbls": 1710.86,
+      "id": "2b02"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0308",
+      "vol_bbls": 1750.39,
+      "id": "f351"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0309",
+      "vol_bbls": 1789.93,
+      "id": "d5f8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0310",
+      "vol_bbls": 1829.46,
+      "id": "aef6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0311",
+      "vol_bbls": 1869,
+      "id": "c834"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0400",
+      "vol_bbls": 1909.1,
+      "id": "6071"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0401",
+      "vol_bbls": 1948.07,
+      "id": "af17"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0402",
+      "vol_bbls": 1987.6,
+      "id": "2a87"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0403",
+      "vol_bbls": 2027.13,
+      "id": "dea9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0404",
+      "vol_bbls": 2066.67,
+      "id": "de18"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0405",
+      "vol_bbls": 2106.2,
+      "id": "b25f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0406",
+      "vol_bbls": 2145.74,
+      "id": "f668"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0407",
+      "vol_bbls": 2185.27,
+      "id": "6dca"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0408",
+      "vol_bbls": 2224.8,
+      "id": "133a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0409",
+      "vol_bbls": 2254.45,
+      "id": "12cf"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0410",
+      "vol_bbls": 2294.44,
+      "id": "548d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0411",
+      "vol_bbls": 2334.42,
+      "id": "f4eb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0500",
+      "vol_bbls": 2374.69,
+      "id": "d64d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0501",
+      "vol_bbls": 2414.38,
+      "id": "f5c7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0502",
+      "vol_bbls": 2454.37,
+      "id": "64c6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0503",
+      "vol_bbls": 2494.35,
+      "id": "ec30"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0504",
+      "vol_bbls": 2534.33,
+      "id": "73ad"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0505",
+      "vol_bbls": 2574.31,
+      "id": "27bc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0506",
+      "vol_bbls": 2614.3,
+      "id": "38f5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0507",
+      "vol_bbls": 2654.28,
+      "id": "bd49"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0508",
+      "vol_bbls": 2694.26,
+      "id": "48a9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0509",
+      "vol_bbls": 2734.24,
+      "id": "0343"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0510",
+      "vol_bbls": 2774.23,
+      "id": "ebe7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0511",
+      "vol_bbls": 2814.21,
+      "id": "6171"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0600",
+      "vol_bbls": 2854.19,
+      "id": "bc51"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0601",
+      "vol_bbls": 2894.17,
+      "id": "a32d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0602",
+      "vol_bbls": 2934.16,
+      "id": "54e3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0603",
+      "vol_bbls": 2974.14,
+      "id": "a6c0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0604",
+      "vol_bbls": 3014.12,
+      "id": "b385"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0605",
+      "vol_bbls": 3054.1,
+      "id": "d0ba"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0606",
+      "vol_bbls": 3094.09,
+      "id": "5422"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0607",
+      "vol_bbls": 3134.07,
+      "id": "4330"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0608",
+      "vol_bbls": 3174.05,
+      "id": "da60"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0609",
+      "vol_bbls": 3214.03,
+      "id": "6df5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0610",
+      "vol_bbls": 3254.02,
+      "id": "a99b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0611",
+      "vol_bbls": 3294,
+      "id": "be32"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0700",
+      "vol_bbls": 3333.77,
+      "id": "cd55"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0701",
+      "vol_bbls": 3373.96,
+      "id": "147c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0702",
+      "vol_bbls": 3413.95,
+      "id": "bd9a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0703",
+      "vol_bbls": 3453.93,
+      "id": "9bdc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0704",
+      "vol_bbls": 3493.91,
+      "id": "281b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0705",
+      "vol_bbls": 3533.89,
+      "id": "6f1a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0706",
+      "vol_bbls": 3573.87,
+      "id": "6bf3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0707",
+      "vol_bbls": 3613.86,
+      "id": "1464"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0708",
+      "vol_bbls": 3653.84,
+      "id": "562a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0709",
+      "vol_bbls": 3693.82,
+      "id": "3a34"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0710",
+      "vol_bbls": 3733.8,
+      "id": "8188"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0711",
+      "vol_bbls": 3773.79,
+      "id": "255d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0800",
+      "vol_bbls": 3813.77,
+      "id": "8cae"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0801",
+      "vol_bbls": 3853.75,
+      "id": "b1fa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0802",
+      "vol_bbls": 3893.73,
+      "id": "4eee"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0803",
+      "vol_bbls": 3933.72,
+      "id": "edda"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0804",
+      "vol_bbls": 3973.7,
+      "id": "d010"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0805",
+      "vol_bbls": 4013.68,
+      "id": "6ca6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0806",
+      "vol_bbls": 4053.66,
+      "id": "17aa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0807",
+      "vol_bbls": 4093.65,
+      "id": "dd5e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0808",
+      "vol_bbls": 4133.63,
+      "id": "3162"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0809",
+      "vol_bbls": 4173.61,
+      "id": "39ec"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0810",
+      "vol_bbls": 4213.59,
+      "id": "f248"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0811",
+      "vol_bbls": 4253.58,
+      "id": "0ac4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0900",
+      "vol_bbls": 4293.56,
+      "id": "3624"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0901",
+      "vol_bbls": 4333.54,
+      "id": "6314"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0902",
+      "vol_bbls": 4373.52,
+      "id": "30a4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0903",
+      "vol_bbls": 4413.51,
+      "id": "f977"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0904",
+      "vol_bbls": 4453.49,
+      "id": "b667"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0905",
+      "vol_bbls": 4493.47,
+      "id": "306b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0906",
+      "vol_bbls": 4533.45,
+      "id": "bc3e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0907",
+      "vol_bbls": 4573.44,
+      "id": "1c78"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0908",
+      "vol_bbls": 4613.42,
+      "id": "2449"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0909",
+      "vol_bbls": 4653.4,
+      "id": "20b3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0910",
+      "vol_bbls": 4692.59,
+      "id": "a76b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "0911",
+      "vol_bbls": 4733.37,
+      "id": "02c8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1000",
+      "vol_bbls": 4773.35,
+      "id": "d8bc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1001",
+      "vol_bbls": 4813.33,
+      "id": "355b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1002",
+      "vol_bbls": 4853.31,
+      "id": "4930"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1003",
+      "vol_bbls": 4893.29,
+      "id": "6ffa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1004",
+      "vol_bbls": 4933.28,
+      "id": "ae52"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1005",
+      "vol_bbls": 4972.58,
+      "id": "e391"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1006",
+      "vol_bbls": 5013.25,
+      "id": "7374"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1007",
+      "vol_bbls": 5053.22,
+      "id": "3e99"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1008",
+      "vol_bbls": 5093.21,
+      "id": "791c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1009",
+      "vol_bbls": 5133.19,
+      "id": "3738"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1010",
+      "vol_bbls": 5173.17,
+      "id": "d5cd"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1011",
+      "vol_bbls": 5213.15,
+      "id": "c712"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1100",
+      "vol_bbls": 5253.14,
+      "id": "7ebb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1101",
+      "vol_bbls": 5293.12,
+      "id": "b11f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1102",
+      "vol_bbls": 5333.1,
+      "id": "c0fd"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1103",
+      "vol_bbls": 5373.08,
+      "id": "e570"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1104",
+      "vol_bbls": 5413.07,
+      "id": "d515"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1105",
+      "vol_bbls": 5453.05,
+      "id": "2318"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1106",
+      "vol_bbls": 5493.03,
+      "id": "a6ab"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1107",
+      "vol_bbls": 5533.01,
+      "id": "b242"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1108",
+      "vol_bbls": 5573,
+      "id": "9d52"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1109",
+      "vol_bbls": 5612.93,
+      "id": "2f73"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1110",
+      "vol_bbls": 5652.96,
+      "id": "086b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1111",
+      "vol_bbls": 5692.94,
+      "id": "1af9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1200",
+      "vol_bbls": 5732.93,
+      "id": "e72b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1201",
+      "vol_bbls": 5772.91,
+      "id": "c645"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1202",
+      "vol_bbls": 5812.89,
+      "id": "0353"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1203",
+      "vol_bbls": 5852.87,
+      "id": "3cfe"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1204",
+      "vol_bbls": 5892.86,
+      "id": "788b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1205",
+      "vol_bbls": 5932.84,
+      "id": "464e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1206",
+      "vol_bbls": 5972.82,
+      "id": "8b18"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1207",
+      "vol_bbls": 6012.8,
+      "id": "6ac9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1208",
+      "vol_bbls": 6052.78,
+      "id": "091d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1209",
+      "vol_bbls": 6092.77,
+      "id": "4132"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1210",
+      "vol_bbls": 6132.75,
+      "id": "48ba"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1211",
+      "vol_bbls": 6172.73,
+      "id": "c6c9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1300",
+      "vol_bbls": 6212.71,
+      "id": "5e98"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1301",
+      "vol_bbls": 6252.7,
+      "id": "5b32"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1302",
+      "vol_bbls": 6292.68,
+      "id": "7e28"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1303",
+      "vol_bbls": 6332.66,
+      "id": "5a53"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1304",
+      "vol_bbls": 6372.64,
+      "id": "85fb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1305",
+      "vol_bbls": 6412.63,
+      "id": "5344"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1306",
+      "vol_bbls": 6452.61,
+      "id": "ed06"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1307",
+      "vol_bbls": 6492.6,
+      "id": "0dc5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1308",
+      "vol_bbls": 6532.57,
+      "id": "be12"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1309",
+      "vol_bbls": 6572.56,
+      "id": "593d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1310",
+      "vol_bbls": 6612.54,
+      "id": "5480"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1311",
+      "vol_bbls": 6652.52,
+      "id": "1f07"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1400",
+      "vol_bbls": 6692.5,
+      "id": "644e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1401",
+      "vol_bbls": 6732.49,
+      "id": "189a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1402",
+      "vol_bbls": 6772.47,
+      "id": "5b02"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1403",
+      "vol_bbls": 6812.45,
+      "id": "b8d0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1404",
+      "vol_bbls": 6852.43,
+      "id": "1ec0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1405",
+      "vol_bbls": 6892.42,
+      "id": "bbec"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1406",
+      "vol_bbls": 6932.39,
+      "id": "73a6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1407",
+      "vol_bbls": 6972.38,
+      "id": "7d60"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1408",
+      "vol_bbls": 7012.36,
+      "id": "7050"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1409",
+      "vol_bbls": 7052.35,
+      "id": "1202"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1410",
+      "vol_bbls": 7092.34,
+      "id": "8fdf"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1411",
+      "vol_bbls": 7132.34,
+      "id": "cb6a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1500",
+      "vol_bbls": 7172.34,
+      "id": "40ba"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1501",
+      "vol_bbls": 7212.33,
+      "id": "c710"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1502",
+      "vol_bbls": 7251.47,
+      "id": "4573"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1503",
+      "vol_bbls": 7292.33,
+      "id": "03e4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1504",
+      "vol_bbls": 7332.32,
+      "id": "1d90"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1505",
+      "vol_bbls": 7372.32,
+      "id": "95c7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1506",
+      "vol_bbls": 7412.32,
+      "id": "ab38"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1507",
+      "vol_bbls": 7452.31,
+      "id": "8be4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1508",
+      "vol_bbls": 7492.31,
+      "id": "07f1"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1509",
+      "vol_bbls": 7532.31,
+      "id": "0c59"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1510",
+      "vol_bbls": 7572.3,
+      "id": "00ab"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1511",
+      "vol_bbls": 7612.3,
+      "id": "aa6b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1600",
+      "vol_bbls": 7651.48,
+      "id": "e0f4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1601",
+      "vol_bbls": 7692.29,
+      "id": "7d1d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1602",
+      "vol_bbls": 7732.29,
+      "id": "5886"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1603",
+      "vol_bbls": 7772.28,
+      "id": "07ef"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1604",
+      "vol_bbls": 7812.28,
+      "id": "72d2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1605",
+      "vol_bbls": 7852.28,
+      "id": "98cd"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1606",
+      "vol_bbls": 7892.27,
+      "id": "9c70"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1607",
+      "vol_bbls": 7932.27,
+      "id": "7e8b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1608",
+      "vol_bbls": 7972.27,
+      "id": "b711"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1609",
+      "vol_bbls": 8012.27,
+      "id": "6c4f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1610",
+      "vol_bbls": 8052.26,
+      "id": "46a8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1611",
+      "vol_bbls": 8092.26,
+      "id": "a8ff"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1700",
+      "vol_bbls": 8132.25,
+      "id": "4c63"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1701",
+      "vol_bbls": 8172.25,
+      "id": "2be7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1702",
+      "vol_bbls": 8212.25,
+      "id": "4356"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1703",
+      "vol_bbls": 8252.24,
+      "id": "a215"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1704",
+      "vol_bbls": 8292.24,
+      "id": "b70d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1705",
+      "vol_bbls": 8332.24,
+      "id": "628e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1706",
+      "vol_bbls": 8372.23,
+      "id": "44c6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1707",
+      "vol_bbls": 8412.23,
+      "id": "137b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1708",
+      "vol_bbls": 8452.23,
+      "id": "231d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1709",
+      "vol_bbls": 8492.23,
+      "id": "494f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1710",
+      "vol_bbls": 8532.22,
+      "id": "d1a4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1711",
+      "vol_bbls": 8572.22,
+      "id": "7e5a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1800",
+      "vol_bbls": 8612.21,
+      "id": "d87d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1801",
+      "vol_bbls": 8652.21,
+      "id": "cb93"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1802",
+      "vol_bbls": 8691.47,
+      "id": "00d4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1803",
+      "vol_bbls": 8732.2,
+      "id": "fab3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1804",
+      "vol_bbls": 8772.2,
+      "id": "a1e6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1805",
+      "vol_bbls": 8812.2,
+      "id": "45b5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1806",
+      "vol_bbls": 8852.19,
+      "id": "52a0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1807",
+      "vol_bbls": 8892.19,
+      "id": "2dbe"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1808",
+      "vol_bbls": 8932.19,
+      "id": "7217"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1809",
+      "vol_bbls": 8972.18,
+      "id": "2305"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1810",
+      "vol_bbls": 9012.18,
+      "id": "ad98"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1811",
+      "vol_bbls": 9052.18,
+      "id": "3e7f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1900",
+      "vol_bbls": 9092.17,
+      "id": "de4e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1901",
+      "vol_bbls": 9132.17,
+      "id": "be7a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1902",
+      "vol_bbls": 9172.17,
+      "id": "1523"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1903",
+      "vol_bbls": 9212.36,
+      "id": "a52b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1904",
+      "vol_bbls": 9252.16,
+      "id": "4582"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1905",
+      "vol_bbls": 9292.16,
+      "id": "1aef"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1906",
+      "vol_bbls": 9332.15,
+      "id": "ebf3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1907",
+      "vol_bbls": 9372.15,
+      "id": "fe0d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1908",
+      "vol_bbls": 9412.15,
+      "id": "0780"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1909",
+      "vol_bbls": 9452.14,
+      "id": "54d0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1910",
+      "vol_bbls": 9491.46,
+      "id": "c992"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "1911",
+      "vol_bbls": 9532.14,
+      "id": "46c6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2000",
+      "vol_bbls": 9572.13,
+      "id": "2e7e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2001",
+      "vol_bbls": 9612.13,
+      "id": "6ce9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2002",
+      "vol_bbls": 9652.13,
+      "id": "f897"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2003",
+      "vol_bbls": 9692.12,
+      "id": "b006"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2004",
+      "vol_bbls": 9732.12,
+      "id": "e060"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2005",
+      "vol_bbls": 9772.12,
+      "id": "626e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2006",
+      "vol_bbls": 9812.11,
+      "id": "2252"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2007",
+      "vol_bbls": 9852.11,
+      "id": "fda4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2008",
+      "vol_bbls": 9892.11,
+      "id": "4acb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2009",
+      "vol_bbls": 9932.1,
+      "id": "1568"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2010",
+      "vol_bbls": 9972.1,
+      "id": "85b7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2011",
+      "vol_bbls": 10012.1,
+      "id": "b68d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2100",
+      "vol_bbls": 10052.09,
+      "id": "5e6c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2101",
+      "vol_bbls": 10092.09,
+      "id": "cf61"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2102",
+      "vol_bbls": 10132.09,
+      "id": "148c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2103",
+      "vol_bbls": 10172.08,
+      "id": "2852"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2104",
+      "vol_bbls": 10212.09,
+      "id": "bc6e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2105",
+      "vol_bbls": 10252.06,
+      "id": "1b3b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2106",
+      "vol_bbls": 10292.07,
+      "id": "02a0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2107",
+      "vol_bbls": 10332.07,
+      "id": "a04c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2108",
+      "vol_bbls": 10372.07,
+      "id": "39e7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2109",
+      "vol_bbls": 10412.06,
+      "id": "3311"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2110",
+      "vol_bbls": 10452.06,
+      "id": "4861"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2111",
+      "vol_bbls": 10492.06,
+      "id": "9646"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2200",
+      "vol_bbls": 10532.05,
+      "id": "7c45"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2201",
+      "vol_bbls": 10572.05,
+      "id": "9c17"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2202",
+      "vol_bbls": 10612.05,
+      "id": "71fe"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2203",
+      "vol_bbls": 10652.04,
+      "id": "1ef7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2204",
+      "vol_bbls": 10692.04,
+      "id": "2d07"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2205",
+      "vol_bbls": 10732.04,
+      "id": "e9e9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2206",
+      "vol_bbls": 10772.03,
+      "id": "8463"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2207",
+      "vol_bbls": 10812.03,
+      "id": "125e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2208",
+      "vol_bbls": 10852.03,
+      "id": "0769"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2209",
+      "vol_bbls": 10892.02,
+      "id": "fadf"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2210",
+      "vol_bbls": 10932.02,
+      "id": "1853"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2211",
+      "vol_bbls": 10972.02,
+      "id": "63fc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2300",
+      "vol_bbls": 11012.01,
+      "id": "93e6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2301",
+      "vol_bbls": 11052.01,
+      "id": "9278"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2302",
+      "vol_bbls": 11092.01,
+      "id": "fa28"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2303",
+      "vol_bbls": 11132,
+      "id": "cba6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2304",
+      "vol_bbls": 11172,
+      "id": "926d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2305",
+      "vol_bbls": 11212,
+      "id": "27c0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2306",
+      "vol_bbls": 11251.99,
+      "id": "1481"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2307",
+      "vol_bbls": 11291.99,
+      "id": "059b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2308",
+      "vol_bbls": 11331.99,
+      "id": "7478"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2309",
+      "vol_bbls": 11371.98,
+      "id": "c4f5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2310",
+      "vol_bbls": 11411.98,
+      "id": "07ae"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2311",
+      "vol_bbls": 11451.98,
+      "id": "d83e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2400",
+      "vol_bbls": 11491.97,
+      "id": "5cc1"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2401",
+      "vol_bbls": 11531.97,
+      "id": "eaa6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2402",
+      "vol_bbls": 11571.97,
+      "id": "66e5"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2403",
+      "vol_bbls": 11611.96,
+      "id": "d9fe"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2404",
+      "vol_bbls": 11651.96,
+      "id": "3e73"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2405",
+      "vol_bbls": 11691.96,
+      "id": "928d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2406",
+      "vol_bbls": 11731.97,
+      "id": "ffb3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2407",
+      "vol_bbls": 11771.95,
+      "id": "cf09"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2408",
+      "vol_bbls": 11811.95,
+      "id": "9703"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2409",
+      "vol_bbls": 11851.94,
+      "id": "d9b2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2410",
+      "vol_bbls": 11891.94,
+      "id": "7db2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2411",
+      "vol_bbls": 11931.93,
+      "id": "010d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2500",
+      "vol_bbls": 11971.93,
+      "id": "9ec4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2501",
+      "vol_bbls": 12011.93,
+      "id": "0285"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2502",
+      "vol_bbls": 12051.93,
+      "id": "f594"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2503",
+      "vol_bbls": 12091.92,
+      "id": "49c4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2504",
+      "vol_bbls": 12131.92,
+      "id": "1e4d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2505",
+      "vol_bbls": 12171.92,
+      "id": "cfce"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2506",
+      "vol_bbls": 12211.91,
+      "id": "5ff1"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2507",
+      "vol_bbls": 12251.91,
+      "id": "68ca"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2508",
+      "vol_bbls": 12291.91,
+      "id": "72a9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2509",
+      "vol_bbls": 12331.9,
+      "id": "b78b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2510",
+      "vol_bbls": 12371.9,
+      "id": "4cf3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2511",
+      "vol_bbls": 12411.9,
+      "id": "12d2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2600",
+      "vol_bbls": 12451.89,
+      "id": "a818"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2601",
+      "vol_bbls": 12491.89,
+      "id": "ad97"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2602",
+      "vol_bbls": 12531.89,
+      "id": "3b47"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2603",
+      "vol_bbls": 12571.88,
+      "id": "6eae"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2604",
+      "vol_bbls": 12611.86,
+      "id": "ade0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2605",
+      "vol_bbls": 12651.88,
+      "id": "ac01"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2606",
+      "vol_bbls": 12691.87,
+      "id": "a811"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2607",
+      "vol_bbls": 12731.87,
+      "id": "9147"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2608",
+      "vol_bbls": 12771.86,
+      "id": "2594"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2609",
+      "vol_bbls": 12811.83,
+      "id": "77f4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2610",
+      "vol_bbls": 12851.86,
+      "id": "2d49"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2611",
+      "vol_bbls": 12891.85,
+      "id": "724a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2700",
+      "vol_bbls": 12931.85,
+      "id": "3de6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2701",
+      "vol_bbls": 12977.85,
+      "id": "5d4e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2702",
+      "vol_bbls": 13011.84,
+      "id": "ddd2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2703",
+      "vol_bbls": 13051.84,
+      "id": "c85f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2704",
+      "vol_bbls": 13091.84,
+      "id": "a5bb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2705",
+      "vol_bbls": 13131.83,
+      "id": "a73b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2706",
+      "vol_bbls": 13171.83,
+      "id": "130e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2707",
+      "vol_bbls": 13211.85,
+      "id": "97b0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2708",
+      "vol_bbls": 13251.84,
+      "id": "78ab"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2709",
+      "vol_bbls": 13291.82,
+      "id": "61f9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2710",
+      "vol_bbls": 13331.82,
+      "id": "bf34"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2711",
+      "vol_bbls": 13371.81,
+      "id": "a970"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2800",
+      "vol_bbls": 13411.82,
+      "id": "8f92"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2801",
+      "vol_bbls": 13451.81,
+      "id": "b89e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2802",
+      "vol_bbls": 13491.8,
+      "id": "873f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2803",
+      "vol_bbls": 13531.8,
+      "id": "7725"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2804",
+      "vol_bbls": 13571.8,
+      "id": "2c9d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2805",
+      "vol_bbls": 13611.79,
+      "id": "586a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2806",
+      "vol_bbls": 13651.79,
+      "id": "507d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2807",
+      "vol_bbls": 13691.79,
+      "id": "3528"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2808",
+      "vol_bbls": 13731.78,
+      "id": "383a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2809",
+      "vol_bbls": 13771.78,
+      "id": "fd70"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2810",
+      "vol_bbls": 13811.78,
+      "id": "045c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2811",
+      "vol_bbls": 13851.77,
+      "id": "a068"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2900",
+      "vol_bbls": 13891.77,
+      "id": "8ada"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2901",
+      "vol_bbls": 13931.77,
+      "id": "9a90"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2902",
+      "vol_bbls": 13971.76,
+      "id": "9df0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2903",
+      "vol_bbls": 14011.76,
+      "id": "b050"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2904",
+      "vol_bbls": 14051.76,
+      "id": "4481"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2905",
+      "vol_bbls": 14091.75,
+      "id": "7cde"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2906",
+      "vol_bbls": 14131.75,
+      "id": "39e9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2907",
+      "vol_bbls": 14171.75,
+      "id": "85e9"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2908",
+      "vol_bbls": 14211.74,
+      "id": "a364"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2909",
+      "vol_bbls": 14251.74,
+      "id": "0ae2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2910",
+      "vol_bbls": 14291.74,
+      "id": "07a8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "2911",
+      "vol_bbls": 14331.73,
+      "id": "e018"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3000",
+      "vol_bbls": 14371.73,
+      "id": "d596"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3001",
+      "vol_bbls": 14411.73,
+      "id": "0de4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3002",
+      "vol_bbls": 14451.72,
+      "id": "7ca2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3003",
+      "vol_bbls": 14491.72,
+      "id": "3277"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3004",
+      "vol_bbls": 14531.72,
+      "id": "52ff"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3005",
+      "vol_bbls": 14571.71,
+      "id": "6311"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3006",
+      "vol_bbls": 14611.71,
+      "id": "9428"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3007",
+      "vol_bbls": 14651.71,
+      "id": "2659"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3008",
+      "vol_bbls": 14691.7,
+      "id": "d9b3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3009",
+      "vol_bbls": 14731.7,
+      "id": "16c3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3010",
+      "vol_bbls": 14771.7,
+      "id": "de66"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3011",
+      "vol_bbls": 14811.69,
+      "id": "1f63"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3100",
+      "vol_bbls": 14851.69,
+      "id": "aff7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3101",
+      "vol_bbls": 14891.69,
+      "id": "c17a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3102",
+      "vol_bbls": 14931.68,
+      "id": "5f28"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3103",
+      "vol_bbls": 14971.69,
+      "id": "1d03"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3104",
+      "vol_bbls": 15011.68,
+      "id": "7af8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3105",
+      "vol_bbls": 15051.67,
+      "id": "804a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3106",
+      "vol_bbls": 15091.67,
+      "id": "2612"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3107",
+      "vol_bbls": 15131.67,
+      "id": "b405"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3108",
+      "vol_bbls": 15171.66,
+      "id": "975d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3109",
+      "vol_bbls": 15211.66,
+      "id": "3dae"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3110",
+      "vol_bbls": 15251.66,
+      "id": "bede"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3111",
+      "vol_bbls": 15291.65,
+      "id": "b9c8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3200",
+      "vol_bbls": 15331.65,
+      "id": "1ba7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3201",
+      "vol_bbls": 15371.65,
+      "id": "61d1"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3202",
+      "vol_bbls": 15411.64,
+      "id": "c481"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3203",
+      "vol_bbls": 15451.64,
+      "id": "a5df"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3204",
+      "vol_bbls": 15491.63,
+      "id": "3e3d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3205",
+      "vol_bbls": 15531.63,
+      "id": "f237"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3206",
+      "vol_bbls": 15571.63,
+      "id": "1e21"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3207",
+      "vol_bbls": 15611.62,
+      "id": "dc4a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3208",
+      "vol_bbls": 15651.42,
+      "id": "59c8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3209",
+      "vol_bbls": 15691.62,
+      "id": "81aa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3210",
+      "vol_bbls": 15731.61,
+      "id": "0823"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3211",
+      "vol_bbls": 15771.61,
+      "id": "d2dd"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3300",
+      "vol_bbls": 15811.61,
+      "id": "332b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3301",
+      "vol_bbls": 15851.6,
+      "id": "732c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3302",
+      "vol_bbls": 15891.6,
+      "id": "431b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3303",
+      "vol_bbls": 15931.6,
+      "id": "915d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3304",
+      "vol_bbls": 15971.59,
+      "id": "20d2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3305",
+      "vol_bbls": 16011.59,
+      "id": "aa2e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3306",
+      "vol_bbls": 16051.59,
+      "id": "46fa"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3307",
+      "vol_bbls": 16091.58,
+      "id": "ec37"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3308",
+      "vol_bbls": 16131.58,
+      "id": "60dc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3309",
+      "vol_bbls": 16171.58,
+      "id": "2784"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3310",
+      "vol_bbls": 16211.58,
+      "id": "3f3b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3311",
+      "vol_bbls": 16251.57,
+      "id": "c53b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3400",
+      "vol_bbls": 16291.57,
+      "id": "289e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3401",
+      "vol_bbls": 16331.57,
+      "id": "e87b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3402",
+      "vol_bbls": 16371.56,
+      "id": "a8fc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3403",
+      "vol_bbls": 16411.56,
+      "id": "b1dd"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3404",
+      "vol_bbls": 16451.56,
+      "id": "1a99"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3405",
+      "vol_bbls": 16491.55,
+      "id": "771a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3406",
+      "vol_bbls": 16531.55,
+      "id": "81fc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3407",
+      "vol_bbls": 16571.54,
+      "id": "90db"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3408",
+      "vol_bbls": 16611.54,
+      "id": "63ad"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3409",
+      "vol_bbls": 16651.54,
+      "id": "de78"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3410",
+      "vol_bbls": 16691.53,
+      "id": "71fb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3411",
+      "vol_bbls": 16731.53,
+      "id": "1762"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3500",
+      "vol_bbls": 16771.53,
+      "id": "47f8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3501",
+      "vol_bbls": 16811.53,
+      "id": "30a4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3502",
+      "vol_bbls": 16851.52,
+      "id": "586b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3503",
+      "vol_bbls": 16891.52,
+      "id": "222a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3504",
+      "vol_bbls": 16931.51,
+      "id": "5595"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3505",
+      "vol_bbls": 16971.51,
+      "id": "e1b0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3506",
+      "vol_bbls": 17011.51,
+      "id": "e530"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3507",
+      "vol_bbls": 17051.5,
+      "id": "fd71"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3508",
+      "vol_bbls": 17091.5,
+      "id": "e0c4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3509",
+      "vol_bbls": 17131.5,
+      "id": "4a3b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3510",
+      "vol_bbls": 17171.49,
+      "id": "b9b1"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3511",
+      "vol_bbls": 17211.49,
+      "id": "cf33"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3600",
+      "vol_bbls": 17251.49,
+      "id": "e926"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3601",
+      "vol_bbls": 17291.48,
+      "id": "c5ea"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3602",
+      "vol_bbls": 17331.48,
+      "id": "2823"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3603",
+      "vol_bbls": 17371.48,
+      "id": "e25b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3604",
+      "vol_bbls": 17411.47,
+      "id": "5d37"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3605",
+      "vol_bbls": 17451.47,
+      "id": "1be2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3606",
+      "vol_bbls": 17491.47,
+      "id": "98ef"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3607",
+      "vol_bbls": 17531.46,
+      "id": "8e6c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3608",
+      "vol_bbls": 17571.46,
+      "id": "551c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3609",
+      "vol_bbls": 17611.46,
+      "id": "3402"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3610",
+      "vol_bbls": 17651.45,
+      "id": "8292"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3611",
+      "vol_bbls": 17691.45,
+      "id": "ae01"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3700",
+      "vol_bbls": 17731.45,
+      "id": "0451"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3701",
+      "vol_bbls": 17771.44,
+      "id": "6ec7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3702",
+      "vol_bbls": 17811.44,
+      "id": "80ce"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3703",
+      "vol_bbls": 17851.44,
+      "id": "7339"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3704",
+      "vol_bbls": 17891.43,
+      "id": "88dc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3705",
+      "vol_bbls": 17931.43,
+      "id": "6223"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3706",
+      "vol_bbls": 17971.43,
+      "id": "827c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3707",
+      "vol_bbls": 18011.42,
+      "id": "9d1a"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3708",
+      "vol_bbls": 18051.42,
+      "id": "ae40"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3709",
+      "vol_bbls": 18091.42,
+      "id": "8123"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3710",
+      "vol_bbls": 18131.41,
+      "id": "288e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3711",
+      "vol_bbls": 18171.41,
+      "id": "b992"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3800",
+      "vol_bbls": 18211.41,
+      "id": "4e98"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3801",
+      "vol_bbls": 18251.4,
+      "id": "ce39"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3802",
+      "vol_bbls": 18291.4,
+      "id": "ca83"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3803",
+      "vol_bbls": 18331.4,
+      "id": "b6f4"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3804",
+      "vol_bbls": 18371.4,
+      "id": "46c3"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3805",
+      "vol_bbls": 18411.39,
+      "id": "30cc"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3806",
+      "vol_bbls": 18451.39,
+      "id": "48ba"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3807",
+      "vol_bbls": 18491.38,
+      "id": "b23e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3808",
+      "vol_bbls": 18531.38,
+      "id": "b1fb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3809",
+      "vol_bbls": 18571.38,
+      "id": "e7c8"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3810",
+      "vol_bbls": 18611.37,
+      "id": "9d93"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3811",
+      "vol_bbls": 18651.36,
+      "id": "4aff"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3900",
+      "vol_bbls": 18691.37,
+      "id": "963d"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3901",
+      "vol_bbls": 18731.36,
+      "id": "ac39"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3902",
+      "vol_bbls": 18771.36,
+      "id": "8373"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3903",
+      "vol_bbls": 18811.36,
+      "id": "0413"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3904",
+      "vol_bbls": 18851.35,
+      "id": "8234"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3905",
+      "vol_bbls": 18891.35,
+      "id": "de96"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3906",
+      "vol_bbls": 18931.35,
+      "id": "7eeb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3907",
+      "vol_bbls": 18971.34,
+      "id": "9cda"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3908",
+      "vol_bbls": 19011.34,
+      "id": "b0e6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3909",
+      "vol_bbls": 19051.34,
+      "id": "5f59"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3910",
+      "vol_bbls": 19091.33,
+      "id": "ef4b"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "3911",
+      "vol_bbls": 19131.33,
+      "id": "c297"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4000",
+      "vol_bbls": 19171.33,
+      "id": "dad6"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4001",
+      "vol_bbls": 19211.32,
+      "id": "8097"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4002",
+      "vol_bbls": 19251.32,
+      "id": "a533"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4003",
+      "vol_bbls": 19291.31,
+      "id": "9f92"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4004",
+      "vol_bbls": 19331.31,
+      "id": "73d7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4005",
+      "vol_bbls": 19371.31,
+      "id": "7737"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4006",
+      "vol_bbls": 19411.3,
+      "id": "8f10"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4007",
+      "vol_bbls": 19451.3,
+      "id": "e6a0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4008",
+      "vol_bbls": 19491.3,
+      "id": "1909"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4009",
+      "vol_bbls": 19531.29,
+      "id": "45da"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4010",
+      "vol_bbls": 19571.29,
+      "id": "5539"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4011",
+      "vol_bbls": 19611.29,
+      "id": "fb58"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4100",
+      "vol_bbls": 19651.28,
+      "id": "c882"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4101",
+      "vol_bbls": 19691.28,
+      "id": "997c"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4102",
+      "vol_bbls": 19731.28,
+      "id": "0e80"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4103",
+      "vol_bbls": 19771.27,
+      "id": "7ce0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4104",
+      "vol_bbls": 19811.27,
+      "id": "d7ac"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4105",
+      "vol_bbls": 19851.27,
+      "id": "85e0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4106",
+      "vol_bbls": 19891.26,
+      "id": "e8fb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4107",
+      "vol_bbls": 19931.26,
+      "id": "96cb"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4108",
+      "vol_bbls": 19971.26,
+      "id": "68f2"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "4109",
+      "vol_bbls": 20011.25,
+      "id": "6a98"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8881",
+      "vol_bbls": 4.94,
+      "id": "1d6f"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8882",
+      "vol_bbls": 9.88,
+      "id": "d2e0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8883",
+      "vol_bbls": 14.82,
+      "id": "bcf7"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8884",
+      "vol_bbls": 19.76,
+      "id": "6770"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8885",
+      "vol_bbls": 24.7,
+      "id": "091e"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8886",
+      "vol_bbls": 29.64,
+      "id": "c544"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8887",
+      "vol_bbls": 34.58,
+      "id": "8adc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0000",
+      "vol_bbls": 0,
+      "id": "7f4d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0001",
+      "vol_bbls": 23.82,
+      "id": "2f2d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0002",
+      "vol_bbls": 47.65,
+      "id": "25da"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0003",
+      "vol_bbls": 71.47,
+      "id": "9b91"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0004",
+      "vol_bbls": 95.3,
+      "id": "abc7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0005",
+      "vol_bbls": 119.12,
+      "id": "1eb4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0006",
+      "vol_bbls": 142.95,
+      "id": "1056"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0007",
+      "vol_bbls": 166.77,
+      "id": "b0c5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0008",
+      "vol_bbls": 190.6,
+      "id": "ff9f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0009",
+      "vol_bbls": 214.42,
+      "id": "5941"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0010",
+      "vol_bbls": 238.25,
+      "id": "9424"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0011",
+      "vol_bbls": 262.07,
+      "id": "ade0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0100",
+      "vol_bbls": 285.9,
+      "id": "7b2a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0101",
+      "vol_bbls": 309.72,
+      "id": "cabb"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0102",
+      "vol_bbls": 333.55,
+      "id": "f081"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0103",
+      "vol_bbls": 357.33,
+      "id": "bde4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0104",
+      "vol_bbls": 381.19,
+      "id": "3c1b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0105",
+      "vol_bbls": 405.02,
+      "id": "b836"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0106",
+      "vol_bbls": 428.84,
+      "id": "b33f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0107",
+      "vol_bbls": 452.67,
+      "id": "4a61"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0108",
+      "vol_bbls": 476.49,
+      "id": "60de"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0109",
+      "vol_bbls": 500.32,
+      "id": "08d7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0110",
+      "vol_bbls": 524.14,
+      "id": "33a4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0111",
+      "vol_bbls": 547.97,
+      "id": "dad9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0200",
+      "vol_bbls": 571.79,
+      "id": "3d77"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0201",
+      "vol_bbls": 595.62,
+      "id": "c0eb"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0202",
+      "vol_bbls": 619.44,
+      "id": "3be7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0203",
+      "vol_bbls": 643.27,
+      "id": "2aee"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0204",
+      "vol_bbls": 667.09,
+      "id": "a19a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0205",
+      "vol_bbls": 690.92,
+      "id": "eeb2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0206",
+      "vol_bbls": 714.74,
+      "id": "4c82"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0207",
+      "vol_bbls": 738.57,
+      "id": "67b2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0208",
+      "vol_bbls": 762.39,
+      "id": "5965"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0209",
+      "vol_bbls": 786.21,
+      "id": "1d01"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0210",
+      "vol_bbls": 810.04,
+      "id": "fd95"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0211",
+      "vol_bbls": 833.86,
+      "id": "8bc8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0300",
+      "vol_bbls": 857.69,
+      "id": "190f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0301",
+      "vol_bbls": 881.51,
+      "id": "0da6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0302",
+      "vol_bbls": 905.34,
+      "id": "b636"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0303",
+      "vol_bbls": 929.16,
+      "id": "fd55"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0304",
+      "vol_bbls": 952.99,
+      "id": "a235"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0305",
+      "vol_bbls": 976.81,
+      "id": "1157"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0306",
+      "vol_bbls": 1000.64,
+      "id": "31d3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0307",
+      "vol_bbls": 1024.46,
+      "id": "e447"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0308",
+      "vol_bbls": 1048.29,
+      "id": "53e0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0309",
+      "vol_bbls": 1072.11,
+      "id": "6333"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0310",
+      "vol_bbls": 1095.94,
+      "id": "292a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0311",
+      "vol_bbls": 1119.76,
+      "id": "25f5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0400",
+      "vol_bbls": 1143.58,
+      "id": "eecf"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0401",
+      "vol_bbls": 1167.41,
+      "id": "271d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0402",
+      "vol_bbls": 1191.23,
+      "id": "b8b4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0403",
+      "vol_bbls": 1215.06,
+      "id": "ca7f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0404",
+      "vol_bbls": 1238.88,
+      "id": "2c2c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0405",
+      "vol_bbls": 1262.71,
+      "id": "a51d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0406",
+      "vol_bbls": 1286.53,
+      "id": "8c34"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0407",
+      "vol_bbls": 1310.36,
+      "id": "f2e8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0408",
+      "vol_bbls": 1334.18,
+      "id": "f403"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0409",
+      "vol_bbls": 1358.01,
+      "id": "51ac"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0410",
+      "vol_bbls": 1381.83,
+      "id": "d911"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0411",
+      "vol_bbls": 1405.66,
+      "id": "0f4f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0500",
+      "vol_bbls": 1429.48,
+      "id": "1818"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0501",
+      "vol_bbls": 1453.31,
+      "id": "b863"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0502",
+      "vol_bbls": 1477.13,
+      "id": "7e34"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0503",
+      "vol_bbls": 1500.95,
+      "id": "ab74"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0504",
+      "vol_bbls": 1524.78,
+      "id": "478d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0505",
+      "vol_bbls": 1548.6,
+      "id": "1d1b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0506",
+      "vol_bbls": 1572.43,
+      "id": "b7b8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0507",
+      "vol_bbls": 1596.25,
+      "id": "3c5e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0508",
+      "vol_bbls": 1620.08,
+      "id": "aae2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0509",
+      "vol_bbls": 1643.9,
+      "id": "9196"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0510",
+      "vol_bbls": 1667.73,
+      "id": "784e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0511",
+      "vol_bbls": 1691.55,
+      "id": "7e5c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0600",
+      "vol_bbls": 1715.38,
+      "id": "930e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0601",
+      "vol_bbls": 1739.2,
+      "id": "4210"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0602",
+      "vol_bbls": 1763.03,
+      "id": "7b79"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0603",
+      "vol_bbls": 1786.85,
+      "id": "2efe"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0604",
+      "vol_bbls": 1810.68,
+      "id": "a1b9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0605",
+      "vol_bbls": 1834.5,
+      "id": "494b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0606",
+      "vol_bbls": 1858.33,
+      "id": "4895"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0607",
+      "vol_bbls": 1882.15,
+      "id": "8191"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0608",
+      "vol_bbls": 1905.97,
+      "id": "1d65"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0609",
+      "vol_bbls": 1929.8,
+      "id": "eace"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0610",
+      "vol_bbls": 1953.62,
+      "id": "5b84"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0611",
+      "vol_bbls": 1977.45,
+      "id": "33d2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0700",
+      "vol_bbls": 2001.27,
+      "id": "4046"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0701",
+      "vol_bbls": 2025.1,
+      "id": "dee4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0702",
+      "vol_bbls": 2048.92,
+      "id": "07c8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0703",
+      "vol_bbls": 2072.75,
+      "id": "ebb6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0704",
+      "vol_bbls": 2096.57,
+      "id": "05df"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0705",
+      "vol_bbls": 2120.4,
+      "id": "80b4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0706",
+      "vol_bbls": 2144.22,
+      "id": "12d6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0707",
+      "vol_bbls": 2168.05,
+      "id": "de61"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0708",
+      "vol_bbls": 2191.87,
+      "id": "51f3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0709",
+      "vol_bbls": 2215.7,
+      "id": "1699"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0710",
+      "vol_bbls": 2239.52,
+      "id": "950e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0711",
+      "vol_bbls": 2263.34,
+      "id": "3c6d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0800",
+      "vol_bbls": 2287.17,
+      "id": "dd00"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0801",
+      "vol_bbls": 2310.99,
+      "id": "248a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0802",
+      "vol_bbls": 2334.82,
+      "id": "652e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0803",
+      "vol_bbls": 2358.64,
+      "id": "e5b1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0804",
+      "vol_bbls": 2382.47,
+      "id": "75aa"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0805",
+      "vol_bbls": 2406.29,
+      "id": "64c7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0806",
+      "vol_bbls": 2430.12,
+      "id": "d30a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0807",
+      "vol_bbls": 2453.94,
+      "id": "02cc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0808",
+      "vol_bbls": 2477.77,
+      "id": "7fd2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0809",
+      "vol_bbls": 2501.59,
+      "id": "a7f1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0810",
+      "vol_bbls": 2525.42,
+      "id": "be94"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0811",
+      "vol_bbls": 2549.24,
+      "id": "4671"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0900",
+      "vol_bbls": 2573.07,
+      "id": "ba6f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0901",
+      "vol_bbls": 2596.89,
+      "id": "580b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0902",
+      "vol_bbls": 2620.71,
+      "id": "e4df"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0903",
+      "vol_bbls": 2644.54,
+      "id": "28b1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0904",
+      "vol_bbls": 2668.36,
+      "id": "c3bf"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0905",
+      "vol_bbls": 2692.19,
+      "id": "f745"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0906",
+      "vol_bbls": 2716.01,
+      "id": "bc27"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0907",
+      "vol_bbls": 2739.84,
+      "id": "fe1d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0908",
+      "vol_bbls": 2763.66,
+      "id": "bad6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0909",
+      "vol_bbls": 2787.49,
+      "id": "e5bd"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0910",
+      "vol_bbls": 2811.31,
+      "id": "4d3f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "0911",
+      "vol_bbls": 2835.14,
+      "id": "cff3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1000",
+      "vol_bbls": 2858.96,
+      "id": "76ab"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1001",
+      "vol_bbls": 2882.79,
+      "id": "61dd"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1002",
+      "vol_bbls": 2906.61,
+      "id": "58bb"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1003",
+      "vol_bbls": 2930.44,
+      "id": "50f1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1004",
+      "vol_bbls": 2954.26,
+      "id": "a577"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1005",
+      "vol_bbls": 2978.09,
+      "id": "2c63"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1006",
+      "vol_bbls": 3001.91,
+      "id": "355e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1007",
+      "vol_bbls": 3025.73,
+      "id": "7e90"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1008",
+      "vol_bbls": 3049.56,
+      "id": "8984"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1009",
+      "vol_bbls": 3073.38,
+      "id": "7c90"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1010",
+      "vol_bbls": 3097.21,
+      "id": "d413"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1011",
+      "vol_bbls": 3121.03,
+      "id": "ff56"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1100",
+      "vol_bbls": 3144.86,
+      "id": "9ff6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1101",
+      "vol_bbls": 3168.68,
+      "id": "f75a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1102",
+      "vol_bbls": 3192.51,
+      "id": "da0e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1103",
+      "vol_bbls": 3216.33,
+      "id": "6df9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1104",
+      "vol_bbls": 3240.16,
+      "id": "cd32"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1105",
+      "vol_bbls": 3263.98,
+      "id": "a550"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1106",
+      "vol_bbls": 3287.81,
+      "id": "31a4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1107",
+      "vol_bbls": 3311.63,
+      "id": "42b0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1108",
+      "vol_bbls": 3335.46,
+      "id": "5896"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1109",
+      "vol_bbls": 3359.28,
+      "id": "c915"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1110",
+      "vol_bbls": 3383.1,
+      "id": "8417"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1111",
+      "vol_bbls": 3406.93,
+      "id": "d323"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1200",
+      "vol_bbls": 3430.75,
+      "id": "1fe2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1201",
+      "vol_bbls": 3454.58,
+      "id": "3b2d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1202",
+      "vol_bbls": 3478.4,
+      "id": "2452"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1203",
+      "vol_bbls": 3502.23,
+      "id": "f1aa"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1204",
+      "vol_bbls": 3526.05,
+      "id": "3416"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1205",
+      "vol_bbls": 3549.88,
+      "id": "66ec"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1206",
+      "vol_bbls": 3573.7,
+      "id": "5fc2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1207",
+      "vol_bbls": 3597.53,
+      "id": "7cfc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1208",
+      "vol_bbls": 3621.35,
+      "id": "fc85"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1209",
+      "vol_bbls": 3645.18,
+      "id": "bec2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1210",
+      "vol_bbls": 3669,
+      "id": "47e1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1211",
+      "vol_bbls": 3692.83,
+      "id": "ce73"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1300",
+      "vol_bbls": 3716.65,
+      "id": "5b74"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1301",
+      "vol_bbls": 3740.47,
+      "id": "847c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1302",
+      "vol_bbls": 3764.3,
+      "id": "22c2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1303",
+      "vol_bbls": 3788.12,
+      "id": "5fd9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1304",
+      "vol_bbls": 3811.95,
+      "id": "1557"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1305",
+      "vol_bbls": 3835.77,
+      "id": "9d94"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1306",
+      "vol_bbls": 3859.6,
+      "id": "bc4f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1307",
+      "vol_bbls": 3883.42,
+      "id": "cf25"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1308",
+      "vol_bbls": 3907.25,
+      "id": "b8e9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1309",
+      "vol_bbls": 3931.07,
+      "id": "9866"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1310",
+      "vol_bbls": 3954.9,
+      "id": "1cc0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1311",
+      "vol_bbls": 3978.72,
+      "id": "d054"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1400",
+      "vol_bbls": 4002.55,
+      "id": "dbba"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1401",
+      "vol_bbls": 4026.37,
+      "id": "6ee0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1402",
+      "vol_bbls": 4050.2,
+      "id": "195b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1403",
+      "vol_bbls": 4074.02,
+      "id": "6641"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1404",
+      "vol_bbls": 4097.85,
+      "id": "f856"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1405",
+      "vol_bbls": 4121.67,
+      "id": "35b2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1406",
+      "vol_bbls": 4145.49,
+      "id": "1e18"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1407",
+      "vol_bbls": 4169.32,
+      "id": "45ca"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1408",
+      "vol_bbls": 4193.14,
+      "id": "32ae"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1409",
+      "vol_bbls": 4216.97,
+      "id": "90d9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1410",
+      "vol_bbls": 4240.79,
+      "id": "16e7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1411",
+      "vol_bbls": 4264.62,
+      "id": "e7b0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1500",
+      "vol_bbls": 4288.44,
+      "id": "50ff"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1501",
+      "vol_bbls": 4312.27,
+      "id": "55a6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1502",
+      "vol_bbls": 4336.09,
+      "id": "d4a9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1503",
+      "vol_bbls": 4359.92,
+      "id": "c563"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1504",
+      "vol_bbls": 4383.74,
+      "id": "e4e1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1505",
+      "vol_bbls": 4407.57,
+      "id": "03ae"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1506",
+      "vol_bbls": 4431.39,
+      "id": "33fa"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1507",
+      "vol_bbls": 4455.22,
+      "id": "153c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1508",
+      "vol_bbls": 4479.04,
+      "id": "fbf3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1509",
+      "vol_bbls": 4502.86,
+      "id": "167d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1510",
+      "vol_bbls": 4526.69,
+      "id": "5cee"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1511",
+      "vol_bbls": 4550.51,
+      "id": "2ff3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1600",
+      "vol_bbls": 4574.34,
+      "id": "7a3c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1601",
+      "vol_bbls": 4598.16,
+      "id": "fe3e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1602",
+      "vol_bbls": 4621.99,
+      "id": "b102"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1603",
+      "vol_bbls": 4645.81,
+      "id": "0add"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1604",
+      "vol_bbls": 4669.64,
+      "id": "7f4d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1605",
+      "vol_bbls": 4693.46,
+      "id": "0e10"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1606",
+      "vol_bbls": 4717.29,
+      "id": "3fd8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1607",
+      "vol_bbls": 4741.11,
+      "id": "a9f4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1608",
+      "vol_bbls": 4764.94,
+      "id": "2c36"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1609",
+      "vol_bbls": 4788.76,
+      "id": "dcc5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1610",
+      "vol_bbls": 4812.59,
+      "id": "debe"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1611",
+      "vol_bbls": 4836.41,
+      "id": "c03c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1700",
+      "vol_bbls": 4860.23,
+      "id": "695b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1701",
+      "vol_bbls": 4884.06,
+      "id": "230c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1702",
+      "vol_bbls": 4907.88,
+      "id": "f68d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1703",
+      "vol_bbls": 4931.71,
+      "id": "49d9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1704",
+      "vol_bbls": 4955.53,
+      "id": "af5b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1705",
+      "vol_bbls": 4979.36,
+      "id": "acd9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1706",
+      "vol_bbls": 5003.18,
+      "id": "a4f3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1707",
+      "vol_bbls": 5027.01,
+      "id": "a973"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1708",
+      "vol_bbls": 5050.83,
+      "id": "188d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1709",
+      "vol_bbls": 5074.66,
+      "id": "6599"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1710",
+      "vol_bbls": 5098.48,
+      "id": "5ca1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1711",
+      "vol_bbls": 5122.31,
+      "id": "6d0c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1800",
+      "vol_bbls": 5146.13,
+      "id": "b121"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1801",
+      "vol_bbls": 5169.96,
+      "id": "2965"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1802",
+      "vol_bbls": 5193.78,
+      "id": "8a7d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1803",
+      "vol_bbls": 5217.61,
+      "id": "c62c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1804",
+      "vol_bbls": 5241.43,
+      "id": "dd92"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1805",
+      "vol_bbls": 5265.25,
+      "id": "94ab"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1806",
+      "vol_bbls": 5289.08,
+      "id": "e2f3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1807",
+      "vol_bbls": 5312.9,
+      "id": "1c15"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1808",
+      "vol_bbls": 5336.73,
+      "id": "65c5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1809",
+      "vol_bbls": 5360.55,
+      "id": "5236"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1810",
+      "vol_bbls": 5384.38,
+      "id": "3d88"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1811",
+      "vol_bbls": 5408.2,
+      "id": "aa50"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1900",
+      "vol_bbls": 5432.03,
+      "id": "ccf4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1901",
+      "vol_bbls": 5455.85,
+      "id": "3bc4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1902",
+      "vol_bbls": 5479.68,
+      "id": "3d5a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1903",
+      "vol_bbls": 5503.5,
+      "id": "b4a4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1904",
+      "vol_bbls": 5527.33,
+      "id": "497c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1905",
+      "vol_bbls": 5551.15,
+      "id": "58b6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1906",
+      "vol_bbls": 5574.98,
+      "id": "7985"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1907",
+      "vol_bbls": 5598.8,
+      "id": "c103"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1908",
+      "vol_bbls": 5622.62,
+      "id": "5344"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1909",
+      "vol_bbls": 5646.45,
+      "id": "91ff"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1910",
+      "vol_bbls": 5670.27,
+      "id": "5dcf"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "1911",
+      "vol_bbls": 5694.1,
+      "id": "41a1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2000",
+      "vol_bbls": 5717.92,
+      "id": "7a67"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2001",
+      "vol_bbls": 5741.75,
+      "id": "1b4d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2002",
+      "vol_bbls": 5765.57,
+      "id": "a39d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2003",
+      "vol_bbls": 5789.4,
+      "id": "110d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2004",
+      "vol_bbls": 5813.22,
+      "id": "3de6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2005",
+      "vol_bbls": 5837.05,
+      "id": "ca0d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2006",
+      "vol_bbls": 5860.87,
+      "id": "49b5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2007",
+      "vol_bbls": 5884.7,
+      "id": "7133"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2008",
+      "vol_bbls": 5908.52,
+      "id": "4ab8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2009",
+      "vol_bbls": 5932.35,
+      "id": "00ff"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2010",
+      "vol_bbls": 5956.17,
+      "id": "7837"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2011",
+      "vol_bbls": 5979.99,
+      "id": "fbef"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2100",
+      "vol_bbls": 6003.82,
+      "id": "0af7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2101",
+      "vol_bbls": 6027.64,
+      "id": "8c21"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2102",
+      "vol_bbls": 6051.47,
+      "id": "ecd2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2103",
+      "vol_bbls": 6075.29,
+      "id": "80ca"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2104",
+      "vol_bbls": 6099.12,
+      "id": "4171"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2105",
+      "vol_bbls": 6122.94,
+      "id": "dbff"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2106",
+      "vol_bbls": 6146.77,
+      "id": "898c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2107",
+      "vol_bbls": 6170.59,
+      "id": "2a50"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2108",
+      "vol_bbls": 6194.42,
+      "id": "7a93"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2109",
+      "vol_bbls": 6218.24,
+      "id": "f370"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2110",
+      "vol_bbls": 6242.07,
+      "id": "5433"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2111",
+      "vol_bbls": 6265.89,
+      "id": "2dd2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2200",
+      "vol_bbls": 6289.72,
+      "id": "bd7a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2201",
+      "vol_bbls": 6313.54,
+      "id": "cdd6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2202",
+      "vol_bbls": 6337.37,
+      "id": "3c95"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2203",
+      "vol_bbls": 6361.19,
+      "id": "54ed"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2204",
+      "vol_bbls": 6385.01,
+      "id": "c70e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2205",
+      "vol_bbls": 6408.84,
+      "id": "e529"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2206",
+      "vol_bbls": 6432.66,
+      "id": "8348"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2207",
+      "vol_bbls": 6456.49,
+      "id": "eb36"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2208",
+      "vol_bbls": 6480.31,
+      "id": "3790"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2209",
+      "vol_bbls": 6504.14,
+      "id": "404a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2210",
+      "vol_bbls": 6527.96,
+      "id": "57db"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2211",
+      "vol_bbls": 6551.79,
+      "id": "09a4"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2300",
+      "vol_bbls": 6575.61,
+      "id": "e274"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2301",
+      "vol_bbls": 6599.44,
+      "id": "b33f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2302",
+      "vol_bbls": 6623.26,
+      "id": "a8c8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2303",
+      "vol_bbls": 6647.09,
+      "id": "af74"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2304",
+      "vol_bbls": 6670.91,
+      "id": "e0de"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2305",
+      "vol_bbls": 6694.74,
+      "id": "61f8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2306",
+      "vol_bbls": 6718.56,
+      "id": "dbc2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2307",
+      "vol_bbls": 6742.38,
+      "id": "3ff9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2308",
+      "vol_bbls": 6766.21,
+      "id": "9f0a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2309",
+      "vol_bbls": 6790.03,
+      "id": "2a2f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2310",
+      "vol_bbls": 6813.86,
+      "id": "bb43"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2311",
+      "vol_bbls": 6837.66,
+      "id": "d547"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2400",
+      "vol_bbls": 6861.51,
+      "id": "f207"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2401",
+      "vol_bbls": 6885.33,
+      "id": "2115"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2402",
+      "vol_bbls": 6909.16,
+      "id": "a7fd"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2403",
+      "vol_bbls": 6932.98,
+      "id": "a654"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2404",
+      "vol_bbls": 6956.81,
+      "id": "1cb8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2405",
+      "vol_bbls": 6980.63,
+      "id": "deff"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2406",
+      "vol_bbls": 7004.46,
+      "id": "ffd2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2407",
+      "vol_bbls": 7028.28,
+      "id": "53b1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2408",
+      "vol_bbls": 7052.11,
+      "id": "36b8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2409",
+      "vol_bbls": 7075.93,
+      "id": "42d9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2410",
+      "vol_bbls": 7099.75,
+      "id": "e99a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2411",
+      "vol_bbls": 7123.58,
+      "id": "5d2d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2500",
+      "vol_bbls": 7147.4,
+      "id": "77e9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2501",
+      "vol_bbls": 7171.23,
+      "id": "faa9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2502",
+      "vol_bbls": 7195.05,
+      "id": "045f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2503",
+      "vol_bbls": 7218.88,
+      "id": "6d8a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2504",
+      "vol_bbls": 7242.7,
+      "id": "a829"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2505",
+      "vol_bbls": 7266.53,
+      "id": "4503"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2506",
+      "vol_bbls": 7290.35,
+      "id": "462c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2507",
+      "vol_bbls": 7314.18,
+      "id": "3062"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2508",
+      "vol_bbls": 7338,
+      "id": "e663"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2509",
+      "vol_bbls": 7361.83,
+      "id": "2c1f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2510",
+      "vol_bbls": 7385.65,
+      "id": "7cbc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2511",
+      "vol_bbls": 7409.48,
+      "id": "2a52"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2600",
+      "vol_bbls": 7433.3,
+      "id": "621e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2601",
+      "vol_bbls": 7457.13,
+      "id": "a44e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2602",
+      "vol_bbls": 7480.95,
+      "id": "dc59"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2603",
+      "vol_bbls": 7504.77,
+      "id": "f239"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2604",
+      "vol_bbls": 7528.6,
+      "id": "c54c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2605",
+      "vol_bbls": 7552.42,
+      "id": "5217"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2606",
+      "vol_bbls": 7576.25,
+      "id": "77aa"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2607",
+      "vol_bbls": 7600.07,
+      "id": "8c63"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2608",
+      "vol_bbls": 7623.9,
+      "id": "6d54"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2609",
+      "vol_bbls": 7647.72,
+      "id": "2b57"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2610",
+      "vol_bbls": 7671.55,
+      "id": "8810"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2611",
+      "vol_bbls": 7695.37,
+      "id": "1fd8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2700",
+      "vol_bbls": 7719.2,
+      "id": "c958"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2701",
+      "vol_bbls": 7743.02,
+      "id": "a9cc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2702",
+      "vol_bbls": 7766.85,
+      "id": "1151"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2703",
+      "vol_bbls": 7790.67,
+      "id": "6e0a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2704",
+      "vol_bbls": 7814.5,
+      "id": "bca7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2705",
+      "vol_bbls": 7838.32,
+      "id": "23b2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2706",
+      "vol_bbls": 7862.14,
+      "id": "f6bc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2707",
+      "vol_bbls": 7885.97,
+      "id": "4b57"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2708",
+      "vol_bbls": 7909.79,
+      "id": "1109"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2709",
+      "vol_bbls": 7933.62,
+      "id": "3c79"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2710",
+      "vol_bbls": 7957.44,
+      "id": "f927"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2711",
+      "vol_bbls": 7981.27,
+      "id": "c234"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2800",
+      "vol_bbls": 8005.09,
+      "id": "573b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2801",
+      "vol_bbls": 8028.92,
+      "id": "35f8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2802",
+      "vol_bbls": 8052.74,
+      "id": "45b1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2803",
+      "vol_bbls": 8076.57,
+      "id": "0155"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2804",
+      "vol_bbls": 8100.39,
+      "id": "482e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2805",
+      "vol_bbls": 8124.22,
+      "id": "6531"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2806",
+      "vol_bbls": 8148.04,
+      "id": "dde5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2807",
+      "vol_bbls": 8171.87,
+      "id": "c1aa"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2808",
+      "vol_bbls": 8195.69,
+      "id": "5046"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2809",
+      "vol_bbls": 8219.51,
+      "id": "c1e1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2810",
+      "vol_bbls": 8243.34,
+      "id": "49d3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2811",
+      "vol_bbls": 8267.16,
+      "id": "c293"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2900",
+      "vol_bbls": 8290.99,
+      "id": "b49d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2901",
+      "vol_bbls": 8314.81,
+      "id": "8b66"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2902",
+      "vol_bbls": 8338.64,
+      "id": "2f0c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2903",
+      "vol_bbls": 8362.46,
+      "id": "3be1"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2904",
+      "vol_bbls": 8386.29,
+      "id": "50ec"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2905",
+      "vol_bbls": 8410.11,
+      "id": "c9d9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2906",
+      "vol_bbls": 8433.94,
+      "id": "15b6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2907",
+      "vol_bbls": 8457.76,
+      "id": "edfc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2908",
+      "vol_bbls": 8481.59,
+      "id": "d0d6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2909",
+      "vol_bbls": 8505.41,
+      "id": "db36"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2910",
+      "vol_bbls": 8529.24,
+      "id": "a675"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "2911",
+      "vol_bbls": 8553.06,
+      "id": "e142"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3000",
+      "vol_bbls": 8576.89,
+      "id": "582f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3001",
+      "vol_bbls": 8600.71,
+      "id": "fb29"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3002",
+      "vol_bbls": 8624.53,
+      "id": "d937"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3003",
+      "vol_bbls": 8648.36,
+      "id": "cdbd"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3004",
+      "vol_bbls": 8672.18,
+      "id": "de01"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3005",
+      "vol_bbls": 8696.01,
+      "id": "7090"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3006",
+      "vol_bbls": 8719.83,
+      "id": "bb84"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3007",
+      "vol_bbls": 8743.66,
+      "id": "e04b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3008",
+      "vol_bbls": 8767.48,
+      "id": "9d34"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3009",
+      "vol_bbls": 8791.31,
+      "id": "29b3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3010",
+      "vol_bbls": 8815.13,
+      "id": "f548"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3011",
+      "vol_bbls": 8838.96,
+      "id": "1361"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3100",
+      "vol_bbls": 8862.76,
+      "id": "edf7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3101",
+      "vol_bbls": 8886.61,
+      "id": "9bd2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3102",
+      "vol_bbls": 8910.43,
+      "id": "e055"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3103",
+      "vol_bbls": 8934.26,
+      "id": "a789"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3104",
+      "vol_bbls": 8958.08,
+      "id": "ab40"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3105",
+      "vol_bbls": 8981.9,
+      "id": "e032"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3106",
+      "vol_bbls": 9005.73,
+      "id": "1a27"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3107",
+      "vol_bbls": 9029.55,
+      "id": "2b97"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3108",
+      "vol_bbls": 9053.38,
+      "id": "f24c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3109",
+      "vol_bbls": 9077.2,
+      "id": "e158"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3110",
+      "vol_bbls": 9101.03,
+      "id": "a86c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3111",
+      "vol_bbls": 9124.85,
+      "id": "3073"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3200",
+      "vol_bbls": 9148.68,
+      "id": "ab8c"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3201",
+      "vol_bbls": 9172.5,
+      "id": "5e18"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3202",
+      "vol_bbls": 9196.33,
+      "id": "bbac"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3203",
+      "vol_bbls": 9220.15,
+      "id": "ac02"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3204",
+      "vol_bbls": 9243.98,
+      "id": "5e15"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3205",
+      "vol_bbls": 9267.8,
+      "id": "af08"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3206",
+      "vol_bbls": 9291.63,
+      "id": "e83f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3207",
+      "vol_bbls": 9315.45,
+      "id": "1b7e"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3208",
+      "vol_bbls": 9339.27,
+      "id": "53be"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3209",
+      "vol_bbls": 9363.1,
+      "id": "883f"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3210",
+      "vol_bbls": 9386.92,
+      "id": "e7ab"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3211",
+      "vol_bbls": 9410.75,
+      "id": "70c5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3300",
+      "vol_bbls": 9434.57,
+      "id": "645a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3301",
+      "vol_bbls": 9458.4,
+      "id": "e1b8"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3302",
+      "vol_bbls": 9482.22,
+      "id": "dab5"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3303",
+      "vol_bbls": 9506.05,
+      "id": "f7bb"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3304",
+      "vol_bbls": 9529.87,
+      "id": "59b9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3305",
+      "vol_bbls": 9553.7,
+      "id": "7667"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3306",
+      "vol_bbls": 9577.52,
+      "id": "7e26"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3307",
+      "vol_bbls": 9601.35,
+      "id": "eeec"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3308",
+      "vol_bbls": 9625.17,
+      "id": "6154"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3309",
+      "vol_bbls": 9649,
+      "id": "812b"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3310",
+      "vol_bbls": 9672.82,
+      "id": "1240"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3311",
+      "vol_bbls": 9696.65,
+      "id": "034d"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3400",
+      "vol_bbls": 9720.47,
+      "id": "3a80"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3401",
+      "vol_bbls": 9744.29,
+      "id": "1556"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3402",
+      "vol_bbls": 9768.12,
+      "id": "e4bf"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3403",
+      "vol_bbls": 9791.94,
+      "id": "9ba0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3404",
+      "vol_bbls": 9815.77,
+      "id": "bb49"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3405",
+      "vol_bbls": 9839.59,
+      "id": "e3dc"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3406",
+      "vol_bbls": 9863.42,
+      "id": "09c0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3407",
+      "vol_bbls": 9887.24,
+      "id": "55dd"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3408",
+      "vol_bbls": 9911.07,
+      "id": "8bc6"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3409",
+      "vol_bbls": 9934.89,
+      "id": "de25"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3410",
+      "vol_bbls": 9958.72,
+      "id": "a727"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3411",
+      "vol_bbls": 9982.54,
+      "id": "e89a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3500",
+      "vol_bbls": 10006.37,
+      "id": "dbb3"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3501",
+      "vol_bbls": 10030.19,
+      "id": "acdb"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3502",
+      "vol_bbls": 10054.02,
+      "id": "d6e9"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "3503",
+      "vol_bbls": 10077.84,
+      "id": "4cc2"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8881",
+      "vol_bbls": 2.98,
+      "id": "1bf7"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8882",
+      "vol_bbls": 5.96,
+      "id": "87af"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8883",
+      "vol_bbls": 8.93,
+      "id": "a059"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8884",
+      "vol_bbls": 11.91,
+      "id": "0958"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8885",
+      "vol_bbls": 14.89,
+      "id": "232a"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8886",
+      "vol_bbls": 17.87,
+      "id": "1bcf"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8887",
+      "vol_bbls": 20.85,
+      "id": "7cde"
+    },
+    {
+      "metrica": "TM-010",
+      "medida": "8880",
+      "vol_bbls": 0,
+      "id": "c8b0"
+    },
+    {
+      "metrica": "TM-011",
+      "medida": "8880",
+      "vol_bbls": 0,
+      "id": "d6a0"
+    },
+    {
+      "metrica": "TM-012",
+      "medida": "8880",
+      "vol_bbls": 0,
+      "id": "374a"
+    },
+    {
+      "id": "8bf3",
+      "metrica": "TM-056",
+      "medida": "2316",
+      "vol_bbls": "23"
+    },
+    {
+      "metrica": "TM-056",
+      "medida": "2316",
+      "vol_bbls": "239",
+      "id": "49ea"
+    },
+    {
+      "id": "ae5c",
+      "metrica": "TM-056",
+      "medida": "2316",
+      "vol_bbls": "23"
+    }
   ]
 }
