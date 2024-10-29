@@ -30,7 +30,32 @@ const TanquesList = () => {
   }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
   
 
-
+  const handleRemove = async(id) => {
+    console.log('Deleting student...', id)
+    
+    // enviar una peticionT
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then(async (result) => {
+      // Cuando el usuario presiona el botón Yes
+      if (result.isConfirmed) {
+        
+        const res = await delTanques(id)
+    
+        fetchTanques()
+        .then(dataTanques => {
+          setTanques(dataTanques)
+        })
+      }
+     
+});
+  }
   
 
 

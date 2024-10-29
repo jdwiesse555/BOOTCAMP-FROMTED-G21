@@ -5,8 +5,8 @@ import { TanquesPage } from './pages/TanquesPage'
 import { MetricasPage } from './pages/MetricasPage'
 import Tanque  from './pages/Tanque'
 import Metrica  from './pages/Metrica'
-
-
+import UserPage  from './pages/UserPage'
+import  NewUsuario from './pages/NewUsuario'
 
 export default function App() { 
   return (
@@ -21,6 +21,9 @@ export default function App() {
         <Route path='/Metricas' element={<MetricasPage />} />
         <Route path='/Metricas/:id' element={<Metrica />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
+        <Route path='/Usuarios' element={<UserPage />} />
+        <Route path='/usuario-new' element={<NewUsuario />} />
+        
         </Route>
       </Routes>
     </BrowserRouter>
