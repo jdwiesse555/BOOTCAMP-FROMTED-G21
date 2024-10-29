@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useUsuarios } from "../components/home-page/services/usuarios"
 import { Link } from "react-router-dom"
-
+import  LayoutBase  from '../layouts/LayoutBase'
 const UserPage = () => {
   const { fetchUsuarios, removeUsuarios } = useUsuarios()
 
@@ -21,6 +21,9 @@ const UserPage = () => {
   }
 
   return (
+    <>
+    {<LayoutBase/>}
+    
     <section className="border container mx-auto flex flex-col gap-4">
       <div className="w-8/12 mx-auto flex justify-between py-3 px-6">
         <h2 className="text-3xl">Usuarios list</h2>
@@ -30,6 +33,10 @@ const UserPage = () => {
           >Nuevo Ususario
           </button>
         </Link>
+        <Link              
+                          to={ `/home`}>
+                        <button className='h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900'>Home</button>
+          </Link>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mx-auto pb-4">
@@ -51,6 +58,7 @@ const UserPage = () => {
       </div>
 
     </section>
+    </>
   )
 }
 
