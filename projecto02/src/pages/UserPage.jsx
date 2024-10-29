@@ -26,12 +26,11 @@ const UserPage = () => {
     
     <section className="border container mx-auto flex flex-col gap-4">
       <div className="w-8/12 mx-auto flex justify-between py-3 px-6">
-        <h2 className="text-3xl">Usuarios list</h2>
+        <h2 className="text-3xl">Lista Usuarios</h2>
+        </div>
+        <div>
         <Link to='/usuario-new'>
-          <button
-            className="py-2 px-3 bg-green-600 text-white w-[120px] rounded-lg hover:bg-green-700 duration-300"
-          >Nuevo Ususario
-          </button>
+        <button className='h-10 px-6 font-semibold rounded-full bg-violet-600 text-white' >nuevo</button>
         </Link>
         <Link              
                           to={ `/home`}>
