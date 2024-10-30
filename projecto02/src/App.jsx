@@ -7,8 +7,13 @@ import Tanque  from './pages/Tanque'
 import Metrica  from './pages/Metrica'
 import UserPage  from './pages/UserPage'
 import  NewUsuario from './pages/NewUsuario'
-
+import {  useState } from "react"
+import ProtectedRoutes from './ProtectedRoutes'
+import RouterApp from './RouterApp'
 export default function App() { 
+let paso = true
+
+
   return (
     <BrowserRouter>
 
@@ -16,13 +21,12 @@ export default function App() {
       <Route >
 
         <Route path='/' element={<LoginPage  />} />
-        <Route path='/home' element={<HomePage />} />
-        <Route path='/Tanques' element={<TanquesPage />} />
-        <Route path='/Metricas' element={<MetricasPage />} />
-        <Route path='/Metricas/:id' element={<Metrica />} />
-        <Route path='/Tanques/:id' element={<Tanque />} />
-        <Route path='/Usuarios' element={<UserPage />} />
-        <Route path='/usuario-new/:id' element={<NewUsuario />} />
+        <Route path='/*' element={
+          <ProtectedRoutes>
+            <RouterApp/>
+          </ProtectedRoutes>
+        } />
+
         
         </Route>
       </Routes>

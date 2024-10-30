@@ -27,7 +27,7 @@ const LoginPage = () => {
     console.log("2",res) 
     if (res) {
       console.log(res) // TOKEN
-      localStorage.setItem('auth', JSON.stringify(res)) // accessToken
+      localStorage.setItem('auth', JSON.stringify("ok")) // accessToken
       navigate('/home')
     } else {
       console.log("error")
@@ -35,6 +35,9 @@ const LoginPage = () => {
       // Mostrar alerta cuando el suaurio no se logueo correctamente
     }
   }
+ useEffect(() => {
+  localStorage.removeItem('auth')
+ },[])
 
   const handleChange = (event) => {
     const { name, value } = event.target
