@@ -29,7 +29,7 @@ const UserPage = () => {
         <h2 className="text-3xl">Lista Usuarios</h2>
         </div>
         <div>
-        <Link to='/usuario-new'>
+        <Link to='/usuario-new/null'>
         <button className='h-10 px-6 font-semibold rounded-full bg-violet-600 text-white' >nuevo</button>
         </Link>
         <Link              
@@ -50,6 +50,13 @@ const UserPage = () => {
                   className="py-2 px-3 bg-red-600 text-white w-[120px] rounded-lg hover:bg-red-700 duration-300"
                   onClick={() => handleRemove(usuario.docId)}
                 >Remove</button>
+                   <Link              
+                          key={usuario.docId}
+                          to={ `/usuario-new/${usuario.docId}`}>             <button
+                  className="py-2 px-3 bg-lime-600 text-white w-[120px] rounded-lg hover:bg-red-700 duration-300"
+                  
+                >edit</button>
+                </Link> 
               </div>
             )
           })

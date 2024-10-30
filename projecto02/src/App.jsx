@@ -22,7 +22,7 @@ export default function App() {
         <Route path='/Metricas/:id' element={<Metrica />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
         <Route path='/Usuarios' element={<UserPage />} />
-        <Route path='/usuario-new' element={<NewUsuario />} />
+        <Route path='/usuario-new/:id' element={<NewUsuario />} />
         
         </Route>
       </Routes>

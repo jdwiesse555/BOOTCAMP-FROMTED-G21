@@ -1,18 +1,48 @@
-import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { useEffect,useState } from "react"
+import { Link, useParams ,useNavigate} from 'react-router-dom'
 import { useUsuarios } from "../components/home-page/services/usuarios"
-
+import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
+import { db } from '../components/home-page/services/firebase'
 
 const NewUsuario = () =>{
-  const { createUsuarios } = useUsuarios()
-
+  const { id } = useParams()
   const navigate = useNavigate()
-
+  const [usuarios, setUsuarios] = useState([])
   const [form, setForm] = useState({
+   
     username: '',
     password: '',
     foto:''
   })
+
+  let titulo = "Nuevo Usuario"
+  const { fetchUsuario ,createUsuarios,editUsuarios} = useUsuarios()
+
+    
+ 
+
+  if (id  !== 'null') {
+    titulo = "Corregir Usuario"
+   
+   
+    useEffect(() => {
+      fetchUsuario(id)
+        .then(data => {
+          setForm(data)})
+    }, [])
+    
+   
+ 
+  } else {
+    const { createUsuarios } = useUsuarios()
+
+    
+  }
+
+
+
+
+
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -22,20 +52,18 @@ const NewUsuario = () =>{
 
   const handleSave = async (event) => {
     event.preventDefault();
-    
+    if (id  !== 'null') {
+      const response = await editUsuarios(id,form)
+
+    } else {
     const response = await createUsuarios(form)
-
-    if (response.id) {
-      setForm({
-        username: '',
-        password: '',
-        foto:''
-      })
-
-      navigate('/Usuarios')
     }
 
+    navigate('/Usuarios')
+    
+
     console.log('saving...')
+  
   }
 
   return (
@@ -48,8 +76,15 @@ const NewUsuario = () =>{
           ⬅ Back to User
         </Link>
 
-        <h2 className="text-3xl">New Ususario</h2>
-
+        <h2 className="text-3xl">{titulo}</h2>
+        <input
+          type="text"
+          name="docId"
+          placeholder="id"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.docId}
+        />
         <input
           type="text"
           name="username"
@@ -68,7 +103,7 @@ const NewUsuario = () =>{
         />
         <input
           type="text"
-          name="image"
+          name="foto"
           placeholder="Image Ex. https://placehold.co/200x100"
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
@@ -81,7 +116,7 @@ const NewUsuario = () =>{
           className="text-white border px-3 py-2 bg-emerald-400"
         />
 
-        <pre>{/*JSON.stringify(form)*/}</pre>
+        <pre>{JSON.stringify(form)}</pre>
       </form>
     </main>
   )
