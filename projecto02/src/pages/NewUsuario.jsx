@@ -67,6 +67,7 @@ const NewUsuario = () =>{
   }
 
   return (
+    <div>
     <main className="w-8/12 mx-auto flex justify-center">
       <form
         className="flex flex-col gap-4 w-80"
@@ -77,14 +78,7 @@ const NewUsuario = () =>{
         </Link>
 
         <h2 className="text-3xl">{titulo}</h2>
-        <input
-          type="text"
-          name="docId"
-          placeholder="id"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.docId}
-        />
+
         <input
           type="text"
           name="username"
@@ -116,9 +110,10 @@ const NewUsuario = () =>{
           className="text-white border px-3 py-2 bg-emerald-400"
         />
 
-        <pre>{JSON.stringify(form)}</pre>
+        <pre>{/*JSON.stringify(form)*/}</pre>
       </form>
     </main>
+    </div>
   )
 }
 

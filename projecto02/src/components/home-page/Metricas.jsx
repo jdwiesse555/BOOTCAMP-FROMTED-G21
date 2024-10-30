@@ -1,166 +1,123 @@
-import { useEffect, useState } from 'react'
+import { useEffect,useState } from "react"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
-import { fetchMetricas,updateMetricas,createMetricas, delMetricas,getMetricas } from "./services/metricas";
-import Swal from 'sweetalert2'
-//import tanques from "./tanques.json"
-
+import { useMetricas } from "../home-page/services/metricas"
+import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
+import { db } from '../home-page/services/firebase'
 
 
 
 const Metricas = () => {
-    const { id } = useParams()
-    let titulo = "Nuevo Metria"
-    console.log("1",id)
-    if (id  !== 'null') {titulo = "Corregir Metrica"}
-    
-    const navigate = useNavigate()
-    const [metrica, setMetricas] = useState([])
-    const [form, setForm] = useState({
-        id : '',
-        metrica: '',
-        medida: '',
-        vol_bbls: '',
-    
-    })
+  const { id } = useParams()
+  const navigate = useNavigate()
+  const [metricas, setMetricas] = useState([])
+  const [form, setForm] = useState({
+   
+    docId:'',
+      metrica: '',
+      medida:'',
+      vol_bbls:''
+  })
 
+  let titulo = "Nuevo Metrica"
+  const { fetchMetrica ,createMetricas,editMetricas} = useMetricas()
+
+    
+ 
+
+  if (id  !== 'null') {
+    titulo = "Corregir Metrica"
+   
+   
     useEffect(() => {
+      fetchMetrica(id)
+        .then(data => {
+          setForm(data)})
+    }, [])
+    
+   
+ 
+  } else {
+    const { createMetricas } = useMetricas()
 
-      getMetricas(id)
-        .then(dataMetricas => {
-          setMetricas(dataMetricas)
-          setForm(dataMetricas)
-        })
+    
+  }
 
 
-        
 
 
-      
-  }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
-  
-  
+
 
   const handleChange = (event) => {
-    const { name, value } = event.target // Lo que se escribe en la caja de texto
+    const { name, value } = event.target
 
     setForm({ ...form, [name]: value })
-
   }
 
   const handleSave = async (event) => {
     event.preventDefault();
-    console.log(event.type)
-    const isNew = (form.id === '' ) 
-   
+    if (id  !== 'null') {
+      const response = await editMetricas(id,form)
 
-    if (isNew) {
-      const newtanque = {
-        //id: crypto.randomUUID(),
-    
-    
-        metrica: form.metrica,
-        medida: form.medida,
-        vol_bbls: form.vol_bbls
-
-      }
-      const res = await createMetricas(newtanque)
-
-      console.log("6",res)
-
-      const dataMetricas = await fetchMetricas()
-
-      setMetricas(dataMetricas)
-      navigate('/Metricas')
-
-
-    
     } else {
-      // Update student
-      const res = await updateMetricas(form)
-      console.log("7",res)
-      const dataMetricas = await fetchMetricas()
+    const response = await createMetricas(form)
+    }
 
-      setMetricas(dataMetricas)
-
-         }
-         navigate('/Metricas')
-
-  }
-
-
- 
-
-  const handleRemove = async(id) => {
+    navigate('/Metricas')
     
-    
-    // enviar una peticionT
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
-    }).then(async (result) => {
-      if (result.value) {
-              // Cuando el usuario presiona el botón Yes
-      //const res = await delTanques(id)
-      //const dataTanques = await fetchTanques()
-      console.log('Deleting student...', id)
-      //setTanques(dataTanques)
-      }
 
-
-});
-  }
+    console.log('saving...')
   
-  const handleUpdate = (id) => {
-    const MetricasFound = Metricas.find(metricas => {
-      return metricas.id === id
-    })
-
-    console.log(MetricasFound)
-
-    setForm(MetricasFound)
   }
-
-  
- 
 
   return (
-    <>
+    <main className="w-8/12 mx-auto flex justify-center">
+      <form
+        className="flex flex-col gap-4 w-80"
+        onSubmit={handleSave}
+      >
+        <Link to='/Metricas' className="underline">
+          ⬅ Back 
+        </Link>
+
+        <h2 className="text-3xl">{titulo}</h2>
 
 
-      <section className="container-fluid">
-       
+        <input
+          type="text"
+          name="metrica"
+          placeholder="metrica"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.metrica}
+        />
+        <input
+          type="text"
+          name="medida"
+          placeholder="Medida"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.medida}
+        />
+        <input
+          type="text"
+          name="vol_bbls"
+          placeholder="vol_bbls"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.vol_bbls}
+        />
+        <input
+          type="submit"
+          value="Save"
+          className="text-white border px-3 py-2 bg-emerald-400"
+        />
 
-          <div className =" text-2xl text-center mt-18 container-fluid grid grid-cols-4 gap-4 border-solid border-red-500 ">
-            <form id="MetricaForm"  className="border-solid border-red-500"
-              onSubmit={handleSave} 
-              >
-              <h2 className="w-full flex-none mb-8 text-5xl leading-none text-slate-900">{titulo}</h2>
- 
-
-          
-              <input className='border-4 gap-4 text-center' type="text"   name="metrica" value={form.metrica}  placeholder="nombre" required onChange={handleChange} />
-              <input className='border-4 gap-4 text-center' type="text"  name="medida" value={form.medida}  placeholder="Medida" required onChange={handleChange} />
-              <input className='border-4 gap-4 text-center' type="text"  name="vol_bbls" value={form.vol_bbls}  placeholder="vol_bbls" required onChange={handleChange} />
-  
-             
-              <input type="submit" value="Guardar" className=" m-8 h-10 px-6 font-semibold rounded-full bg-violet-600 text-vol_bblswhite" />
-              <Link              
-                          to={ `/Metricas`}>
-                        <button className='  h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900'>Cancelar</button>
-          </Link>
-             
-               <pre>{/*JSON.stringify(form)*/}</pre>
-            </form>
-          </div>
-       
-      </section>
-    </>
+        <pre>{/*JSON.stringify(form)*/}</pre>
+      </form>
+    </main>
   )
 }
+
+
 
 export default Metricas

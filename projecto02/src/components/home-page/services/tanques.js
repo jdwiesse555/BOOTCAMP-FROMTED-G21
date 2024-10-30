@@ -1,69 +1,79 @@
-const BASE_URL = import.meta.env.VITE_API_URL_1
+import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
 
-export const fetchTanques = async () => {
-    const url = `${BASE_URL}/tanques`
+import { db } from '../services/firebase'
+
+export const useTanques = () => {
+  const reference = collection(db, 'tanques')
+
   
-    const response = await fetch(url)
-    console.log("3",response)
-    return await response.json()
+  const fetchTanque = async(id) => {
+   
+      const document = doc(db, 'tanques', id )
+  
+  
+      const docSnap = await getDoc(document);
+  
+  
+      console.log(docSnap.data())
+    
+     return docSnap.data()
+   }
+
+
+  const fetchTanques = async() => {
+   // const q = query(reference,where("username","==","jdwiesse"))
+   const q = query(reference)
+    const data = await getDocs(q)
+
+    const results = []
+
+    data.forEach(doc => {
+      //console.log(doc.id, doc.data())
+      results.push({
+        docId: doc.id,
+        ...doc.data() // Representa el documento actual
+      })
+    })
+
+    return results
   }
 
-  export const getTanques = async (id) => {
-    const URL = `${BASE_URL}/tanques/${id}`
-  
-    const response = await fetch(URL)
-  
-    return await response.json()
-  }
-  export const createTanques= async (data) => {
-   const url = `${BASE_URL}/tanques`
-    console.log("1",data)
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json' // Mimetypes
-      },
-      body: JSON.stringify(data)
+  const createTanques = async (dato) => {
+    const newTanque = {
+      codigo: dato.codigo,
+      metrica: dato.metrica,
+      capacidad:dato.capacidad,
+      HEIGHT_PIES:dato.HEIGHT_PIES
     }
-  
-    const response = await fetch(url, options)
-    console.log("2",response)
-    return await response.json()
+
+    const response = await addDoc(reference, newTanque)
+
+    return {
+      id: response.id,
+      newUsuario
+    }
   }
 
+  const removeTanques = async (id) => {
+    const document = doc(db, 'tanques', id )
 
-  // crear un registro  Crearemos una petición del tipo POST para el endpoint /students
-  export const updateTanques = async  (data) => {
-  const url = `${BASE_URL}/tanques/${data.id}`
-    const options = {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json' // Mimetypes
-      },
-      body: JSON.stringify({
-        codigo: data.codigo, 
-        metrica: data.metrica,
-        capacidad:  data.capacidad, 
-        HEIGHT_PIES: data.HEIGHT_PIES      
-      }
-        )
+    const response = await deleteDoc(document)
+
+    return response
   }
-  const response = await fetch(url, options)
-  
-  return await response.json()
+
+  const editTanques = async (id,data) => {
+    const document = doc(db, 'tanques', id )
+    
+    const response = await updateDoc(document,
+      data
+    )
+  }
+  return {
+    fetchTanques,
+    createTanques,
+    removeTanques,
+    fetchTanque,
+    editTanques
+  }
 }
-
-export const delTanques = async (id) => {
-  const url = `${BASE_URL}/tanques/${id}`
-
- 
-  
-    const options = {
-      method: 'DELETE'
-    }
-  
-    const response = await fetch(url, options)
-  
-    return await response.json()
-  }
-

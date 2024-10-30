@@ -5,10 +5,14 @@ export const TanquesPage = () => {
     
       return (
         <>
+      
+
           {<LayoutBase/>}
+     
           <h1  className="text-3xl font-bold undeline text-center">Listado de Tanques</h1>
     
           <TanquesList />
+          
         </>
       )
   }

@@ -1,167 +1,127 @@
-import { useEffect, useState } from 'react'
+import { useEffect,useState } from "react"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
-import { fetchTanques,updateTanques,createTanques, delTanques,getTanques } from "./services/tanques";
-import Swal from 'sweetalert2'
-//import tanques from "./tanques.json"
+import { useTanques } from "../home-page/services/tanques"
+import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
+import { db } from '../home-page/services/firebase'
 
-
-
-
-const Tanques = () => {
-    const { id } = useParams()
-    let titulo = "Nuevo Tanque"
-    console.log("1",id)
-    if (id  !== 'null') {titulo = "Corregir Tanque"}
-    
-    const navigate = useNavigate()
-    const [tanques, setTanques] = useState([])
-    const [form, setForm] = useState({
-      id : '',
-      codigo: '',
+const NewTanque = () =>{
+  const { id } = useParams()
+  const navigate = useNavigate()
+  const [tanques, setTanques] = useState([])
+  const [form, setForm] = useState({
+   
+    docId:'',
+    codigo: '',
       metrica: '',
-      capacidad: '',
+      capacidad:'',
       HEIGHT_PIES:''
-    })
+  })
 
+  let titulo = "Nuevo Tanque"
+  const { fetchTanque ,createTanques,editTanques} = useTanques()
+
+    
+ 
+
+  if (id  !== 'null') {
+    titulo = "Corregir Tanque"
+   
+   
     useEffect(() => {
+      fetchTanque(id)
+        .then(data => {
+          setForm(data)})
+    }, [])
+    
+   
+ 
+  } else {
+    const { createTanques } = useTanques()
 
-      getTanques(id)
-        .then(dataTanques => {
-          setTanques(dataTanques)
-          setForm(dataTanques)
-        })
+    
+  }
 
 
-        
 
 
-      
-  }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
-  
-  
+
 
   const handleChange = (event) => {
-    const { name, value } = event.target // Lo que se escribe en la caja de texto
+    const { name, value } = event.target
 
     setForm({ ...form, [name]: value })
-
   }
 
   const handleSave = async (event) => {
     event.preventDefault();
-    console.log(event.type)
-    const isNew = (form.id === '' ) 
-   
+    if (id  !== 'null') {
+      const response = await editTanques(id,form)
 
-    if (isNew) {
-      const newtanque = {
-        //id: crypto.randomUUID(),
-    
-        codigo: form.codigo,
-        metrica: form.metrica,
-        capacidad: form.capacidad,
-        HEIGHT_PIES: form.HEIGHT_PIES
-
-      }
-      const res = await createTanques(newtanque)
-
-      console.log("6",res)
-
-      const dataTanques = await fetchTanques()
-
-      setTanques(dataTanques)
-      navigate('/Tanques')
-
-
-    
     } else {
-      // Update student
-      const res = await updateTanques(form)
-      console.log("7",res)
-      const dataTanques = await fetchTanques()
+    const response = await createTanques(form)
+    }
 
-      setTanques(dataTanques)
-
-         }
-         navigate('/Tanques')
-
-  }
-
-
- 
-
-  const handleRemove = async(id) => {
+    navigate('/Tanques')
     
-    
-    // enviar una peticionT
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
-    }).then(async (result) => {
-      if (result.value) {
-              // Cuando el usuario presiona el botón Yes
-      //const res = await delTanques(id)
-      //const dataTanques = await fetchTanques()
-      console.log('Deleting student...', id)
-      //setTanques(dataTanques)
-      }
 
-
-});
-  }
+    console.log('saving...')
   
-  const handleUpdate = (id) => {
-    const tanquesFound = tanques.find(tanques => {
-      return tanques.id === id
-    })
-
-    console.log(tanquesFound)
-
-    setForm(tanquesFound)
   }
-
-  
- 
 
   return (
-    <>
+    <main className="w-8/12 mx-auto flex justify-center">
+      <form
+        className="flex flex-col gap-4 w-80"
+        onSubmit={handleSave}
+      >
+        <Link to='/Tanques' className="underline">
+          ⬅ Back 
+        </Link>
 
+        <h2 className="text-3xl">{titulo}</h2>
 
-      <section className="container-fluid">
-       
+        <input
+          type="text"
+          name="codigo"
+          placeholder="Codigo"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.codigo}
+        />
+        <input
+          type="text"
+          name="metrica"
+          placeholder="metrica"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.metrica}
+        />
+        <input
+          type="text"
+          name="capacidad"
+          placeholder="capacidad"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.capacidad}
+        />
+        <input
+          type="text"
+          name="HEIGHT_PIES"
+          placeholder="HEIGHT_PIES"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.HEIGHT_PIES}
+        />
+        <input
+          type="submit"
+          value="Save"
+          className="text-white border px-3 py-2 bg-emerald-400"
+        />
 
-          <div className =" text-2xl text-center mt-18 container-fluid grid grid-cols-3 gap-4 border-solid border-red-500 ">
-            <form id="TanquesForm"  className="border-solid border-red-500"
-              onSubmit={handleSave} 
-              >
-              <h2 className="w-full flex-none mb-8 text-5xl leading-none text-slate-900">{titulo}</h2>
- 
-
-          
-              <input className='border-4 gap-4 text-center' type="text"  name="codigo" value={form.codigo} placeholder="TK.." required onChange={handleChange}/> 
-              <input className='border-4 gap-4 text-center' type="text"   name="metrica" value={form.metrica}  placeholder="TM..." required onChange={handleChange} />
-              <input className='border-4 gap-4 text-center' type="text"  name="capacidad" value={form.capacidad}  placeholder="Capacidad" required onChange={handleChange} />
-              <input className='border-4 gap-4 text-center' type="text"  name="HEIGHT_PIES" value={form.HEIGHT_PIES}  placeholder="Alt Pies" required onChange={handleChange} />
-  
-             
-              <input type="submit" value="Guardar" className=" m-8 h-10 px-6 font-semibold rounded-full bg-violet-600 text-white" />
-              <Link              
-                          to={ `/Tanques`}>
-                        <button className='  h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900'>Cancelar</button>
-          </Link>
-             
-               <pre>{/*JSON.stringify(form)*/}</pre>
-            </form>
-          </div>
-       
-      </section>
-    </>
+        <pre>{/*JSON.stringify(form)*/}</pre>
+      </form>
+    </main>
   )
 }
 
-export default Tanques
+export default NewTanque

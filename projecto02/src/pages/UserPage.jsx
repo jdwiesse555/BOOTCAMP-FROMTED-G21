@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useUsuarios } from "../components/home-page/services/usuarios"
 import { Link } from "react-router-dom"
 import  LayoutBase  from '../layouts/LayoutBase'
+import Swal from 'sweetalert2'
 const UserPage = () => {
   const { fetchUsuarios, removeUsuarios } = useUsuarios()
 
@@ -13,11 +14,28 @@ const UserPage = () => {
   }, [])
 
   const handleRemove = async (id) => {
+    console.log('Deleting ...', id)
+    
+    // enviar una peticionT
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then(async (result) => {
+      // Cuando el usuario presiona el botón Yes
+      if (result.isConfirmed) {
+ 
     console.log("xx",id)
     const response = await removeUsuarios(id)
     
     fetchUsuarios()
       .then(data => setUsuarios(data))
+      }
+    })
   }
 
   return (

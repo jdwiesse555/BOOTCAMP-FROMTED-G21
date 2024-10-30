@@ -1,19 +1,18 @@
-import { useState, useEffect } from "react";
-import { fetchMetricas,updateMetricas,createMetricas, delMetricas } from "./services/metricas";
+import { useEffect, useState } from "react"
+import { useMetricas } from "../home-page/services/metricas"
+import { Link, useParams ,useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2'
-import { Link } from "react-router-dom"
-//import tanques from "./tanques.json"
 
 
 
 
 const MetricasList = () => {
-  
+  const { fetchMetricas, removeMetricas } = useMetricas()
   const [metricas, setMetricas] = useState([])
   let filtrometricas =[metricas]
   const [texto, setTexto] = useState('')
   const [form, setForm] = useState({
-    id : '',
+    docId : '',
     metrica: '',
     medida: '',
     vol_bbls: '',
@@ -21,13 +20,9 @@ const MetricasList = () => {
   })
 
   useEffect(() => {
-    console.log("useEffect")
-
-
     fetchMetricas()
-      .then(dataMetricas => {
-        setMetricas(dataMetricas)
-      })
+      .then(data => setMetricas(data))
+      
   }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
  
   const handleChange_V = ({target}) => {
@@ -37,7 +32,31 @@ const MetricasList = () => {
 
   }
 
- 
+  const handleRemove = async(id) => {
+    console.log('Deleting ...', id)
+    
+    // enviar una peticionT
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then(async (result) => {
+      // Cuando el usuario presiona el botón Yes
+      if (result.isConfirmed) {
+        
+        console.log("xx",id)
+        const response = await removeMetricas(id)
+        
+        fetchMetricas()
+          .then(data => setMetricas(data))
+      }
+     
+    })
+  }
   const filtro  = (valor) => {
     
     if(valor=="") {   
@@ -97,7 +116,7 @@ const MetricasList = () => {
               return (
       
                 <tr>
-                  <td>{metricas.id}</td>
+                  <td>{metricas.docId}</td>
 
                   <td>{metricas.metrica} 
                   </td>
@@ -109,11 +128,11 @@ const MetricasList = () => {
                     <td>
                         <div class="flex gap-0.5">
                         <Link 
-                          key={metricas.id}
-                          to={ `/Metricas/${metricas.id}`}>
+                          key={metricas.docId}
+                          to={ `/Metricas/${metricas.docId}`}>
                         <button>✏</button>
                         </Link>
-                          <button onClick={() => handleRemove(metricas.id)}>❌</button>
+                          <button onClick={() => handleRemove(metricas.docId)}>❌</button>
                         </div>        
                   </td>
                 </tr>

@@ -1,32 +1,24 @@
-
-import { useState, useEffect } from "react";
-import { fetchTanques,updateTanques,createTanques, delTanques } from "./services/tanques";
+import { useEffect, useState } from "react"
+import { useTanques } from "../home-page/services/tanques"
+import { Link, useParams ,useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2'
-import { Link } from "react-router-dom"
-//import tanques from "./tanques.json"
-
-
-
 
 const TanquesList = () => {
-  
+  const { fetchTanques, removeTanques } = useTanques()
   const [tanques, setTanques] = useState([])
   const [form, setForm] = useState({
-    id : '',
+    docId:'',
     codigo: '',
-    metrica: '',
-    capacidad: '',
-    HEIGHT_PIES:''
+      metrica: '',
+      capacidad:'',
+      HEIGHT_PIES:''
   })
 
-  useEffect(() => {
-    console.log("useEffect")
+    useEffect(() => {
+      fetchTanques()
+        .then(data => setTanques(data))
 
-
-    fetchTanques()
-      .then(dataTanques => {
-        setTanques(dataTanques)
-      })
+      
   }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
   
 
@@ -46,25 +38,25 @@ const TanquesList = () => {
       // Cuando el usuario presiona el botón Yes
       if (result.isConfirmed) {
         
-        const res = await delTanques(id)
-    
+        console.log("xx",id)
+        const response = await removeTanques(id)
+        
         fetchTanques()
-        .then(dataTanques => {
-          setTanques(dataTanques)
-        })
+          .then(data => setTanques(data))
       }
      
-});
+    })
   }
+  
   
 
 
   return (
     <>
     <div className="flex space-x-4 mb-5 text-sm font-medium">
-        <Link              
-                          to={ `/Tanques/null`}>
-                        <button className='h-10 px-6 font-semibold rounded-full bg-violet-600 text-white' >nuevo</button>
+    <Link to={ `/Tanques/null`}>
+                        <button className='h-10 px-6 font-semibold rounded-full bg-violet-600 text-white' >
+                          nuevo</button>
           </Link>
           <Link              
                           to={ `/home`}>
@@ -92,7 +84,7 @@ const TanquesList = () => {
               return (
       
                 <tr>
-                  <td>{tanques.id}</td>
+                  <td>{tanques.docId}</td>
                   <td>{tanques.codigo}</td>
                   <td>{tanques.metrica} 
                   </td>
@@ -104,11 +96,11 @@ const TanquesList = () => {
                     <td>
                         <div class="flex gap-0.5">
                         <Link 
-                          key={tanques.id}
-                          to={ `/Tanques/${tanques.id}`}>
+                          key={tanques.docId}
+                          to={ `/Tanques/${tanques.docId}`}>
                         <button>✏</button>
                         </Link>
-                          <button onClick={() => handleRemove(tanques.id)}>❌</button>
+                          <button onClick={() => handleRemove(tanques.docId)}>❌</button>
                         </div>        
                   </td>
                 </tr>
