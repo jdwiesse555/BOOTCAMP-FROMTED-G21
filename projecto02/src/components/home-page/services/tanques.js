@@ -50,7 +50,7 @@ export const useTanques = () => {
 
     return {
       id: response.id,
-      newUsuario
+      newTanque
     }
   }
 
