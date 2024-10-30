@@ -19,6 +19,24 @@ export const useUsuarios = () => {
      return docSnap.data()
    }
 
+   const fetchLogin = async(usern, passw) => {
+    const q = query(reference,where("username","==",usern),where("password","==",passw))
+    //const q = query(reference)
+    console.log("paso")
+     const data = await getDocs(q)
+ 
+     const results = []
+ 
+     data.forEach(doc => {
+       //console.log(doc.id, doc.data())
+       results.push({
+         docId: doc.id,
+         ...doc.data() // Representa el documento actual
+       })
+     })
+     console.log(results)
+     return (results.length>0)
+   }
 
   const fetchUsuarios = async() => {
    // const q = query(reference,where("username","==","jdwiesse"))
@@ -73,6 +91,7 @@ export const useUsuarios = () => {
     createUsuarios,
     removeUsuarios,
     fetchUsuario,
+    fetchLogin,
     editUsuarios
   }
 }

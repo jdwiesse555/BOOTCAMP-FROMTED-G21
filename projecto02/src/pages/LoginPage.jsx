@@ -1,16 +1,15 @@
-const BASE_URL = import.meta.env.VITE_API_URL_1
-console.log(BASE_URL)
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from "react"
+import { useUsuarios } from "../components/home-page/services/usuarios"
+import { useNavigate } from "react-router-dom"
+
+
 
 const login = async(username, password) => {
-  const url = `${BASE_URL}/usuarios?username=${username}&password=${password}`
 
-  console.log(url)
-
-  const response = await fetch(url)
- 
-  return await response.json()
+  const { fetchLogin } = useUsuarios()
+  let dato = true
+  dato = fetchLogin(username,password)
+  return dato
 }
 
 const LoginPage = () => {
@@ -26,7 +25,7 @@ const LoginPage = () => {
    
     const res = await login(form.username, form.password)
     console.log("2",res) 
-    if (res!=="Not found") {
+    if (res) {
       console.log(res) // TOKEN
       localStorage.setItem('auth', JSON.stringify(res)) // accessToken
       navigate('/home')
