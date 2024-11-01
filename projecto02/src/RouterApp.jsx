@@ -7,6 +7,10 @@ import Metrica from "./pages/Metrica";
 import Tanque from "./pages/Tanque";
 import UserPage from "./pages/UserPage";
 import NewUsuario from "./pages/NewUsuario";
+import MedicionesPage from "./pages/MedicionesPage";
+import NewMediciones from "./pages/newMediciones";
+import UsuarioPage from "./pages/UsuarioPage";
+
 
 const RouterApp = () => {
     return (
@@ -15,15 +19,16 @@ const RouterApp = () => {
 
      
         <Route path='/home' element={<HomePage />} />
-
+        <Route path='/Medidas' element={<MedicionesPage />} />
+        <Route path='/Medidas/:id' element={<NewMediciones />} />
         <Route path='/Tanques' element={<TanquesPage />} />
         <Route path='/Metricas' element={<MetricasPage />} />
         <Route path='/Metricas/:id' element={<Metrica />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
         <Route path='/Usuarios' element={<UserPage />} />
         <Route path='/usuario-new/:id' element={<NewUsuario />} />
+        <Route path='/User' element={<UsuarioPage />} />
         
-       
       </Routes>
 
     )

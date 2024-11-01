@@ -1,32 +1,38 @@
 import { useEffect,useState } from "react"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
-import { useUsuarios } from "../components/home-page/services/usuarios"
+import { useMedidas } from "../components/home-page/services/medidas"
 import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
 import { db } from '../components/home-page/services/firebase'
 
-const NewUsuario = () =>{
+const NewMediciones = () =>{
   const { id } = useParams()
   const navigate = useNavigate()
-  const [usuarios, setUsuarios] = useState([])
+  const [medidas, setMedidas] = useState([])
   const [form, setForm] = useState({
    
-    username: '',
-    password: '',
-    foto:''
+    fecha: '',
+    tanque: '',
+    metrica:'',
+    crudo_pies:'',
+    crudo_pul:'',
+    agua_pies:'',
+    agua_pul:'',
+    stock_crudo:'',
+    stock_agua:''
   })
 
-  let titulo = "Nuevo Usuario"
-  const { fetchUsuario ,createUsuarios,editUsuarios} = useUsuarios()
+  let titulo = "Nueva Medicion"
+  const { fetchMedida ,createMedidas,editMedidas} = useMedidas()
 
     
  
 
   if (id  !== 'null') {
-    titulo = "Corregir Usuario"
+    titulo = "Corregir Medicion"
    
    
     useEffect(() => {
-      fetchUsuario(id)
+      fetchMedida(id)
         .then(data => {
           setForm(data)})
     }, [])
@@ -34,7 +40,7 @@ const NewUsuario = () =>{
    
  
   } else {
-    const { createUsuarios } = useUsuarios()
+    const { createMedidas } = useMedidas()
 
     
   }
@@ -53,13 +59,13 @@ const NewUsuario = () =>{
   const handleSave = async (event) => {
     event.preventDefault();
     if (id  !== 'null') {
-      const response = await editUsuarios(id,form)
+      const response = await editMedidas(id,form)
 
     } else {
-    const response = await createUsuarios(form)
+    const response = await createMedidas(form)
     }
 
-    navigate('/user')
+    navigate('/Medidas')
     
 
     console.log('saving...')
@@ -73,7 +79,7 @@ const NewUsuario = () =>{
         className="flex flex-col gap-4 w-80"
         onSubmit={handleSave}
       >
-        <Link to='/user' className="underline">
+        <Link to='/Medidas' className="underline">
           ⬅ Back to User
         </Link>
 
@@ -81,27 +87,27 @@ const NewUsuario = () =>{
 
         <input
           type="text"
-          name="username"
-          placeholder="Name username"
+          name="tanque"
+          placeholder="Tanque"
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
-          value={form.username}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.password}
+          value={form.tanque}
         />
         <input
           type="text"
-          name="foto"
-          placeholder="Image Ex. https://placehold.co/200x100"
+          name="metrica"
+          placeholder="Metrica"
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
-          value={form.foto}
+          value={form.metrica}
+        />
+        <input
+          type="text"
+          name="stock_crudo"
+          placeholder="fecha"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.stock_crudo}
         />
 
         <input
@@ -110,11 +116,11 @@ const NewUsuario = () =>{
           className="text-white border px-3 py-2 bg-emerald-400"
         />
 
-        <pre>{/*JSON.stringify(form)*/}</pre>
+        <pre>{JSON.stringify(form)}</pre>
       </form>
     </main>
     </div>
   )
 }
 
-export default NewUsuario
+export default NewMediciones

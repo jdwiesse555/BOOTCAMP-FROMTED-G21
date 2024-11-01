@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useUsuarios } from "../components/home-page/services/usuarios"
 import { useNavigate } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 
 
@@ -26,12 +27,31 @@ const LoginPage = () => {
     const res = await login(form.username, form.password)
     console.log("2",res) 
     if (res) {
-      console.log(res) // TOKEN
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed in successfully"
+      });
       localStorage.setItem('auth', JSON.stringify("ok")) // accessToken
       navigate('/home')
     } else {
-      console.log("error")
-      window.alert("Usuario o contraseña invalido ");
+      
+Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Clave o Usuario incorrecto",
+  footer: ''
+});
       // Mostrar alerta cuando el suaurio no se logueo correctamente
     }
   }

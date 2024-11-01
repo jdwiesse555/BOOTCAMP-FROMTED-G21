@@ -10,6 +10,7 @@ const LayoutBase = () => {
           <nav className="flex gap-4">
             <Link to='/'>Login</Link>
             <Link to='/home'>Home</Link>
+            <Link to='/Medidas'>Mediciones</Link>
             <Link to='/Tanques'>Tanques</Link>
             <Link to='/Metricas'>Metricas</Link>
             <Link to='/Usuarios'>Usuarios</Link>
