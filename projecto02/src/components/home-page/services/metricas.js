@@ -38,6 +38,31 @@ export const useMetricas = () => {
     return results
   }
 
+  const fetchvol = async(valor,valor1) => {
+     const q = query(reference,where("medida","==",valor),where("metrica","==",valor1))
+    //const q = query(reference)
+     const data = await getDocs(q)
+ 
+     const results = []
+ 
+     data.forEach(doc => {
+       //console.log(doc.id, doc.data())
+       results.push({
+        ...doc.data() // Representa el documento actual
+
+         // Representa el documento actual
+       })
+     })
+     //.log("awe",results[0].vol_bbls)
+    console.log(results.length)
+    if(results.length>0){
+     return results[0].vol_bbls
+    }
+    else {
+      return 0
+    }
+   }
+
   const createMetricas = async (dato) => {
     const newMetrica = {
       metrica: dato.metrica,
@@ -73,6 +98,7 @@ export const useMetricas = () => {
     createMetricas,
     removeMetricas,
     fetchMetrica,
-    editMetricas
+    editMetricas,
+    fetchvol
   }
 }

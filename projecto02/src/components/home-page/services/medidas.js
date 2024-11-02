@@ -1,6 +1,7 @@
 import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
 
 import { db } from '../services/firebase'
+import { useMetricas } from "./metricas"
 
 export const useMedidas = () => {
   const reference = collection(db, 'mediciones')
@@ -56,17 +57,21 @@ export const useMedidas = () => {
     return results
   }
 
-  const createMedidas = async (dato) => {
+  const createMedidas = async (dato,valor1,valor2) => {
+    //console.log(fetchvol(form.crudo_pies+form.crudo_pul,form.metrica))
+    //const { fetchvol} = useMetricas()
+    //let vol = fetchvol(form.crudo_pies+form.crudo_pul,form.metrica)
+
     const newMedidas = {
         fecha: dato.fecha ,
         tanque: dato.tanque,
         metrica:dato.metrica,
-        crudo_pies:dato.crudo_pies,
+        crudo_pies:dato.crudo_pies.padStart(2,0),
         crudo_pul:dato.crudo_pul,
-        agua_pies:dato.agua_pies,
+        agua_pies:dato.agua_pies.padStart(2,0),
         agua_pul:dato.agua_pul,
-        stock_crudo:dato.stock_crudo,
-        stock_agua:dato.stock_agua
+        stock_crudo:valor1,
+        stock_agua:valor2
     }
 
     const response = await addDoc(reference, newMedidas)
@@ -85,9 +90,10 @@ export const useMedidas = () => {
     return response
   }
 
-  const editMedidas = async (id,data) => {
+  const editMedidas = async (id,data,valor1,valor2) => {
     const document = doc(db, 'mediciones', id )
-    
+    data.stock_crudo=valor1
+    data.stock_agua=valor2
     const response = await updateDoc(document,
       data
     )

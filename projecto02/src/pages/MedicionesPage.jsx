@@ -87,6 +87,7 @@ filtro(texto)
               <thead>
                 <tr> 
                 <th className="w-40">id</th>
+                <th className="w-60">Fecha</th>
                   <th className="w-60">Tanque</th>
                   <th className="w-60">Metrica</th>
                   <th className="w-40">stock crudo</th>
@@ -102,14 +103,15 @@ filtro(texto)
       
                 <tr>
                   <td>{medidas.docId}</td>
-                  
+                  <td>{medidas.fecha} 
+                  </td>                  
                   <td>{medidas.tanque} 
                   </td>
                   <td>{medidas.metrica} 
                   </td>
                   <td>{medidas.stock_crudo} 
                   </td>
-                  <td>{medidas.fecha}</td>
+                  <td>{medidas.stock_agua}</td>
                     <td>
                         <div class="flex gap-0.5">
                         <Link 
