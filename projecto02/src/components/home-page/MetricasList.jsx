@@ -66,8 +66,8 @@ const MetricasList = () => {
     
       else {
         filtrometricas =metricas.filter(metricas =>
-    metricas.metrica.toLowerCase().includes(valor.toLowerCase()))}
-    console.log("valor",valor,filtrometricas)
+    (metricas.metrica.toLowerCase()+metricas.medida).includes(valor.toLowerCase()))}
+    //console.log("valor",valor,filtrometricas)
     
     }
 
