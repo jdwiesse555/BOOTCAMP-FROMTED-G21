@@ -10,6 +10,9 @@ import NewUsuario from "./pages/NewUsuario";
 import MedicionesPage from "./pages/MedicionesPage";
 import NewMediciones from "./pages/newMediciones";
 import UsuarioPage from "./pages/UsuarioPage";
+import NewLmetricas from "./components/home-page/NewLmetricas";
+import Listametricas from "./pages/Listametricas";
+
 
 
 const RouterApp = () => {
@@ -24,6 +27,8 @@ const RouterApp = () => {
         <Route path='/Tanques' element={<TanquesPage />} />
         <Route path='/Metricas' element={<MetricasPage />} />
         <Route path='/Metricas/:id' element={<Metrica />} />
+        <Route path='/LMetricas/:id' element={<NewLmetricas />} />
+        <Route path='/LMetricas' element={<Listametricas />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
         <Route path='/Usuarios' element={<UserPage />} />
         <Route path='/usuario-new/:id' element={<NewUsuario />} />

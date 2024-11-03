@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
 import { useMetricas } from "../home-page/services/metricas"
+import { useListametricas } from "../home-page/services/listametricas"
 import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
 import { db } from '../home-page/services/firebase'
 
@@ -8,8 +9,10 @@ import { db } from '../home-page/services/firebase'
 
 const Metricas = () => {
   const { id } = useParams()
+  const [lmetricas, setLmetricas] = useState([])
   const navigate = useNavigate()
   const [metricas, setMetricas] = useState([])
+ 
   const [form, setForm] = useState({
    
     docId:'',
@@ -20,8 +23,14 @@ const Metricas = () => {
 
   let titulo = "Nuevo Metrica"
   const { fetchMetrica ,createMetricas,editMetricas} = useMetricas()
+  const { fetchListametricas } = useListametricas()
 
-    
+
+ 
+  useEffect(() => {
+    fetchListametricas()
+      .then(data => setLmetricas(data))
+  }, [])
  
 
   if (id  !== 'null') {
@@ -81,15 +90,16 @@ const Metricas = () => {
 
         <h2 className="text-3xl">{titulo}</h2>
 
+        <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
+         
+        {lmetricas.map(lmetricas=> {
+              return (
+        <option value={lmetricas.metrica}> {lmetricas.metrica} </option>
+                
+              )})}
 
-        <input
-          type="text"
-          name="metrica"
-          placeholder="metrica"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.metrica}
-        />
+        </select>
+
         <input
           type="text"
           name="medida"

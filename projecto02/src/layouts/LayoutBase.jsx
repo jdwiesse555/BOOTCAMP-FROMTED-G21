@@ -13,6 +13,7 @@ const LayoutBase = () => {
             <Link to='/Medidas'>Mediciones</Link>
             <Link to='/Tanques'>Tanques</Link>
             <Link to='/Metricas'>Metricas</Link>
+            <Link to='/LMetricas'>Lista Metricas</Link>
             <Link to='/Usuarios'>Usuarios</Link>
           </nav>
         </div>
