@@ -1,12 +1,14 @@
 import { useEffect,useState } from "react"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
 import { useTanques } from "../home-page/services/tanques"
+import { useListametricas } from "../home-page/services/listametricas"
 import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
 import { db } from '../home-page/services/firebase'
 
 const NewTanque = () =>{
   const { id } = useParams()
   const navigate = useNavigate()
+  const [lmetricas, setLmetricas] = useState([])
   const [tanques, setTanques] = useState([])
   const [form, setForm] = useState({
    
@@ -19,8 +21,12 @@ const NewTanque = () =>{
 
   let titulo = "Nuevo Tanque"
   const { fetchTanque ,createTanques,editTanques} = useTanques()
+  const { fetchListametricas } = useListametricas()
 
-    
+  useEffect(() => {
+    fetchListametricas()
+      .then(data => setLmetricas(data))
+  }, [])
  
 
   if (id  !== 'null') {
@@ -88,14 +94,15 @@ const NewTanque = () =>{
           onChange={handleChange}
           value={form.codigo}
         />
-        <input
-          type="text"
-          name="metrica"
-          placeholder="metrica"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.metrica}
-        />
+        <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
+         
+         {lmetricas.map(lmetricas=> {
+               return (
+         <option value={lmetricas.metrica}> {lmetricas.metrica} </option>
+                 
+               )})}
+ 
+         </select>
         <input
           type="text"
           name="capacidad"
