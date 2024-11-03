@@ -34,7 +34,7 @@ else {
   navigate('/home')
   
 }
-}, 200)
+}, 2000)
 })
 },
 allowOutsideClick: false

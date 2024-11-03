@@ -63,12 +63,20 @@ const NewMediciones = () =>{
 
 
 
+  const handleChange1 = (event) => {
+    let cod = document.getElementById("tanque").value
+    let combo = document.getElementById("tanque")
+    let tex = combo.options[combo.selectedIndex].text
+    console.log(cod,tex)
+    setForm({ ...form,metrica:cod,tanque:tex})
+  }
 
 
   const handleChange = (event) => {
     const { name, value } = event.target
 
     setForm({ ...form, [name]: value })
+   
   }
 
   const handleSave = async (event) => {
@@ -100,6 +108,11 @@ const NewMediciones = () =>{
   return (
     <div>
     <main className="w-8/12 mx-auto flex justify-center">
+    <form>
+      
+
+
+    </form>
       <form
         className="flex flex-col gap-4 w-80"
         onSubmit={handleSave}
@@ -108,17 +121,27 @@ const NewMediciones = () =>{
         <Link to='/Medidas' className="underline">
           ⬅ Back 
         </Link>
-
         <h2 className="text-3xl">{titulo}</h2>
         Tanque
-        <select name="tanque" onChange={handleChange} value={form.tanque}> 
+        <select id="tanque" name="tanque" onChange={handleChange1} > 
+          <option>   </option>
         {tanques1.map(tanques => {
               return (
-        <option value={tanques.codigo}>{tanques.codigo}</option>
- 
-              )})}handleChange
+        <option value={tanques.metrica}>{tanques.codigo} </option>
+                
+              )})}
              
       </select>
+      <input
+          type="text"
+          name="tanque"
+          placeholder="Tanque"
+          className="border px-3 py-2 bg-slate-100"
+          onChange={handleChange}
+          value={form.tanque}
+          disabled="false"
+        />
+
         <input
           type="text"
           name="metrica"
@@ -126,6 +149,7 @@ const NewMediciones = () =>{
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
           value={form.metrica}
+          disabled="false"
         />
         fecha de la medicion
         <input
@@ -198,7 +222,7 @@ const NewMediciones = () =>{
           className="text-white border px-3 py-2 bg-emerald-400"
         />
 
-        <pre>{JSON.stringify(form)}</pre>
+        <pre>{/*JSON.stringify(form)*/}</pre>
       </form>
     </main>
     </div>

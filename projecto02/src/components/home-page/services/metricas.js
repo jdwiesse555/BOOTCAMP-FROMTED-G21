@@ -1,4 +1,4 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
+import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc,orderBy} from 'firebase/firestore'
 
 import { db } from '../services/firebase'
 
@@ -23,7 +23,7 @@ export const useMetricas = () => {
   const fetchMetricas = async() => {
    // const q = query(reference,where("username","==","jdwiesse"))
    const q = query(reference)
-    const data = await getDocs(q)
+    const data = await getDocs(q,orderBy("medida","desc")) 
 
     const results = []
 
