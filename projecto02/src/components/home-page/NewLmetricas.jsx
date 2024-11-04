@@ -107,7 +107,7 @@ const NewLmetricas = () => {
           className="text-white border px-3 py-2 bg-emerald-400"
         />
 
-        <pre>{JSON.stringify(form)}</pre>
+        <pre>{/*JSON.stringify(form)*/}</pre>
       </form>
     </main>
   )
