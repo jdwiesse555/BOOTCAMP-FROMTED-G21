@@ -11,10 +11,12 @@ import Swal from 'sweetalert2'
 const NewMediciones = () =>{
   const { id } = useParams()
   const navigate = useNavigate()
+
   const [medidas, setMedidas] = useState([])
   const [metricas1, setMetricas1] = useState([])
   const [tanques1, setTanques1] = useState([])
   const [tanques2, setTanques2] = useState([])
+  let filtrotanque =[tanques1]
   //const tanques = [];
   const [form, setForm] = useState({
    
@@ -31,11 +33,11 @@ const NewMediciones = () =>{
 
   let titulo = "Nueva Medicion"
   const { fetchMedida ,createMedidas,editMedidas} = useMedidas()
-  const { fetchTanques} = useTanques()
+  const { fetchTanques,fetchTanque } = useTanques()
   const { fetchvol} = useMetricas()
     
   useEffect(() => {
-    fetchTanques(id)
+    fetchTanques()
       .then(data => {
         setTanques1(data)})
   }, [])
@@ -53,7 +55,7 @@ const NewMediciones = () =>{
 
  
   } else {
-    const { createMedidas } = useMedidas()
+    titulo = "Nueva Medicion"
 
     
   }
@@ -81,11 +83,18 @@ const NewMediciones = () =>{
 
   const handleSave = async (event) => {
     event.preventDefault();
- 
+
+     filtrotanque =tanques1.filter(tanques1 =>
+      (tanques1.codigo.includes(form.tanque)))
+    console.log("capacidad",filtrotanque[0].capacidad)
    const datovolcrudo = await fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
     const datovolagua = await fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
-    if (datovolcrudo == 0 || datovolagua==0) {
-      Swal.fire("error en medida")
+    if (datovolcrudo == 0 || datovolagua==0 || parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(filtrotanque[0].capacidad) ) {
+      if(parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(filtrotanque[0].capacidad)) {
+        Swal.fire({title:"la suma de los volumenes no puede ser mayor a "+  filtrotanque[0].capacidad,
+          text:"volumen crudo: "+datovolcrudo+"  volumen agua :"+datovolagua})
+      } else {
+      Swal.fire("No existe data en las tabla en metricas")}
     } else {
 
     if (id  !== 'null') {
@@ -191,10 +200,11 @@ const NewMediciones = () =>{
           <input
           type="number"
           name="agua_pies"
-          min="2" 
+          
           placeholder="agua_pies"
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
+          value={form.agua_pies}
           
           
         />
