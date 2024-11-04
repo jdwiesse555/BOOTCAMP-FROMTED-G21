@@ -95,7 +95,7 @@ const NewTanque = () =>{
           value={form.codigo}
         />
         <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
-         
+         <option>  </option>
          {lmetricas.map(lmetricas=> {
                return (
          <option value={lmetricas.metrica}> {lmetricas.metrica} </option>

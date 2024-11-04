@@ -91,7 +91,7 @@ const Metricas = () => {
         <h2 className="text-3xl">{titulo}</h2>
 
         <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
-         
+        <option></option> 
         {lmetricas.map(lmetricas=> {
               return (
         <option value={lmetricas.metrica}> {lmetricas.metrica} </option>
