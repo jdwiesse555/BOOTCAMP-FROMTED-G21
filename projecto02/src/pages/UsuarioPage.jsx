@@ -43,7 +43,7 @@ fetchUsuarios()
 }
 return (
   <>
-  <div>hola</div>
+  {<LayoutBase/>}
 
   <section className="border container mx-auto flex flex-col gap-4">
     <div className="w-8/12 mx-auto flex justify-between py-3 px-6">

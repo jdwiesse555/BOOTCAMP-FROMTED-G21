@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useListametricas } from "../components/home-page/services/listametricas"
 import { Link} from 'react-router-dom'
-
+import  LayoutBase  from '../layouts/LayoutBase'
 import Swal from 'sweetalert2'
 
 const Listametricas = () => {
@@ -79,6 +79,7 @@ const Listametricas = () => {
        
         return (
           <>
+              {<LayoutBase/>}
           <div className="flex space-x-4 mb-5 text-sm font-medium">
               <Link              
                                 to={ `/LMetricas/null`}>
