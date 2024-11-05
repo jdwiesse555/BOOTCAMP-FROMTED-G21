@@ -64,8 +64,15 @@ return (
         usuarios && usuarios.map(usuario => {
           return (
             <div key={usuario.docId} className="bg-sky-500 p-4 flex flex-col gap-2">
+              <label className="block text-gray-700 text-sm font-bold mb-2">USERNAME:</label>
               <div className="font-semibold mb-2">{usuario.username}</div>
+              <label className="block text-gray-700 text-sm font-bold mb-2" >
+                FOTO 
+            </label>
               <img src={usuario.foto ?? 'https://placehold.co/200x100'} />
+              <label className="block text-gray-700 text-sm font-bold mb-2" >
+                PASSWORD
+            </label>
               <div className="font-semibold mb-2">{usuario.password}</div>
               <button
                 className="py-2 px-3 bg-red-600 text-white w-[120px] rounded-lg hover:bg-red-700 duration-300"
