@@ -6,46 +6,44 @@ import Swal from 'sweetalert2'
 
 
 const UsuarioPage = () => { 
-    console.log("swer")
-    const { fetchUsuarios, removeUsuarios } = useUsuarios()
+  const { fetchUsuarios, removeUsuarios } = useUsuarios()
     
-    const [usuarios, setUsuarios] = useState([])
+  const [usuarios, setUsuarios] = useState([])
 
 useEffect(() => {
-  fetchUsuarios()
-    .then(data => setUsuarios(data))
+fetchUsuarios()
+  .then(data => setUsuarios(data))
 }, [])
 
 
 const handleRemove = async (id) => {
-  console.log('Deleting ...', id)
-  
-  // enviar una peticionT
-  Swal.fire({
-    title: "Are you sure?",
-    text: "You won't be able to revert this!",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Yes, delete it!"
-  }).then(async (result) => {
-    // Cuando el usuario presiona el botón Yes
-    if (result.isConfirmed) {
+console.log('Deleting ...', id)
 
-  console.log("xx",id)
-  const response = await removeUsuarios(id)
-  
-  fetchUsuarios()
-    .then(data => setUsuarios(data))
-    }
-  })
+// enviar una peticionT
+Swal.fire({
+  title: "Are you sure?",
+  text: "You won't be able to revert this!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Yes, delete it!"
+}).then(async (result) => {
+  // Cuando el usuario presiona el botón Yes
+  if (result.isConfirmed) {
+
+console.log("xx",id)
+const response = await removeUsuarios(id)
+
+fetchUsuarios()
+  .then(data => setUsuarios(data))
+  }
+})
 
 }
-
 return (
   <>
-  {<LayoutBase/>}
+  <div>hola</div>
 
   <section className="border container mx-auto flex flex-col gap-4">
     <div className="w-8/12 mx-auto flex justify-between py-3 px-6">

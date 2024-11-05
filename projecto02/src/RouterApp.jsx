@@ -12,7 +12,8 @@ import NewMediciones from "./pages/newMediciones";
 import UsuarioPage from "./pages/UsuarioPage";
 import NewLmetricas from "./components/home-page/NewLmetricas";
 import Listametricas from "./pages/Listametricas";
-
+import ProtectedRoutesUser from './ProyectedRoutersUser'
+import RouterAppUser from './RouterAppUser'
 
 
 const RouterApp = () => {
@@ -31,8 +32,13 @@ const RouterApp = () => {
         <Route path='/LMetricas' element={<Listametricas />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
         <Route path='/Usuarios' element={<UserPage />} />
-        <Route path='/usuario-new/:id' element={<NewUsuario />} />
-        <Route path='/User' element={<UsuarioPage />} />
+        <Route path='/*' element={
+          <ProtectedRoutesUser>
+            <RouterAppUser/>
+          </ProtectedRoutesUser>
+
+        } />
+       
         
       </Routes>
 

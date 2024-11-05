@@ -1,11 +1,13 @@
-
+import { useEffect, useState } from "react"
 import { Link ,useNavigate } from "react-router-dom"
 import LayoutBase from "../layouts/LayoutBase"
 import Swal from 'sweetalert2'
 import UsuarioPage from "./UsuarioPage"
+import { useUsuarios } from "../components/home-page/services/usuarios"
 
 const UserPage = () => {
-  
+
+
   const navigate = useNavigate()
   let paso = false
   Swal.fire({
@@ -18,10 +20,12 @@ const UserPage = () => {
       return new Promise(function (resolve, reject) {
         setTimeout(function() {
           if (clave === '1234') {
-            console.log("paso12")
+            localStorage.setItem('adm', JSON.stringify("ok")) // accessToken
             navigate('/user')
             paso = true
             resolve()
+                
+    console.log("paso",paso)
             
          
 
@@ -34,7 +38,7 @@ else {
   navigate('/home')
   
 }
-}, 2000)
+}, 200)
 })
 },
 allowOutsideClick: false
@@ -42,6 +46,7 @@ allowOutsideClick: false
   //UsuarioPage()
   if (!paso){
     navigate('/home')
+    console.log(paso)
   }
   
 

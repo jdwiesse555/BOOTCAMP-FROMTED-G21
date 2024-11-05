@@ -57,6 +57,7 @@ Swal.fire({
   }
  useEffect(() => {
   localStorage.removeItem('auth')
+  localStorage.removeItem('adm')
  },[])
 
   const handleChange = (event) => {

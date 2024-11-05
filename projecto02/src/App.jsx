@@ -16,11 +16,14 @@ export default function App() {
       <Route >
 
         <Route path='/' element={<LoginPage  />} />
+
         <Route path='/*' element={
           <ProtectedRoutes>
             <RouterApp/>
           </ProtectedRoutes>
+
         } />
+       
 
         
         </Route>
