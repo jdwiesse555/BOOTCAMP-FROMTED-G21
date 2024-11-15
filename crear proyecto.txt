@@ -7,6 +7,8 @@ crear proyecto
 	escoger react	
 	escoger  javascrip +swc
 
+npm i
+
 picocss
 
 copiar index.dtml
