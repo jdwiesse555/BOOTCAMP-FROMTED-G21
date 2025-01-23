@@ -54,7 +54,7 @@ export const useMedidas = () => {
 
 
 
-  const createMedidas = async (dato,valor1,valor2) => {
+  const createMedidas = async (dato) => {
     //console.log(fetchvol(form.crudo_pies+form.crudo_pul,form.metrica))
     //const { fetchvol} = useMetricas()
     //let vol = fetchvol(form.crudo_pies+form.crudo_pul,form.metrica)
@@ -67,8 +67,8 @@ export const useMedidas = () => {
         crudo_pul:dato.crudo_pul,
         agua_pies:dato.agua_pies.padStart(2,0),
         agua_pul:dato.agua_pul,
-        stock_crudo:valor1,
-        stock_agua:valor2
+        stock_crudo:0,
+        stock_agua:0
     }
     const options = {
       method: 'PUT',
@@ -87,21 +87,43 @@ export const useMedidas = () => {
 
   }
 
-  const removeMedidas = async (id) => {
-    const document = doc(db, 'mediciones', id )
-
-    const response = await deleteDoc(document)
-
-    return response
+  const removeMedidas = async (id1) => {
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id1})
+    }
+  
+    const response = await fetch(`${BASE_URL}/borrarmedicion`, options)
+    
+    return await response.json()
+  
+  
   }
 
-  const editMedidas = async (id,data,valor1,valor2) => {
-    const document = doc(db, 'mediciones', id )
-    data.stock_crudo=valor1
-    data.stock_agua=valor2
-    const response = await updateDoc(document,
-      data
-    )
+  const editMedidas = async (id,form) => {
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id,data:form})
+    }
+    
+    const response = await fetch(`${BASE_URL}/actlmedicion`, options)
+    
+    return await response.json()
+    
+
+  
+
+
   }
   return {
     fetchMedidas,

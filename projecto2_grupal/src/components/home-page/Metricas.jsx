@@ -89,9 +89,14 @@ const Metricas = () => {
         </Link>
 
         <h2 className="text-3xl">{titulo}</h2>
+        Metrica
+        {(() =>  {if (id  !== 'null')  {return ( 
+          <select disabled id="metrica" name="metrica" onChange={handleChange} value={form.metrica} >
 
-        <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
+        
         <option></option> 
+        
+
         {lmetricas.map(lmetricas=> {
               return (
         <option value={lmetricas.id}> {lmetricas.metrica} </option>
@@ -99,6 +104,23 @@ const Metricas = () => {
               )})}
 
         </select>
+        )}
+        else {return ( 
+          <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} >
+
+        
+        <option></option> 
+        
+
+        {lmetricas.map(lmetricas=> {
+              return (
+        <option value={lmetricas.id}> {lmetricas.metrica} </option>
+                
+              )})}
+
+        </select>
+
+        )}})()}
         Medida 
         <input
           type="text"

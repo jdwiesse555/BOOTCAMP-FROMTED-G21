@@ -4,6 +4,7 @@ import { useMedidas } from "../components/home-page/services/medidas"
 import { useMetricas } from "../components/home-page/services/metricas"
 import { useTanques } from "../components/home-page/services/tanques"
 import Swal from 'sweetalert2'
+import dateFormat, { masks } from "dateformat";
 
 
 const NewMediciones = () =>{
@@ -63,22 +64,10 @@ const NewMediciones = () =>{
 
 
 
+
+
+
   const handleChange = (event) => {
-    let cod = document.getElementById("tanque").value
-  //  let combo = document.getElementById("tanque")
-  //  let tex = combo.options[combo.selectedIndex].text
-    console.log(cod)
-    fetchTanque(cod)
-    .then(data => {
-      setTanques2(data.content)})
-      //setForm.metrica=tanques2.metrica
-      //setForm.tanque=tanques2.id
-    setForm({metrica:tanques2.metrica,tanque:tanques2.id})
-    console.log("www",tanques2.metrica)
-  }
-
-
-  const handleChange1 = (event) => {
     const { name, value } = event.target
 
     setForm({ ...form, [name]: value })
@@ -87,46 +76,31 @@ const NewMediciones = () =>{
 
   const handleSave = async (event) => {
     event.preventDefault();
-   // console.log("paso",filtrotanque)
-  //   filtrotanque =tanques1.filter(tanques1 =>
-  //    (tanques1.id.includes(form.tanque)))
-    console.log("capacidad",tanques2.capacidad)
-    
-    fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
-        .then(data => {
-          setMetricas1(data.content)})
-          let datovolcrudo= data.vol_bbls
-    fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
-          .then(data => {
-            setMetricas1(data.content)})
-            let datovolagua= data.vol_bbls
 
-   //const datovolcrudo = await fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
-   // const datovolagua = await fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
-    if (datovolcrudo == 0 || datovolagua==0 || parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(tanques2.capacidad) ) {
-      if(parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(tanques2.capacidad)) {
-        Swal.fire({title:"la suma de los volumenes no puede ser mayor a "+  tanques2.capacidad,
-          text:"volumen crudo: "+datovolcrudo+"  volumen agua :"+datovolagua})
-      } else {
-      Swal.fire("No existe data en las tabla en metricas")}
-    } else {
+    
+  
 
     if (id  !== 'null') {
-      const response = await editMedidas(id,form,datovolcrudo,datovolagua)
+      const response = await editMedidas(id,form)
+      if (response.message.includes("Error")) {alert(response.message)}
+      else {alert(response.message)
+        navigate('/Medidas')}
 
     } else {
 
       //console.log("datovol",dato,form.crudo_pies+form.crudo_pul,form.metrica)
-    const response = await createMedidas(form,datovolcrudo,datovolagua)
-    console.log("sds")
+    const response = await createMedidas(form)
+    if (response.message.includes("Error")) {alert(response.message)}
+    else {alert(response.message)
+      navigate('/Medidas')}
     }
-
-    navigate('/Medidas')
+    
+   
     
 
-    console.log('saving...')
+    
   
-  }}
+  }
 
   return (
     <div>
@@ -146,44 +120,47 @@ const NewMediciones = () =>{
         </Link>
         <h2 className="text-3xl">{titulo}</h2>
         Tanque
-        <select id="tanque" name="tanque" onChange={handleChange} > 
+        {(() =>  {if (id  !== 'null')  {return ( 
+        <select disabled id="tanque" name="tanque" value={form.tanque} onChange={handleChange} > 
           <option>   </option>
         {tanques1.map(tanques => {
               return (
         <option value={tanques.id}>{tanques.codigo} </option>
                 
               )})}
-             
-      </select>
-      <input
-          type="text"
-          name="tanque"
-          placeholder="Tanque"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.tanque}
-          disabled="false"
-        />
+              
+        </select>
+        )}
+           else {return ( 
+            <select id="tanque" name="tanque" value={form.tanque} onChange={handleChange} > 
+            <option>   </option>
+          {tanques1.map(tanques => {
+                return (
+          <option value={tanques.id}>{tanques.codigo} </option>
+                  
+                )})}
+                
+          </select>
 
-        <input
-          type="text"
-          name="metrica"
-          placeholder="Metrica"
-          className="border px-3 py-2 bg-slate-100"
-          onChange={handleChange}
-          value={form.metrica}
-          disabled="false"
-        />
-        fecha de la medicion
+           )}})()}
+
+        Fecha de la medicion
+        {(() =>  {if (id  !== 'null')  {return ( 
+        <a>{dateFormat(form.fecha, "d/mm/yyyy")}</a> 
+        
+      )}
+      else {return ( 
         <input
           type="date"
           name="fecha"
+          id="fecha"
           placeholder="fecha"
           className="border px-3 py-2 bg-slate-100"
           onChange={handleChange}
           value={form.fecha}
         />
-        crudo en Pies
+      )}})()}
+        Crudo en Pies
                 <input
           type="number"
           name="crudo_pies"
@@ -193,7 +170,7 @@ const NewMediciones = () =>{
           value={form.crudo_pies}
           
         />
-        crudo en Pulgadas
+        Crudo en Pulgadas
         <select name="crudo_pul" onChange={handleChange} value={form.crudo_pul}> 
         <option value='00'>00</option>
 <option value='01'>01</option>

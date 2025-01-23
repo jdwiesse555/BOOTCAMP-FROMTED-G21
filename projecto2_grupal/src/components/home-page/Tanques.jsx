@@ -88,7 +88,8 @@ const NewTanque = () =>{
 
         <h2 className="text-3xl">{titulo}</h2>
         Codigo
-        <input
+        {(() =>  {if (id  !== 'null')  {return ( 
+        <input disabled
           type="text"
           name="codigo"
           placeholder="Codigo"
@@ -96,16 +97,44 @@ const NewTanque = () =>{
           onChange={handleChange}
           value={form.codigo}
         />
+      )}
+      else {return ( 
+        <input 
+        type="text"
+        name="codigo"
+        placeholder="Codigo"
+        className="border px-3 py-2 bg-slate-100"
+        onChange={handleChange}
+        value={form.codigo}
+      />
+    )}})()}
         Tabla de Metrica
-        <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
+        {(() =>  {if (id  !== 'null')  {return ( 
+        <select disabled id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
          <option>  </option>
          {lmetricas.map(lmetricas=> {
                return (
          <option value={lmetricas.id}> {lmetricas.metrica} </option>
-                 
-               )})}
- 
-         </select>
+        )})}
+         </select>    
+               
+        
+        
+          )}
+          else {return ( 
+
+          
+          <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
+           <option>  </option>
+           {lmetricas.map(lmetricas=> {
+                 return (
+           <option value={lmetricas.id}> {lmetricas.metrica} </option>
+          )})}
+           </select>      
+            )}})()}      
+   
+           
+
          Capacidad
         <input
           type="text"

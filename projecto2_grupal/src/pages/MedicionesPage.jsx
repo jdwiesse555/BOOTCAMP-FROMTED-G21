@@ -3,7 +3,10 @@ import { useMedidas } from "../components/home-page/services/medidas"
 import { Link } from "react-router-dom"
 import  LayoutBase  from '../layouts/LayoutBase'
 import Swal from 'sweetalert2'
+import dateFormat, { masks } from "dateformat";
+
 const MedicionesPage = () => {
+
   const { fetchMedidas, removeMedidas } = useMedidas()
   const [texto, setTexto] = useState('')
   const [medidas, setMedidas] = useState([])
@@ -53,7 +56,7 @@ const handleRemove = async (id) => {
  
     console.log("xx",id)
     const response = await removeMedidas(id)
-    
+    alert(response.message)
     fetchMedidas()
       .then(data => setMedidas(data.content))
       }
@@ -71,7 +74,7 @@ filtro(texto)
           </Link>
           <input
       className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
-      placeholder="fecha"   onChange={handleChange_V}
+      placeholder="fecha:AAAA-MM-DD"   onChange={handleChange_V}
     />
           <Link              
                           to={ `/home`}>
@@ -84,7 +87,7 @@ filtro(texto)
             <table >
               <thead>
                 <tr> 
-                <th className="w-40">id</th>
+                <th className="w-40">Id</th>
                 <th className="w-60">Fecha</th>
                   <th className="w-60">Tanque</th>
                   <th className="w-60">Metrica</th>
@@ -101,7 +104,7 @@ filtro(texto)
       
                 <tr>
                   <td>{medidas.id}</td>
-                  <td>{medidas.fecha} 
+                  <td>{dateFormat(medidas.fecha, "yyyy-mm-dd")} 
                   </td>                  
                   <td>{medidas.ltk_med.codigo} 
                   </td>

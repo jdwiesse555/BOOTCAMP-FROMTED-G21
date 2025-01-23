@@ -84,8 +84,9 @@ const NewLmetricas = () => {
         <h2 className="text-3xl">{titulo}</h2>
 
 
-
-        <input
+      Metrica
+      {(() =>  {if (id  !== 'null')  {return ( 
+        <input disabled
           type="text"
           name="metrica"
           placeholder="Metrica"
@@ -93,6 +94,19 @@ const NewLmetricas = () => {
           onChange={handleChange}
           value={form.metrica}
         />
+      )}
+      else {return ( 
+        <input
+        type="text"
+        name="metrica"
+        placeholder="Metrica"
+        className="border px-3 py-2 bg-slate-100"
+        onChange={handleChange}
+        value={form.metrica}
+      />
+
+        )}})()}
+        Comentario
         <input
           type="text"
           name="comentario"
