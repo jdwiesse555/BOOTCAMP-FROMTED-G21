@@ -1,97 +1,104 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
+const BASE_URL = 'http://127.0.0.1:3000'
 
-import { db } from '../services/firebase'
 
-export const useUsuarios = () => {
-  const reference = collection(db, 'usuarios')
 
+export const fetchUsuarios = async () => {
+  console.log(`bearer ${localStorage.getItem("JWT_TOKEN")}`)
+  const options = {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json',
+      'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+    },
+
+  }
+
+  const response = await fetch(`${BASE_URL}/listausuarios`,options)
+
+  return await response.json()
+}
+
+export const fetchUsuario = async (id1) => {
   
-  const fetchUsuario = async(id) => {
+  const options = {
+    method: 'POST',
    
-      const document = doc(db, 'usuarios', id )
-  
-  
-      const docSnap = await getDoc(document);
-  
-  
-      console.log(docSnap.data())
+    headers: {
+            'Content-type': 'application/json',
+            'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+    },
+    body: JSON.stringify({id:id1}),
     
-     return docSnap.data()
-   }
 
-   const fetchLogin = async(usern, passw) => {
-    const q = query(reference,where("username","==",usern),where("password","==",passw))
-    //const q = query(reference)
-    console.log("paso")
-     const data = await getDocs(q)
- 
-     const results = []
- 
-     data.forEach(doc => {
-       //console.log(doc.id, doc.data())
-       results.push({
-         docId: doc.id,
-         ...doc.data() // Representa el documento actual
-       })
-     })
-     console.log(results)
-     return (results.length>0)
-   }
-
-  const fetchUsuarios = async() => {
-   // const q = query(reference,where("username","==","jdwiesse"))
-   const q = query(reference)
-    const data = await getDocs(q)
-
-    const results = []
-
-    data.forEach(doc => {
-      //console.log(doc.id, doc.data())
-      results.push({
-        docId: doc.id,
-        ...doc.data() // Representa el documento actual
-      })
-    })
-
-    return results
   }
 
-  const createUsuarios = async (dato) => {
-    const newUsuario = {
-      username: dato.username,
-      password: dato.password,
-      foto:dato.foto
-    }
+  const response = await fetch(`${BASE_URL}/usuarioid`, options)
+  
+  console.log(response.content)
 
-    const response = await addDoc(reference, newUsuario)
+  return await response.json()
+}
 
-    return {
-      id: response.id,
-      newUsuario
-    }
+
+ export const fetchLogin = async (username,password) => {
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: JSON.stringify({email:username,password:password})
   }
 
-  const removeUsuarios = async (id) => {
-    const document = doc(db, 'usuarios', id )
+  const response = await fetch(`${BASE_URL}/login`, options)
+  
+  return await response.json()
+}
 
-    const response = await deleteDoc(document)
+export const editUsuarios = async (id,form) => {
+  const options = {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+       'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
 
-    return response
+    },
+    body: JSON.stringify({id:id,user:form})
   }
+  console.log(options)
+  const response = await fetch(`${BASE_URL}/actualizar-usuario`, options)
+  
+  return await response.json()
+}
 
-  const editUsuarios = async (id,data) => {
-    const document = doc(db, 'usuarios', id )
-    
-    const response = await updateDoc(document,
-      data
-    )
+
+export const createUsuarios = async (form) => {
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+       'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+
+    },
+    body: JSON.stringify({user:form})
   }
-  return {
-    fetchUsuarios,
-    createUsuarios,
-    removeUsuarios,
-    fetchUsuario,
-    fetchLogin,
-    editUsuarios
+  console.log(options)
+  const response = await fetch(`${BASE_URL}/registro`, options)
+  
+  return await response.json()
+}
+
+export const removeUsuarios = async (id1) => {
+  const options = {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+       'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+
+    },
+    body: JSON.stringify({id:id1})
   }
+  console.log(options)
+  const response = await fetch(`${BASE_URL}/delusuario`, options)
+  
+  return await response.json()
 }

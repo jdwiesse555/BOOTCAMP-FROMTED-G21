@@ -1,61 +1,58 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
+import { useParams } from "react-router-dom"
 
-import { db } from '../services/firebase'
+const BASE_URL = 'http://127.0.0.1:3000'
+
 import { useMetricas } from "./metricas"
 
 export const useMedidas = () => {
-  const reference = collection(db, 'mediciones')
+
 
   
-  const fetchMedida = async(id) => {
-   
-      const document = doc(db, 'mediciones', id )
+  const fetchMedida = async(id1) => {
+    const options = {
+      method: 'POST',
+     
+      headers: {
+              'Content-type': 'application/json',
+              'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+      },
+      body: JSON.stringify({id:id1}),
+      
   
+    }
   
-      const docSnap = await getDoc(document);
+    const response = await fetch(`${BASE_URL}/medicion`, options)
   
+    console.log(response.content)
   
-      console.log(docSnap.data())
-    
-     return docSnap.data()
+    return await response.json()
    }
 
-   const fetchLogin = async(usern, passw) => {
-    const q = query(reference,where("username","==",usern),where("password","==",passw))
-    //const q = query(reference)
-    console.log("paso")
-     const data = await getDocs(q)
- 
-     const results = []
- 
-     data.forEach(doc => {
-       //console.log(doc.id, doc.data())
-       results.push({
-         docId: doc.id,
-         ...doc.data() // Representa el documento actual
-       })
-     })
-     console.log(results)
-     return (results.length>0)
-   }
+
 
   const fetchMedidas = async() => {
    // const q = query(reference,where("username","==","jdwiesse"))
-   const q = query(reference)
-    const data = await getDocs(q)
+     
+   const options = {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json',
+    },
+   
 
-    const results = []
-
-    data.forEach(doc => {
-      console.log(doc.id, doc.data())
-      results.push({
-        docId: doc.id,
-        ...doc.data() // Representa el documento actual
-      })
-    })
-
-    return results
   }
+  console.log(options)
+  const response = await fetch(`${BASE_URL}/listasmediciones`,options)
+
+  return await response.json()
+}
+
+
+
+
+
+
+
 
   const createMedidas = async (dato,valor1,valor2) => {
     //console.log(fetchvol(form.crudo_pies+form.crudo_pul,form.metrica))
@@ -73,13 +70,21 @@ export const useMedidas = () => {
         stock_crudo:valor1,
         stock_agua:valor2
     }
-
-    const response = await addDoc(reference, newMedidas)
-
-    return {
-      id: response.id,
-      newMedidas
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({data:newMedidas})
     }
+    
+    const response = await fetch(`${BASE_URL}/registramedicion`, options)
+    
+    return await response.json()
+    
+
   }
 
   const removeMedidas = async (id) => {
@@ -103,7 +108,7 @@ export const useMedidas = () => {
     createMedidas,
     removeMedidas,
     fetchMedida,
-    fetchLogin,
+   
     editMedidas
   }
 }

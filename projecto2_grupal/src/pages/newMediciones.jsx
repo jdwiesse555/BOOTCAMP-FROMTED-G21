@@ -3,8 +3,6 @@ import { Link, useParams ,useNavigate} from 'react-router-dom'
 import { useMedidas } from "../components/home-page/services/medidas"
 import { useMetricas } from "../components/home-page/services/metricas"
 import { useTanques } from "../components/home-page/services/tanques"
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where } from 'firebase/firestore'
-import { db } from '../components/home-page/services/firebase'
 import Swal from 'sweetalert2'
 
 
@@ -16,7 +14,7 @@ const NewMediciones = () =>{
   const [metricas1, setMetricas1] = useState([])
   const [tanques1, setTanques1] = useState([])
   const [tanques2, setTanques2] = useState([])
-  let filtrotanque =[tanques1]
+  let filtrotanque =tanques1
   //const tanques = [];
   const [form, setForm] = useState({
    
@@ -39,7 +37,7 @@ const NewMediciones = () =>{
   useEffect(() => {
     fetchTanques()
       .then(data => {
-        setTanques1(data)})
+        setTanques1(data.content)})
   }, [])
 
   if (id  !== 'null') {
@@ -49,7 +47,7 @@ const NewMediciones = () =>{
     useEffect(() => {
       fetchMedida(id)
         .then(data => {
-          setForm(data)})
+          setForm(data.content)})
     }, [])
     
 
@@ -65,16 +63,22 @@ const NewMediciones = () =>{
 
 
 
-  const handleChange1 = (event) => {
+  const handleChange = (event) => {
     let cod = document.getElementById("tanque").value
-    let combo = document.getElementById("tanque")
-    let tex = combo.options[combo.selectedIndex].text
-    console.log(cod,tex)
-    setForm({ ...form,metrica:cod,tanque:tex})
+  //  let combo = document.getElementById("tanque")
+  //  let tex = combo.options[combo.selectedIndex].text
+    console.log(cod)
+    fetchTanque(cod)
+    .then(data => {
+      setTanques2(data.content)})
+      //setForm.metrica=tanques2.metrica
+      //setForm.tanque=tanques2.id
+    setForm({metrica:tanques2.metrica,tanque:tanques2.id})
+    console.log("www",tanques2.metrica)
   }
 
 
-  const handleChange = (event) => {
+  const handleChange1 = (event) => {
     const { name, value } = event.target
 
     setForm({ ...form, [name]: value })
@@ -83,15 +87,25 @@ const NewMediciones = () =>{
 
   const handleSave = async (event) => {
     event.preventDefault();
+   // console.log("paso",filtrotanque)
+  //   filtrotanque =tanques1.filter(tanques1 =>
+  //    (tanques1.id.includes(form.tanque)))
+    console.log("capacidad",tanques2.capacidad)
+    
+    fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
+        .then(data => {
+          setMetricas1(data.content)})
+          let datovolcrudo= data.vol_bbls
+    fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
+          .then(data => {
+            setMetricas1(data.content)})
+            let datovolagua= data.vol_bbls
 
-     filtrotanque =tanques1.filter(tanques1 =>
-      (tanques1.codigo.includes(form.tanque)))
-    console.log("capacidad",filtrotanque[0].capacidad)
-   const datovolcrudo = await fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
-    const datovolagua = await fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
-    if (datovolcrudo == 0 || datovolagua==0 || parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(filtrotanque[0].capacidad) ) {
-      if(parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(filtrotanque[0].capacidad)) {
-        Swal.fire({title:"la suma de los volumenes no puede ser mayor a "+  filtrotanque[0].capacidad,
+   //const datovolcrudo = await fetchvol(form.crudo_pies.padStart(2,0)+form.crudo_pul,form.metrica)
+   // const datovolagua = await fetchvol(form.agua_pies.padStart(2,0)+form.agua_pul,form.metrica)
+    if (datovolcrudo == 0 || datovolagua==0 || parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(tanques2.capacidad) ) {
+      if(parseFloat(datovolcrudo)+parseFloat(datovolagua)>parseFloat(tanques2.capacidad)) {
+        Swal.fire({title:"la suma de los volumenes no puede ser mayor a "+  tanques2.capacidad,
           text:"volumen crudo: "+datovolcrudo+"  volumen agua :"+datovolagua})
       } else {
       Swal.fire("No existe data en las tabla en metricas")}
@@ -132,11 +146,11 @@ const NewMediciones = () =>{
         </Link>
         <h2 className="text-3xl">{titulo}</h2>
         Tanque
-        <select id="tanque" name="tanque" onChange={handleChange1} > 
+        <select id="tanque" name="tanque" onChange={handleChange} > 
           <option>   </option>
         {tanques1.map(tanques => {
               return (
-        <option value={tanques.metrica}>{tanques.codigo} </option>
+        <option value={tanques.id}>{tanques.codigo} </option>
                 
               )})}
              

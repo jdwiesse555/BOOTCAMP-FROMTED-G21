@@ -1,20 +1,29 @@
 import { useEffect, useState } from "react"
-import { useUsuarios } from "../components/home-page/services/usuarios"
+import { fetchLogin } from "../components/home-page/services/usuarios"
 import { useNavigate } from "react-router-dom"
 import Swal from 'sweetalert2'
 
 
-
 const login = async(username, password) => {
-
-  const { fetchLogin } = useUsuarios()
-  let dato = true
-  dato = fetchLogin(username,password)
-  return dato
+ 
+      const datos = await fetchLogin(username, password);
+      console.log("112",datos.message)
+      const cant = datos.message
+     
+      if (cant ==="Bienvenido") {
+        localStorage.setItem('JWT_TOKEN', JSON.stringify(datos.content))
+        return true;
+      }
+      else    return false;
+      
+ 
 }
 
+
 const LoginPage = () => {
+
   const navigate = useNavigate()
+
 
   const [form, setForm] = useState({
     username: '',
@@ -53,6 +62,7 @@ Swal.fire({
   footer: ''
 });
       // Mostrar alerta cuando el suaurio no se logueo correctamente
+      console.log("21") 
     }
   }
  useEffect(() => {
@@ -85,6 +95,7 @@ Swal.fire({
               type="text"
               placeholder="jhondoe"
               name="username"
+              required="true"
               onChange={handleChange}
             />
           </label>
@@ -95,6 +106,7 @@ Swal.fire({
               type="password"
               placeholder="************"
               name="password"
+              required="true"
               onChange={handleChange}
             />
           </label>

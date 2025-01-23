@@ -20,7 +20,7 @@ const Listametricas = () => {
       
         useEffect(() => {
           fetchListametricas()
-            .then(data => setMetricas(data))
+            .then(data => setMetricas(data.content))
             
         }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
        
@@ -51,7 +51,7 @@ const Listametricas = () => {
               const response = await removeListametricas(id)
               
               fetchListametricas()
-                .then(data => setMetricas(data))
+                .then(data => setMetricas(data.content))
             }
            
           })
@@ -116,7 +116,7 @@ const Listametricas = () => {
                     return (
             
                       <tr>
-                        <td>{metricas.docId}</td>
+                        <td>{metricas.id}</td>
       
                         <td>{metricas.metrica} 
                         </td>
@@ -128,10 +128,10 @@ const Listametricas = () => {
                               <div class="flex gap-0.5">
                               <Link 
                                 key={metricas.docId}
-                                to={ `/LMetricas/${metricas.docId}`}>
+                                to={ `/LMetricas/${metricas.id}`}>
                               <button>✏</button>
                               </Link>
-                                <button onClick={() => handleRemove(metricas.docId)}>❌</button>
+                                <button onClick={() => handleRemove(metricas.id)}>❌</button>
                               </div>        
                         </td>
                       </tr>

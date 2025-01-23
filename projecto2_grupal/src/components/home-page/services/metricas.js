@@ -1,104 +1,130 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc,orderBy} from 'firebase/firestore'
+import { useParams } from "react-router-dom"
 
-import { db } from '../services/firebase'
+const BASE_URL = 'http://127.0.0.1:3000'
+
+
 
 export const useMetricas = () => {
-  const reference = collection(db, 'metricas')
 
+
+const fetchMetrica = async (id1) => {
   
-  const fetchMetrica = async(id) => {
+  const options = {
+    method: 'POST',
    
-      const document = doc(db, 'metricas', id )
-  
-  
-      const docSnap = await getDoc(document);
-  
-  
-      console.log(docSnap.data())
+    headers: {
+            'Content-type': 'application/json',
+            'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+    },
+    body: JSON.stringify({id:id1}),
     
-     return docSnap.data()
-   }
 
-
-  const fetchMetricas = async() => {
-   // const q = query(reference,where("username","==","jdwiesse"))
-   const q = query(reference)
-    const data = await getDocs(q,orderBy("medida","desc")) 
-
-    const results = []
-
-    data.forEach(doc => {
-      //console.log(doc.id, doc.data())
-      results.push({
-        docId: doc.id,
-        ...doc.data() // Representa el documento actual
-      })
-    })
-
-    return results
   }
 
-  const fetchvol = async(valor,valor1) => {
-     const q = query(reference,where("medida","==",valor),where("metrica","==",valor1))
-    //const q = query(reference)
-     const data = await getDocs(q)
- 
-     const results = []
- 
-     data.forEach(doc => {
-       //console.log(doc.id, doc.data())
-       results.push({
-        ...doc.data() // Representa el documento actual
+  const response = await fetch(`${BASE_URL}/devmetrica`, options)
 
-         // Representa el documento actual
-       })
-     })
-     //.log("awe",results[0].vol_bbls)
-    console.log(results.length)
-    if(results.length>0){
-     return results[0].vol_bbls
-    }
-    else {
-      return 0
-    }
-   }
+  console.log(response.content)
 
-  const createMetricas = async (dato) => {
-    const newMetrica = {
-      metrica: dato.metrica,
-      medida:dato.medida,
-      vol_bbls:dato.vol_bbls
-    }
+  return await response.json()
+}
 
-    const response = await addDoc(reference, newMetrica)
-
-    return {
-      id: response.id,
-      newMetrica
-    }
-  }
-
-  const removeMetricas = async (id) => {
-    const document = doc(db, 'metricas', id )
-
-    const response = await deleteDoc(document)
-
-    return response
-  }
-
-  const editMetricas = async (id,data) => {
-    const document = doc(db, 'metricas', id )
+  const fetchMetricas= async (page,perPage) => {
     
-    const response = await updateDoc(document,
-      data
-    )
+    const options = {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json',
+      },
+     
+  
+    }
+    console.log(options)
+    const response = await fetch(`${BASE_URL}/metricas?page=${page}&perPage=${perPage}`,options)
+  
+    return await response.json()
   }
+
+
+
+  const createMetricas = async (form) => {
+    
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({data:form})
+    }
+
+    const response = await fetch(`${BASE_URL}/metrica`, options)
+    
+    return await response.json()
+  }
+
+
+
+   const removeMetricas = async (id1) => {
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id1})
+    }
+  
+    const response = await fetch(`${BASE_URL}/delmetrica`, options)
+    
+    return await response.json()
+  }
+  
+
+ const editMetricas = async (id,form) => {
+  const options = {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+       'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+
+    },
+    body: JSON.stringify({id:id,data:form})
+  }
+  
+  const response = await fetch(`${BASE_URL}/actmetrica`, options)
+  
+  return await response.json()
+}
+
+const fetchvol = async(valor,valor1) => {
+
+  const options = {
+    method: 'POST',
+   
+    headers: {
+            'Content-type': 'application/json',
+            'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+    },
+    body: JSON.stringify({medida:valor,metrica:valor1}),
+    
+
+  }
+
+  const response = await fetch(`${BASE_URL}/devmetrica`, options)
+
+  console.log(response.content)
+
+  return await response.json()
+
+ 
+}
   return {
     fetchMetricas,
     createMetricas,
     removeMetricas,
     fetchMetrica,
-    editMetricas,
-    fetchvol
+    editMetricas
   }
 }

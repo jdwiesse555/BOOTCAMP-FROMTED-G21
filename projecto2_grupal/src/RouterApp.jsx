@@ -31,7 +31,9 @@ const RouterApp = () => {
         <Route path='/LMetricas/:id' element={<NewLmetricas />} />
         <Route path='/LMetricas' element={<Listametricas />} />
         <Route path='/Tanques/:id' element={<Tanque />} />
-        <Route path='/Usuarios' element={<UserPage />} />
+        <Route path='/Usuarios' element={<UsuarioPage />} />
+        <Route path='/usuario-new/:id' element={<NewUsuario />} />
+        <Route path='/User' element={<UsuarioPage />} />
         <Route path='/*' element={
           <ProtectedRoutesUser>
             <RouterAppUser/>

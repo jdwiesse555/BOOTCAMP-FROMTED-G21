@@ -10,9 +10,10 @@ const NewTanque = () =>{
   const navigate = useNavigate()
   const [lmetricas, setLmetricas] = useState([])
   const [tanques, setTanques] = useState([])
+  const [mensaje, setMensaje] = useState([])
   const [form, setForm] = useState({
    
-    docId:'',
+  
     codigo: '',
       metrica: '',
       capacidad:'',
@@ -25,7 +26,7 @@ const NewTanque = () =>{
 
   useEffect(() => {
     fetchListametricas()
-      .then(data => setLmetricas(data))
+      .then(data => setLmetricas(data.content))
   }, [])
  
 
@@ -36,7 +37,7 @@ const NewTanque = () =>{
     useEffect(() => {
       fetchTanque(id)
         .then(data => {
-          setForm(data)})
+          setForm(data.content)})
     }, [])
     
    
@@ -64,6 +65,7 @@ const NewTanque = () =>{
       const response = await editTanques(id,form)
 
     } else {
+      console.log(form)
     const response = await createTanques(form)
     }
 
@@ -85,7 +87,7 @@ const NewTanque = () =>{
         </Link>
 
         <h2 className="text-3xl">{titulo}</h2>
-
+        Codigo
         <input
           type="text"
           name="codigo"
@@ -94,15 +96,17 @@ const NewTanque = () =>{
           onChange={handleChange}
           value={form.codigo}
         />
+        Tabla de Metrica
         <select id="metrica" name="metrica" onChange={handleChange} value={form.metrica} > 
          <option>  </option>
          {lmetricas.map(lmetricas=> {
                return (
-         <option value={lmetricas.metrica}> {lmetricas.metrica} </option>
+         <option value={lmetricas.id}> {lmetricas.metrica} </option>
                  
                )})}
  
          </select>
+         Capacidad
         <input
           type="text"
           name="capacidad"
@@ -111,6 +115,7 @@ const NewTanque = () =>{
           onChange={handleChange}
           value={form.capacidad}
         />
+        Altura Pies
         <input
           type="text"
           name="HEIGHT_PIES"

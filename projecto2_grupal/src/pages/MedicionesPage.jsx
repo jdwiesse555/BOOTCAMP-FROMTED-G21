@@ -7,10 +7,10 @@ const MedicionesPage = () => {
   const { fetchMedidas, removeMedidas } = useMedidas()
   const [texto, setTexto] = useState('')
   const [medidas, setMedidas] = useState([])
-  let filtramedidas =[medidas]
+  let filtramedidas =medidas
   useEffect(() => {
     fetchMedidas()
-      .then(data => setMedidas(data))
+      .then(data => setMedidas(data.content))
   }, [])
 
   console.log(medidas)
@@ -18,7 +18,7 @@ const MedicionesPage = () => {
   const handleChange_V = ({target}) => {
     setTexto(target.value)
     
-//filtro(texto)
+filtro(texto)
 
   }
 
@@ -27,13 +27,11 @@ const MedicionesPage = () => {
   const  filtro  = (valor) => {
     
     if(valor=="") {   
-      filtramedidas =medidas.filter(medidas =>
-        medidas.tanque.includes(medidas.tanque))}
-
-    
+      filtramedidas =medidas
+    }
       else {
         filtramedidas =medidas.filter(medidas =>
-    medidas.tanque.toLowerCase().includes(valor.toLowerCase()))}
+    (medidas.fecha).includes(valor))}
     console.log("valor",valor,filtramedidas)
     
     }
@@ -57,7 +55,7 @@ const handleRemove = async (id) => {
     const response = await removeMedidas(id)
     
     fetchMedidas()
-      .then(data => setMedidas(data))
+      .then(data => setMedidas(data.content))
       }
     })
   }
@@ -73,7 +71,7 @@ filtro(texto)
           </Link>
           <input
       className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
-      placeholder="Tanque"   onChange={handleChange_V}
+      placeholder="fecha"   onChange={handleChange_V}
     />
           <Link              
                           to={ `/home`}>
@@ -90,8 +88,8 @@ filtro(texto)
                 <th className="w-60">Fecha</th>
                   <th className="w-60">Tanque</th>
                   <th className="w-60">Metrica</th>
-                  <th className="w-40">stock crudo</th>
-                  <th className="w-40">stock agua</th>
+                  <th className="w-40">Stock crudo</th>
+                  <th className="w-40">Stock agua</th>
                   <th className="w-90">Acciones</th>
                 </tr>
               </thead>
@@ -102,12 +100,12 @@ filtro(texto)
               return (
       
                 <tr>
-                  <td>{medidas.docId}</td>
+                  <td>{medidas.id}</td>
                   <td>{medidas.fecha} 
                   </td>                  
-                  <td>{medidas.tanque} 
+                  <td>{medidas.ltk_med.codigo} 
                   </td>
-                  <td>{medidas.metrica} 
+                  <td>{medidas.lmetrica_med.metrica} 
                   </td>
                   <td>{medidas.stock_crudo} 
                   </td>
@@ -116,10 +114,10 @@ filtro(texto)
                         <div class="flex gap-0.5">
                         <Link 
                           key={medidas.docId}
-                          to={ `/Medidas/${medidas.docId}`}>
+                          to={ `/Medidas/${medidas.id}`}>
                         <button>✏</button>
                         </Link>
-                          <button onClick={() => handleRemove(medidas.docId)}>❌</button>
+                          <button onClick={() => handleRemove(medidas.id)}>❌</button>
                         </div>        
                   </td>
                 </tr>

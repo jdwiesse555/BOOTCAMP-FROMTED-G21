@@ -1,73 +1,103 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
+import { useParams } from "react-router-dom"
+const BASE_URL = 'http://127.0.0.1:3000'
 
-import { db } from '../services/firebase'
+
 
 export const useListametricas = () => {
-  const reference = collection(db, 'listametricas')
 
   
-  const fetchListametrica = async(id) => {
+  const fetchListametrica = async(id1) => {
    
-      const document = doc(db, 'listametricas', id )
+    const options = {
+      method: 'POST',
+     
+      headers: {
+              'Content-type': 'application/json',
+              'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+      },
+      body: JSON.stringify({id:id1}),
+      
   
+    }
   
-      const docSnap = await getDoc(document);
-  
-  
-      console.log(docSnap.data())
+    const response = await fetch(`${BASE_URL}/listasmetrica`, options)
     
-     return docSnap.data()
+    console.log(response.content)
+  
+    return await response.json()
    }
 
-
-  const fetchListametricas = async() => {
-   // const q = query(reference,where("username","==","jdwiesse"))
-   const q = query(reference)
-    const data = await getDocs(q)
-
-    const results = []
-
-    data.forEach(doc => {
-      //console.log(doc.id, doc.data())
-      results.push({
-        docId: doc.id,
-        ...doc.data() // Representa el documento actual
-      })
-    })
-
-    return results
-  }
-
-  const createListametricas = async (dato) => {
-    const newListametrica = {
-      metrica: dato.metrica,
-      comentario: dato.comentario
-      
-    }
-
-    const response = await addDoc(reference, newListametrica)
-
-    return {
-      id: response.id,
-      newListametrica
-    }
-  }
-
-  const removeListametricas = async (id) => {
-    const document = doc(db, 'listametricas', id )
-
-    const response = await deleteDoc(document)
-
-    return response
-  }
-
-  const editListametricas = async (id,data) => {
-    const document = doc(db, 'listametricas', id )
+   const fetchListametricas = async () => {
     
-    const response = await updateDoc(document,
-      data
-    )
+    const options = {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json',
+      },
+  
+    }
+  
+    const response = await fetch(`${BASE_URL}/listasmetricas`,options)
+  
+    return await response.json()
   }
+
+
+
+  const createListametricas = async (form) => {
+    
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({data:form})
+    }
+    
+    const response = await fetch(`${BASE_URL}/registralmetrica`, options)
+    
+    return await response.json()
+    
+  }
+
+  const removeListametricas = async (id1) => {
+    
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id1})
+    }
+  
+    const response = await fetch(`${BASE_URL}/borrarlmetrica`, options)
+    
+    return await response.json()
+  
+  }
+
+  const editListametricas = async (id,form) => {
+
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id,data:form})
+    }
+    
+    const response = await fetch(`${BASE_URL}/actlmetrica`, options)
+    
+    return await response.json()
+    
+  }
+
   return {
     fetchListametricas,
     createListametricas,

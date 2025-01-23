@@ -6,8 +6,9 @@ import Swal from 'sweetalert2'
 const TanquesList = () => {
   const { fetchTanques, removeTanques } = useTanques()
   const [tanques, setTanques] = useState([])
+  const [mensaje, setMensaje] = useState([])
   const [form, setForm] = useState({
-    docId:'',
+    id:'',
     codigo: '',
       metrica: '',
       capacidad:'',
@@ -16,7 +17,10 @@ const TanquesList = () => {
 
     useEffect(() => {
       fetchTanques()
-        .then(data => setTanques(data))
+        .then(data => {setTanques(data.content);
+        setMensaje(data.message);
+
+        })
 
       
   }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
@@ -42,7 +46,8 @@ const TanquesList = () => {
         const response = await removeTanques(id)
         
         fetchTanques()
-          .then(data => setTanques(data))
+          .then(data => {setTanques(data.content);
+            setMensaje(data.message); })
       }
      
     })
@@ -84,9 +89,9 @@ const TanquesList = () => {
               return (
       
                 <tr>
-                  <td>{tanques.docId}</td>
+                  <td>{tanques.id}</td>
                   <td>{tanques.codigo}</td>
-                  <td>{tanques.metrica} 
+                  <td>{tanques.listametrica.metrica} 
                   </td>
                   <td>{tanques.capacidad} 
                   </td>
@@ -96,11 +101,11 @@ const TanquesList = () => {
                     <td>
                         <div class="flex gap-0.5">
                         <Link 
-                          key={tanques.docId}
-                          to={ `/Tanques/${tanques.docId}`}>
+                          key={tanques.id}
+                          to={ `/Tanques/${tanques.id}`}>
                         <button>✏</button>
                         </Link>
-                          <button onClick={() => handleRemove(tanques.docId)}>❌</button>
+                          <button onClick={() => handleRemove(tanques.id)}>❌</button>
                         </div>        
                   </td>
                 </tr>

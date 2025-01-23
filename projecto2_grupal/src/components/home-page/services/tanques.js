@@ -1,74 +1,101 @@
-import { collection, query, getDocs, addDoc, doc, deleteDoc,where,updateDoc, getDoc } from 'firebase/firestore'
+const BASE_URL = 'http://127.0.0.1:3000'
 
-import { db } from '../services/firebase'
+
 
 export const useTanques = () => {
-  const reference = collection(db, 'tanques')
 
+
+const fetchTanque = async (id1) => {
   
-  const fetchTanque = async(id) => {
+  const options = {
+    method: 'POST',
    
-      const document = doc(db, 'tanques', id )
-  
-  
-      const docSnap = await getDoc(document);
-  
-  
-      console.log(docSnap.data())
+    headers: {
+            'Content-type': 'application/json',
+            'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+    },
+    body: JSON.stringify({id:id1}),
     
-     return docSnap.data()
-   }
 
-
-  const fetchTanques = async() => {
-   // const q = query(reference,where("username","==","jdwiesse"))
-   const q = query(reference)
-    const data = await getDocs(q)
-
-    const results = []
-
-    data.forEach(doc => {
-      //console.log(doc.id, doc.data())
-      results.push({
-        docId: doc.id,
-        ...doc.data() // Representa el documento actual
-      })
-    })
-
-    return results
   }
 
-  const createTanques = async (dato) => {
-    const newTanque = {
-      codigo: dato.codigo,
-      metrica: dato.metrica,
-      capacidad:dato.capacidad,
-      HEIGHT_PIES:dato.HEIGHT_PIES
-    }
+  const response = await fetch(`${BASE_URL}/devtanques`, options)
+  
+  console.log(response.content)
 
-    const response = await addDoc(reference, newTanque)
+  return await response.json()
+}
 
-    return {
-      id: response.id,
-      newTanque
-    }
-  }
-
-  const removeTanques = async (id) => {
-    const document = doc(db, 'tanques', id )
-
-    const response = await deleteDoc(document)
-
-    return response
-  }
-
-  const editTanques = async (id,data) => {
-    const document = doc(db, 'tanques', id )
+  const fetchTanques = async () => {
     
-    const response = await updateDoc(document,
-      data
-    )
+    const options = {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json',
+      },
+  
+    }
+  
+    const response = await fetch(`${BASE_URL}/tanques`,options)
+  
+    return await response.json()
   }
+
+
+
+  const createTanques = async (form) => {
+    
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({data:form})
+    }
+    console.log("paso123")
+    console.log(options)
+    const response = await fetch(`${BASE_URL}/tanque`, options)
+    
+    return await response.json()
+  }
+
+
+
+   const removeTanques = async (id1) => {
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+         'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+  
+      },
+      body: JSON.stringify({id:id1})
+    }
+    console.log(options)
+    const response = await fetch(`${BASE_URL}/deltanques`, options)
+    
+    return await response.json()
+  }
+  
+
+ const editTanques = async (id,form) => {
+  const options = {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+       'Authorization': `bearer ${localStorage.getItem("JWT_TOKEN").replace(/['"]+/g, '')}`
+
+    },
+    body: JSON.stringify({id:id,data:form})
+  }
+  console.log(options)
+  const response = await fetch(`${BASE_URL}/acttanques`, options)
+  
+  return await response.json()
+}
+
   return {
     fetchTanques,
     createTanques,

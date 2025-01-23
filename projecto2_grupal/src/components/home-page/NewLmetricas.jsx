@@ -33,7 +33,7 @@ const NewLmetricas = () => {
     useEffect(() => {
       fetchListametrica(id)
         .then(data => {
-          setForm(data)})
+          setForm(data.content)})
     }, [])
     
    

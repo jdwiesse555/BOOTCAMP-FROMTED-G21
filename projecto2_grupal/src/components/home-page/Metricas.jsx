@@ -15,7 +15,7 @@ const Metricas = () => {
  
   const [form, setForm] = useState({
    
-    docId:'',
+   
       metrica: '',
       medida:'',
       vol_bbls:''
@@ -29,7 +29,7 @@ const Metricas = () => {
  
   useEffect(() => {
     fetchListametricas()
-      .then(data => setLmetricas(data))
+      .then(data => setLmetricas(data.content))
   }, [])
  
 
@@ -40,7 +40,7 @@ const Metricas = () => {
     useEffect(() => {
       fetchMetrica(id)
         .then(data => {
-          setForm(data)})
+          setForm(data.content)})
     }, [])
     
    
@@ -94,12 +94,12 @@ const Metricas = () => {
         <option></option> 
         {lmetricas.map(lmetricas=> {
               return (
-        <option value={lmetricas.metrica}> {lmetricas.metrica} </option>
+        <option value={lmetricas.id}> {lmetricas.metrica} </option>
                 
               )})}
 
         </select>
-
+        Medida 
         <input
           type="text"
           name="medida"
@@ -108,6 +108,7 @@ const Metricas = () => {
           onChange={handleChange}
           value={form.medida}
         />
+        Volumen Bbls
         <input
           type="text"
           name="vol_bbls"

@@ -2,33 +2,49 @@ import { useEffect, useState } from "react"
 import { useMetricas } from "../home-page/services/metricas"
 import { Link, useParams ,useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2'
+import { useListametricas } from "../home-page/services/listametricas"
 
 
 
 
 const MetricasList = () => {
   const { fetchMetricas, removeMetricas } = useMetricas()
+  const [lmetricas, setLmetricas] = useState([])
   const [metricas, setMetricas] = useState([])
-  let filtrometricas =[metricas]
+  const [pagina, setPagina] = useState([])
+  let filtrometricas =metricas
   const [texto, setTexto] = useState('')
   const [form, setForm] = useState({
-    docId : '',
+    id : '',
     metrica: '',
     medida: '',
     vol_bbls: '',
 
   })
+  let i=1 
+  let j=50
 
   useEffect(() => {
-    fetchMetricas()
-      .then(data => setMetricas(data))
-      
+    fetchMetricas(i,j)
+      .then(data => {
+        setMetricas(data.content);
+        setPagina(data.pageInfo);
+      })
+
+
   }, []) // Se ejecuta el useEffect al cargar el componente la primera vez
  
+ 
+ 
+  const pagenumber = []
+  for (let i=1; i <= pagina.totalPages; i++) {
+    pagenumber.push(i);
+  }
+
   const handleChange_V = ({target}) => {
     setTexto(target.value)
     
-//filtro(texto)
+    filtro(texto) 
 
   }
 
@@ -51,23 +67,29 @@ const MetricasList = () => {
         console.log("xx",id)
         const response = await removeMetricas(id)
         
-        fetchMetricas()
-          .then(data => setMetricas(data))
+        fetchMetricas(i,j)
+            .then(data => {
+              setMetricas(data.content);
+              setPagina(data.pageInfo);
+            })
       }
      
     })
   }
+
+
+  
   const filtro  = (valor) => {
     
     if(valor=="") {   
-      filtrometricas =metricas.filter(metricas =>
-        metricas.metrica.includes(metricas.metrica))}
+      filtrometricas =metricas
+    }
 
     
       else {
         filtrometricas =metricas.filter(metricas =>
-    (metricas.metrica.toLowerCase()+metricas.medida).includes(valor.toLowerCase()))}
-    //console.log("valor",valor,filtrometricas)
+   (metricas.medida).includes(valor.toLowerCase()))
+    console.log("valor",valor,filtrometricas) }
     
     }
 
@@ -75,7 +97,15 @@ const MetricasList = () => {
     filtro(texto)
  
 
- 
+ const paginate = (pageNumber,e) => {
+  e.preventDefault();
+  
+  fetchMetricas(pageNumber,j)
+  .then(data => {
+    setMetricas(data.content);
+    setPagina(data.pageInfo);
+  })
+ }
 
  
   return (
@@ -88,7 +118,7 @@ const MetricasList = () => {
           </Link>
           <input
       className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
-      placeholder="TM-....."   onChange={handleChange_V}
+      placeholder="Medida....."   onChange={handleChange_V}
     />
 
           <Link              
@@ -102,11 +132,11 @@ const MetricasList = () => {
             <table >
               <thead>
                 <tr> 
-                <th className="w-40">id</th>
+                <th className="w-40">Id</th>
 
                   <th className="w-60">Metrica</th>
-                  <th className="w-40">medida</th>
-                  <th className="w-40">vol_bbls</th>
+                  <th className="w-40">Medida</th>
+                  <th className="w-40">Vol_bbls</th>
                   <th className="w-90">Acciones</th>
                 </tr>
               </thead>
@@ -117,9 +147,11 @@ const MetricasList = () => {
               return (
       
                 <tr>
-                  <td>{metricas.docId}</td>
+                  <td>{metricas.id}</td>
 
-                  <td>{metricas.metrica} 
+
+                 
+                  <td>{metricas.lmetrica.metrica} 
                   </td>
                   <td>{metricas.medida} 
                   </td>
@@ -129,11 +161,11 @@ const MetricasList = () => {
                     <td>
                         <div class="flex gap-0.5">
                         <Link 
-                          key={metricas.docId}
-                          to={ `/Metricas/${metricas.docId}`}>
+                          key={metricas.id}
+                          to={ `/Metricas/${metricas.id}`}>
                         <button>✏</button>
                         </Link>
-                          <button onClick={() => handleRemove(metricas.docId)}>❌</button>
+                          <button onClick={() => handleRemove(metricas.id)}>❌</button>
                         </div>        
                   </td>
                 </tr>
@@ -143,9 +175,18 @@ const MetricasList = () => {
             </tbody>
             
             </table>
-          
+            
+
+        
 
         </div>
+        <ul className="pagination " >
+              <a>Paginas:</a>
+              {pagenumber.map(pagen=>{
+                return (
+                  <a className="text-1xl text-center mt-2 border-8"  onClick={(e)=> paginate(pagen,e)} href="!#">{pagen} </a>
+              )})}
+      </ul>
       </section>
     </>
   )

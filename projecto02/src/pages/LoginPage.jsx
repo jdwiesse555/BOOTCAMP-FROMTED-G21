@@ -53,6 +53,11 @@ Swal.fire({
   footer: ''
 });
       // Mostrar alerta cuando el suaurio no se logueo correctamente
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Clave o Usuario incorrecto",
+        footer: ''})
     }
   }
  useEffect(() => {
