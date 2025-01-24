@@ -61,7 +61,10 @@ Zustand
 
 npm install zustand
 
+GitHub Javier.wiesse@gmail.com
+Temporal44$
 
+Render desplegar con github
 
 proyecto
 

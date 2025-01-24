@@ -104,7 +104,7 @@ const Listametricas = () => {
                       <th className="w-40">id</th>
       
                         <th className="w-60">Metrica</th>
-                        <th className="w-40">Comentario</th>
+                        <th className="w-120">Comentario</th>
                        
                         <th className="w-90">Acciones</th>
                       </tr>
