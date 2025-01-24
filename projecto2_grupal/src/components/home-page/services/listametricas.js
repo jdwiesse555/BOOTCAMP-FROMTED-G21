@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 const BASE_URL = 'https://sist-tanques.onrender.com'
 
 
-export const useListametricas = () => {
+export const useListametricas = () => {  
 
   
   const fetchListametrica = async(id1) => {
